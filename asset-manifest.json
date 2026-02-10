@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Deeraj-Interior/static/css/main.8798bcbc.css",
+    "main.js": "/Deeraj-Interior/static/js/main.f284854d.js",
+    "static/js/453.fd2f0c4a.chunk.js": "/Deeraj-Interior/static/js/453.fd2f0c4a.chunk.js",
+    "index.html": "/Deeraj-Interior/index.html",
+    "main.8798bcbc.css.map": "/Deeraj-Interior/static/css/main.8798bcbc.css.map",
+    "main.f284854d.js.map": "/Deeraj-Interior/static/js/main.f284854d.js.map",
+    "453.fd2f0c4a.chunk.js.map": "/Deeraj-Interior/static/js/453.fd2f0c4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8798bcbc.css",
+    "static/js/main.f284854d.js"
+  ]
+}
