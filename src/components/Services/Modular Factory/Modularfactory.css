@@ -1,0 +1,179 @@
+/* modularfactory.css - Magazine / Picture-style layout */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.mf-page {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #333;
+  line-height: 1.7;
+  background: #f9f9f9;
+}
+
+/* Hero with background image */
+.mf-hero {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  background: url('https://thumbs.dreamstime.com/b/inside-large-bright-wooden-furniture-factory-woodworking-industry-spacious-well-lit-features-rows-worktables-wood-367434135.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.mf-hero-overlay {
+  text-align: center;
+  padding: 60px 40px;
+  max-width: 1100px;
+  border-radius: 12px;
+}
+
+.mf-hero h1 {
+  font-size: 4.2rem;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.mf-hero-subtitle {
+  font-size: 1.35rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Main content - text + images side by side */
+.mf-main-content {
+  padding: 80px 5%;
+  background: white;
+}
+
+.mf-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mf-text-column h2 {
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+  color: #c5a059; /* your gold */
+}
+
+.mf-text-column p {
+  font-size: 1.5rem;
+  margin-bottom: 28px;
+}
+
+.mf-image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mf-inline-image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.mf-inline-image:hover {
+  transform: scale(1.03);
+}
+
+.mf-large {
+  order: -1; /* optional - put large one on top */
+}
+
+/* Gallery section */
+.mf-gallery {
+  padding: 80px 5%;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.mf-gallery-title {
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+}
+
+.mf-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mf-gallery-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  transition: transform 0.4s;
+}
+
+.mf-gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.mf-footer {
+  padding: 60px 5% 40px;
+  background: #1a1a1a;
+  color: #ccc;
+  text-align: center;
+}
+
+.mf-footer-links {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.mf-company-info h3 {
+  color: #c5a059;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.mf-company-info p {
+  margin: 8px 0;
+  font-size: 1.05rem;
+}
+
+.mf-copyright {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .mf-content-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .mf-hero h1 {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mf-hero {
+    height: 70vh;
+  }
+  .mf-hero h1 {
+    font-size: 2.8rem;
+  }
+  .mf-hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
