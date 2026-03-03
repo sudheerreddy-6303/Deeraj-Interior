@@ -1,0 +1,386 @@
+/* src/components/ourprojects/ourprojects.css */
+
+/* ────────────────────────────────────────────────
+   Main Layout & Typography
+──────────────────────────────────────────────── */
+
+.our-projects-page {
+  padding: 60px 20px 100px;
+  background: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.projects-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #64748b;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+/* ────────────────────────────────────────────────
+   Project Cards Grid
+──────────────────────────────────────────────── */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 32px;
+}
+
+.project-item {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* ────────────────────────────────────────────────
+   Shared Thumbnail + Play Button Styles
+──────────────────────────────────────────────── */
+
+.video-thumbnail-wrapper {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.project-item:hover .thumbnail,
+.ourprojects-short-item:hover .thumbnail {
+  transform: scale(1.09);
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.play-overlay:hover {
+  background: rgba(59, 130, 246, 0.55);
+}
+
+.play-icon {
+  width: 65px;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.6rem;
+  color: #ff0000;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.play-overlay:hover .play-icon {
+  transform: scale(1.15);
+  background: white;
+}
+
+/* ────────────────────────────────────────────────
+   Card Details (shared by projects & shorts)
+──────────────────────────────────────────────── */
+
+.project-details {
+  padding: 20px 24px;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: #475569;
+  margin: 0 0 6px;
+}
+
+.project-brand {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #e63946;
+  margin: 8px 0 4px;
+}
+
+.project-location {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+/* ────────────────────────────────────────────────
+   Shorts Section – Faster Right-to-Left Marquee
+──────────────────────────────────────────────── */
+
+.ourprojects-shorts-section {
+  margin: 80px 0 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ourprojects-shorts-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.ourprojects-shorts-subtitle {
+  font-size: 1.3rem;
+  color: #64748b;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.ourprojects-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.ourprojects-marquee-track {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scrollLeft 26s linear infinite;
+  will-change: transform;
+}
+
+.ourprojects-short-item {
+  flex: 0 0 auto;
+  width: 360px;
+  margin-right: 32px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+}
+
+.ourprojects-short-item:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.ourprojects-marquee-wrapper:hover .ourprojects-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ────────────────────────────────────────────────
+   Pagination Controls
+──────────────────────────────────────────────── */
+
+.pagination-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin: 40px 0 60px;
+  flex-wrap: wrap;
+}
+
+.pagination-btn {
+  padding: 10px 16px;
+  min-width: 48px;
+  min-height: 48px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  background: #e2e8f0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #cbd5e1;
+  transform: translateY(-2px);
+}
+
+.pagination-btn.active {
+  background: #2563eb;
+  color: white;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ────────────────────────────────────────────────
+   Footer
+──────────────────────────────────────────────── */
+
+.company-page-footer {
+  padding: 90px 8% 50px;
+  text-align: center;
+  background: linear-gradient(to top, #f8fafc, #ffffff);
+}
+
+.company-footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.company-footer-brand {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+  color: #1e293b;
+  margin-bottom: 1.8rem;
+}
+
+.company-footer-address {
+  line-height: 1.7;
+  margin-bottom: 1.6rem;
+  font-size: 1rem;
+  color: #475569;
+}
+
+.company-footer-contact {
+  font-weight: 700;
+  color: #2563eb;
+  font-size: 1.25rem;
+}
+
+/* ────────────────────────────────────────────────
+   Responsive Design
+──────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+  }
+  .ourprojects-short-item {
+    width: 320px;
+    margin-right: 24px;
+  }
+  .video-thumbnail-wrapper {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-projects-page {
+    padding: 40px 15px 80px;
+  }
+  .page-title {
+    font-size: 2.8rem;
+  }
+  .page-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  .ourprojects-marquee-track {
+    animation-duration: 32s;
+  }
+  .ourprojects-short-item {
+    width: 280px;
+    margin-right: 20px;
+  }
+  .video-thumbnail-wrapper {
+    height: 200px;
+  }
+  .pagination-controls {
+    justify-content: center;
+  }
+  .company-page-footer {
+    padding: 70px 6% 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .ourprojects-short-item {
+    width: 85vw;
+    margin-right: 16px;
+  }
+  .ourprojects-marquee-track {
+    animation-duration: 38s;
+  }
+  .video-thumbnail-wrapper {
+    height: 180px;
+  }
+  .page-title {
+    font-size: clamp(2.1rem, 8vw, 2.6rem);
+  }
+  .company-footer-brand {
+    font-size: 1.6rem;
+  }
+  .company-footer-contact {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .ourprojects-short-item {
+    width: 90vw;
+  }
+  .video-thumbnail-wrapper {
+    height: 160px;
+  }
+}

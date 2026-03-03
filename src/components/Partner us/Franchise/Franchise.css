@@ -1,0 +1,621 @@
+/* Franchise.css – Modern & Professional Franchise Page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.franchise-page {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.65;
+  color: #1f2937;
+  background: #ffffff;
+}
+
+/* ==========================================================================
+   Wrappers & Typography – Wider & more expansive
+   ========================================================================== */
+.franchise-content-wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  
+}
+
+.franchise-section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+  width: 100%;
+  max-width: none;
+}
+
+/* Wider variant especially for background / grid-heavy sections */
+.franchise-fixed-bg-section .franchise-content-wrapper,
+.wide-section .franchise-content-wrapper {
+  max-width: 1680px;
+  padding: 0 5vw;
+}
+
+@media (max-width: 768px) {
+  .franchise-section-title {
+    font-size: 2.25rem;
+  }
+  .franchise-content-wrapper {
+    padding: 0 20px;
+  }
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.franchise-hero-section {
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.franchise-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.70));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.franchise-hero-content {
+  max-width: 960px;
+  padding: 2rem;
+}
+
+.franchise-hero-title {
+  font-size: 4.2rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  line-height: 1.1;
+  text-shadow: 0 4px 16px rgba(235, 230, 230, 0.6);
+  color:#f3f4f6
+}
+
+.franchise-hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+}
+
+.franchise-hero-cta {
+  display: inline-block;
+  background: orangered;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.franchise-hero-cta:hover {
+  background: orangered;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Intro Section
+   ========================================================================== */
+.franchise-intro-section {
+  padding: 7rem 0 5rem;
+  background: #f9fafb;
+}
+
+.franchise-intro-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.franchise-intro-text p {
+  font-size: 1.18rem;
+  margin-bottom: 1.5rem;
+  color: #4b5563;
+}
+
+.franchise-intro-image {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 1024px) {
+  .franchise-intro-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* ==========================================================================
+   Benefits (Why Partner)
+   ========================================================================== */
+.franchise-benefits-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.franchise-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+  max-width: none;
+}
+
+/* ==========================================================================
+   Main Content – About + Fixed BG Sections
+   ========================================================================== */
+.franchise-main-content-section {
+  padding: 4rem 0 0;
+}
+
+.franchise-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 6rem;
+  width: 100%;
+}
+
+.franchise-about-text .franchise-feature-list {
+  list-style: none;
+  margin-top: 1.8rem;
+}
+
+.franchise-feature-list li {
+  font-size: 1.12rem;
+  margin-bottom: 1rem;
+  padding-left: 1.8rem;
+  position: relative;
+}
+
+.franchise-feature-list li::before {
+  content: "✔";
+  color: orangered;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.franchise-about-image {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 1024px) {
+  .franchise-about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* Fixed Background Sections – now wider */
+.franchise-fixed-bg-section {
+  position: relative;
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  margin: 6rem 0;
+}
+
+.franchise-fixed-bg-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.48);
+  z-index: 1;
+}
+
+.franchise-fixed-bg-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.franchise-fixed-bg-section .franchise-section-title {
+  color: white;
+}
+
+.franchise-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.8rem;
+  width: 100%;
+  max-width: none;
+}
+
+.franchise-why-card,
+.franchise-support-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+  color: #1f2937;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.franchise-why-card:hover,
+.franchise-support-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.22);
+}
+
+.franchise-why-card h3,
+.franchise-support-card h3 {
+  color: orangered;
+  margin-bottom: 1rem;
+  font-size: 1.45rem;
+}
+
+.franchise-support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: none;
+}
+
+.franchise-support-img {
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.franchise-investment-text {
+  font-size: 1.35rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+}
+
+.franchise-investment-highlight {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fef3c7;
+}
+
+/* CTA */
+.franchise-cta-section {
+  padding: 0rem 0 5rem;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.franchise-cta-text {
+  font-size: 1.35rem;
+  margin-bottom: 2.5rem;
+  color: #4b5563;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.franchise-cta-button {
+  display: inline-block;
+  padding: 1.1rem 2.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 0.8rem;
+}
+
+.franchise-primary {
+  background: orangered;
+  color: white;
+}
+
+.franchise-primary:hover {
+  background: orangered;
+}
+
+.franchise-secondary {
+  background: transparent;
+  border: 2px solid orangered;
+  color: orangered;
+}
+
+.franchise-secondary:hover {
+  background: orangered;
+  color: white;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .franchise-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .franchise-content-wrapper {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .franchise-why-grid,
+  .franchise-support-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .franchise-fixed-bg-section {
+    background-attachment: scroll;
+    min-height: auto;
+    padding: 5rem 0;
+  }
+
+  .franchise-hero-title {
+    font-size: 3rem;
+  }
+
+  .franchise-hero-subtitle {
+    font-size: 1.35rem;
+  }
+
+  .franchise-content-wrapper {
+    padding: 0 16px;
+  }
+}
+
+/* Extra wide feel on very large screens */
+@media (min-width: 1440px) {
+  .franchise-content-wrapper {
+    padding: 0 5vw;
+  }
+  .franchise-fixed-bg-section .franchise-content-wrapper {
+    max-width: 1800px;
+  }
+}
+
+/* --- Investment Metrics Grid --- */
+.franchise-investment-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin: 4rem 0;
+  width: 100%;
+}
+
+.franchise-metric-card {
+  background: #f3f4f6;
+  padding: 3.5rem 2.5rem;
+  border-radius: 4px;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  border-left: 0 solid var(--copper, #c5a367);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.franchise-metric-card:hover {
+  transform: translateY(-10px);
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-left-width: 8px;
+}
+
+.franchise-metric-card h3 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.franchise-metric-label {
+  font-size: 1.1rem;
+  color: #475569;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- Responsive Behavior --- */
+@media (max-width: 1024px) {
+  .franchise-investment-metrics-grid {
+    gap: 1.5rem;
+  }
+ 
+  .franchise-metric-card {
+    padding: 2.5rem 2rem;
+  }
+  .franchise-metric-card h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .franchise-investment-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .franchise-metric-card {
+    text-align: center;
+  }
+}
+
+/* --- Market Opportunity --- */
+.franchise-market-flex-layout {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 40px 0;
+  margin-top: -100px;
+}
+
+.franchise-market-text-box {
+  flex: 1;
+   margin-bottom: 90px;
+}
+
+.franchise-market-text-box .franchise-lead-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.franchise-market-text-box .franchise-description-text {
+  font-size: 1.1rem;
+  color: #4a5568;
+}
+
+.franchise-market-graphic-box {
+  flex: 1;
+  position: relative;
+}
+
+.franchise-market-img {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 30px 30px 0px -5px rgba(197, 163, 103, 0.1);
+}
+
+.franchise-floating-stat-card {
+  position: absolute;
+  top: -12px;                 /* less offset so it doesn't stick out too much */
+  left: -12px;
+  background: var(--dark, #0f172a);
+  color: white;
+  padding: 16px 20px;         /* significantly reduced padding → smaller card */
+  border-radius: 6px;
+  z-index: 2;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  max-width: 180px;           /* ← limits maximum width */
+  font-size: 0.95rem;         /* slightly smaller text base size */
+}
+.franchise-floating-stat-card strong {
+  display: block;
+  font-size: 1.8rem;
+  color: orangered;
+}
+
+/* --- Get Started Steps --- */
+.franchise-process-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.franchise-process-step-card {
+  background: white;
+  transition: all 0.4s ease;
+}
+
+.franchise-step-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.franchise-step-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.franchise-process-step-card:hover .franchise-step-image img {
+  transform: scale(1.1);
+}
+
+.franchise-step-number {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: orangered;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.franchise-step-content {
+  padding: 0 10px 20px 0;
+}
+
+.franchise-step-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.franchise-step-content p {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.franchise-eyebrow {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: orangered;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1200px) {
+  .franchise-process-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 968px) {
+  .franchise-market-flex-layout {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+ 
+  .franchise-process-steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .franchise-floating-stat-card {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.franchise-process-section{
+    /* border: 2px solid red; */
+    /* margin-top: -150px; */
+}
