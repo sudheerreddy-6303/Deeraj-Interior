@@ -130,7 +130,7 @@ const Franchise = () => {
                 <div className="franchise-support-card">
                   <h3>Showroom Design & Setup</h3>
                   <p>Professional layout, branding, and experience-center creation guidance.</p>
-                  <img src="https://images.unsplash.com/photo-1618220048045-1a9a0c8e6a2f?auto=format&fit=crop&q=80&w=800" alt="Elegant showroom" className="franchise-support-img" loading="lazy" />
+                  <img src="https://www.natrajfurniture.com/retail-furniture/digital-displays/digital-displays6.jpg" alt="Elegant showroom" className="franchise-support-img" loading="lazy" />
                 </div>
                 <div className="franchise-support-card">
                   <h3>Training & Operations</h3>
