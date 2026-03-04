@@ -56,7 +56,7 @@ export default function Navbar() {
                   Company Story
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   to="/about-us/our-team"
                   className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
@@ -64,7 +64,7 @@ export default function Navbar() {
                 >
                   Our Team
                 </NavLink>
-              </li>
+              </li> */}
               {/* <li>
                 <NavLink
                   to="/about-us/our-process"

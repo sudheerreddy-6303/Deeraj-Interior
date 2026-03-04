@@ -240,7 +240,7 @@ function OurProjects() {
           </div>
         </div>
 
-        <footer className="company-page-footer">
+        {/* <footer className="company-page-footer">
           <div className="company-footer-content">
             <p className="company-footer-brand">DEERAJ INTERIORS</p>
             <p className="company-footer-address">
@@ -249,7 +249,7 @@ function OurProjects() {
             </p>
             <p className="company-footer-contact">+91 9000700930 / 9000700910</p>
           </div>
-        </footer>
+        </footer> */}
         {/* ================= WHATSAPP FLOAT ================= */}
 <div className="whatsapp-container">
 

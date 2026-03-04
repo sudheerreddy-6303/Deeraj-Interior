@@ -126,7 +126,7 @@ export default function CompanyStory() {
       </section>
 
       {/* Footer */}
-      <footer className="deeraj-about-footer">
+      {/* <footer className="deeraj-about-footer">
         <div className="deeraj-about-footer-inner">
           <p className="deeraj-about-brand">DEERAJ INTERIORS</p>
           <p className="deeraj-about-address">
@@ -135,7 +135,7 @@ export default function CompanyStory() {
           </p>
           <p className="deeraj-about-contact">+91 9000700910 / 9000700930</p>
         </div>
-      </footer>
+      </footer> */}
 
 
       {/* ================= WHATSAPP FLOAT ================= */}

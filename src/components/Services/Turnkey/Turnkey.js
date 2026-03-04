@@ -126,7 +126,7 @@ const TurnkeyProjects = () => {
         </div>
 
         {/* Footer */}
-        <footer className="turnkey-page-footer">
+        {/* <footer className="turnkey-page-footer">
           <p>Privacy Policy • Terms & Conditions</p>
           <p className="turnkey-contact-info">
             DEAR INTERIORS<br />
@@ -134,7 +134,7 @@ const TurnkeyProjects = () => {
             HYDERABAD, TS 500090<br />
             +91 9000705000
           </p>
-        </footer>
+        </footer> */}
 
       </div>
 
