@@ -441,7 +441,7 @@ const Contact = () => {
               </div>
             ) : (
               <>
-                <h1>Contact Us</h1>
+                <h1>Request Quote</h1>
                 <p className="lead">
                   Transform your home, office, retail space, or hospitality venue with 
                   bespoke interior design that reflects your vision and lifestyle.

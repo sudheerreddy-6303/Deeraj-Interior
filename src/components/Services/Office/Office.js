@@ -93,64 +93,118 @@ const Office = () => {
 
     {/* Projects Section */}
       <div className="drj-off-projects-wrapper">
-        <div className="drj-off-container">
-          <div className="drj-off-projects">
-            <h3>TYPES OF OFFICE & COMMERCIAL PROJECTS WE HANDLE</h3>
-            <div className="drj-off-gallery-grid">
-              
-              <div className="drj-off-gallery-item">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Corporate Offices" />
-                <div className="drj-off-caption">
-                  <h4>Corporate Offices</h4>
-                  <p>Executive cabins, open workspaces, conference rooms, and reception areas.</p>
-                </div>
-              </div>
-
-              <div className="drj-off-gallery-item">
-                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800" alt="Start-up Spaces" />
-                <div className="drj-off-caption">
-                  <h4>Start-up Spaces</h4>
-                  <p>Vibrant, creative designs that inspire innovation and team collaboration.</p>
-                </div>
-              </div>
-
-              <div className="drj-off-gallery-item">
-                <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=800" alt="Retail Stores & Showrooms" />
-                <div className="drj-off-caption">
-                  <h4>Retail Stores & Showrooms</h4>
-                  <p>Customer-focused layouts that drive engagement, traffic, and sales.</p>
-                </div>
-              </div>
-
-              <div className="drj-off-gallery-item">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800" alt="Hospitality Spaces" />
-                <div className="drj-off-caption">
-                  <h4>Hospitality Spaces</h4>
-                  <p>Cafés, lounges, and luxury lobbies with warm, inviting atmospheres.</p>
-                </div>
-              </div>
-
-              <div className="drj-off-gallery-item">
-                <img src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&q=80&w=800" alt="Co-Working Hubs" />
-                <div className="drj-off-caption">
-                  <h4>Co-Working Hubs</h4>
-                  <p>Flexible, modern setups designed to cater to diverse professionals.</p>
-                </div>
-              </div>
-
-              {/* NEW 6TH CARD ADDED HERE */}
-              <div className="drj-off-gallery-item">
-                <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&q=80&w=800" alt="Boardrooms & Conference Centers" />
-                <div className="drj-off-caption">
-                  <h4>Boardrooms & Conference Centers</h4>
-                  <p>State-of-the-art meeting spaces equipped for high-level decision making.</p>
-                </div>
-              </div>
-
-            </div>
+  <div className="drj-off-container">
+    <div className="drj-off-projects">
+      <h3>Our Services</h3>
+      <div className="drj-off-gallery-grid">
+        
+        {/* NEW HOME INTERIOR CARD */}
+        <div className="drj-off-gallery-item">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800" alt="Home Interiors" />
+          <div className="drj-off-caption">
+            <h4>Home Interiors</h4>
+            <p>Cozy, personalized living spaces tailored to your lifestyle and preferences.</p>
           </div>
         </div>
+
+        {/* NEW COMMERCIAL SPACE INTERIOR CARD */}
+        <div className="drj-off-gallery-item">
+          <img src="https://plus.unsplash.com/premium_photo-1670315264879-59cc6b15db5f?auto=format&fit=crop&q=80&w=800" alt="Commercial Space Interiors" />
+          <div className="drj-off-caption">
+            <h4>Commercial Space Interiors</h4>
+            <p>Functional and aesthetic designs for businesses to enhance productivity and brand image.</p>
+          </div>
+        </div>
+
+        {/* NEW SCHOOL INTERIOR CARD */}
+        <div className="drj-off-gallery-item">
+          <img src="https://plus.unsplash.com/premium_photo-1680807869780-e0876a6f3cd5?auto=format&fit=crop&q=80&w=800" alt="School Interiors" />
+          <div className="drj-off-caption">
+            <h4>School Interiors</h4>
+            <p>Engaging learning environments that foster creativity and comfort for students and staff.</p>
+          </div>
+        </div>
+
+        {/* NEW RESTAURANT INTERIOR CARD */}
+        <div className="drj-off-gallery-item">
+          <img src="https://plus.unsplash.com/premium_photo-1664298026480-c72cc46eab84?auto=format&fit=crop&q=80&w=800" alt="Restaurant Interiors" />
+          <div className="drj-off-caption">
+            <h4>Restaurant Interiors</h4>
+            <p>Inviting dining spaces that elevate the culinary experience and ambiance.</p>
+          </div>
+        </div>
+
+        {/* NEW ARCHITECT & INTERIOR SERVICES CARD */}
+        <div className="drj-off-gallery-item">
+          <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&q=80&w=800" alt="Architect & Interior Services" />
+          <div className="drj-off-caption">
+            <h4>Architect & Interior Services</h4>
+            <p>Comprehensive design solutions from concept to completion for seamless integration.</p>
+          </div>
+        </div>
+
+        {/* NEW ONLINE RETAIL SALES CARD */}
+        <div className="drj-off-gallery-item">
+          <img src="https://images.unsplash.com/photo-1648824572347-6edd9a108e28?auto=format&fit=crop&q=80&w=800" alt="Online Retail Showrooms" />
+          <div className="drj-off-caption">
+            <h4>Online Retail Showrooms</h4>
+            <p>Virtual and physical setups optimized for e-commerce display and customer engagement.</p>
+          </div>
+        </div>
+
+        <div className="drj-off-gallery-item">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Corporate Offices" />
+          <div className="drj-off-caption">
+            <h4>Corporate Offices</h4>
+            <p>Executive cabins, open workspaces, conference rooms, and reception areas.</p>
+          </div>
+        </div>
+
+        <div className="drj-off-gallery-item">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800" alt="Start-up Spaces" />
+          <div className="drj-off-caption">
+            <h4>Start-up Spaces</h4>
+            <p>Vibrant, creative designs that inspire innovation and team collaboration.</p>
+          </div>
+        </div>
+
+        <div className="drj-off-gallery-item">
+          <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=800" alt="Retail Stores & Showrooms" />
+          <div className="drj-off-caption">
+            <h4>Retail Stores & Showrooms</h4>
+            <p>Customer-focused layouts that drive engagement, traffic, and sales.</p>
+          </div>
+        </div>
+
+        <div className="drj-off-gallery-item">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800" alt="Hospitality Spaces" />
+          <div className="drj-off-caption">
+            <h4>Hospitality Spaces</h4>
+            <p>Cafés, lounges, and luxury lobbies with warm, inviting atmospheres.</p>
+          </div>
+        </div>
+
+        <div className="drj-off-gallery-item">
+          <img src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&q=80&w=800" alt="Co-Working Hubs" />
+          <div className="drj-off-caption">
+            <h4>Co-Working Hubs</h4>
+            <p>Flexible, modern setups designed to cater to diverse professionals.</p>
+          </div>
+        </div>
+
+        {/* NEW 6TH CARD ADDED HERE */}
+        <div className="drj-off-gallery-item">
+          <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&q=80&w=800" alt="Boardrooms & Conference Centers" />
+          <div className="drj-off-caption">
+            <h4>Boardrooms & Conference Centers</h4>
+            <p>State-of-the-art meeting spaces equipped for high-level decision making.</p>
+          </div>
+        </div>
+
       </div>
+    </div>
+  </div>
+</div>
 
       {/* Popular Styles (NOW LEFT/RIGHT LAYOUT) */}
       <div className="drj-off-popular-styles-wrapper">
@@ -186,7 +240,7 @@ const Office = () => {
       <div className="drj-off-why-choose-wrapper">
         <div className="drj-off-container">
           <div className="drj-off-why-choose-us">
-            <h2>WHY CHOOSE US FOR YOUR CORPORATE INTERIORS? 2025</h2>
+            <h2>WHY CHOOSE US FOR YOUR CORPORATE INTERIORS? 2026</h2>
             <div className="drj-off-why-grid">
               <div className="drj-off-why-item">
                 <img src="https://images.unsplash.com/photo-1498409785966-ab341407de6e?auto=format&fit=crop&q=80&w=800" alt="Experience Across Industries" />

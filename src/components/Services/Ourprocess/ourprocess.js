@@ -404,7 +404,7 @@ const OurTeam = () => {
       </section>
 
       {/* Gallery Section */}
-      <section className="ourprocess-gallery-section">
+      {/* <section className="ourprocess-gallery-section">
         <div className="ourprocess-gallery-wrap">
           <h2 className="ourprocess-gallery-title">Inspiration from Our Recent Projects</h2>
           <p className="ourprocess-gallery-subtitle">See the kind of transformations we create for our clients</p>
@@ -416,7 +416,7 @@ const OurTeam = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Process Section */}
       <section className="ourprocess-steps-section">
@@ -531,7 +531,7 @@ const OurTeam = () => {
     <div className="di-footer-addresses">
       
       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Main Branch</span>
+        <span className="di-footer-branch">experience center</span>
         <p>
           PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>
           SUCHITRA CIRCLE, PET BASHEERABAD,<br/>
@@ -540,7 +540,7 @@ const OurTeam = () => {
       </div>
 
       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Second Branch</span>
+        <span className="di-footer-branch">Modular Factory</span>
         <p>
           PLOT 205, BESIDE HYPOTHETICAL PLAZA,<br/>
           JUBILEE HILLS CHECKPOST,<br/>

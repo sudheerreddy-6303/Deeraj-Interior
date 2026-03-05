@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './Franchise.css';
 
 const images = {
-  heroBg: 'https://wellcraftkitchens.com/wp-content/uploads/2025/04/artisancustomclosetsnew_491078244.webp',
+  heroBg: 'https://www.trustedfranchise.com/images/banner1.jpg',
   workspaceLaptop: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=1200',
   modernLiving: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&q=80&w=1200',
   whyChooseBg: 'https://images.unsplash.com/photo-1618221195710-dd2dabb60b29?auto=format&fit=crop&q=85&w=2000',
@@ -76,7 +76,7 @@ const Franchise = () => {
       <section className="franchise-main-content-section">
         <div className="franchise-content-wrapper">
           {/* About */}
-          <div className="franchise-about-grid">
+          {/* <div className="franchise-about-grid">
             <div className="franchise-about-text">
               <h2 className="franchise-section-title franchise-text-left">About Deeraj Interiors</h2>
               <p>
@@ -95,12 +95,12 @@ const Franchise = () => {
               className="franchise-about-image"
               loading="lazy"
             />
-          </div>
+          </div> */}
 
           {/* Why Choose Us – full-width bg */}
           <div className="franchise-fixed-bg-section franchise-why-choose-section" style={{ backgroundImage: `url(${images.whyChooseBg})` }}>
             <div className="franchise-content-wrapper">
-              <h2 className="franchise-section-title">Why Choose Our Franchise Model?</h2>
+              <h2 className="franchise-section-title"> Our Franchise Model?</h2>
               <div className="franchise-why-grid">
                 <div className="franchise-why-card">
                   <h3>Proven Growth Trajectory</h3>
@@ -138,7 +138,7 @@ const Franchise = () => {
                   <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800" alt="Team training" className="franchise-support-img" loading="lazy" />
                 </div>
                 <div className="franchise-support-card">
-                  <h3>Centralized R&D & Marketing</h3>
+                  <h3>Centralized Support</h3>
                   <p>Ongoing material innovation, national campaigns, and procurement support.</p>
                   <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800" alt="R&D collaboration" className="franchise-support-img" loading="lazy" />
                 </div>

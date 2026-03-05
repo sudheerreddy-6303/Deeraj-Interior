@@ -30,11 +30,11 @@ const BusinessAssociate = () => {
             <h2 style={{color: 'orangered'}}>YOUR GATEWAY TO FINANCIAL FREEDOM</h2>
             <p>
               Our Business Associate Program offers an extraordinary growth opportunity — expected to reach 
-              <strong> ₹1.2 billion by 2025</strong>. Join a proven business model with comprehensive support.
+              <strong> ₹1.2 billion by 2026</strong>. Join a proven business model with comprehensive support.
             </p>
             <div className="business-growth-stat">
               <span className="business-big-number">₹1.2 Billion</span>
-              <span className="business-by-year">by 2025</span>
+              <span className="business-by-year">by 2026</span>
             </div>
           </div>
         </div>

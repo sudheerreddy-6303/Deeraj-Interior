@@ -153,7 +153,7 @@ const ModularFactory = () => {
             </div>
             <div className="mf-stat-card">
               <h3>Advanced</h3>
-              <p>CNC Machinery</p>
+              <p>Machinery</p>
             </div>
           </div>
         </div>
@@ -321,7 +321,7 @@ const ModularFactory = () => {
         <div className="mf-container">
           <div className="mf-form-wrapper">
             <div className="mf-form-info">
-              <h2>Become an Execution Partner</h2>
+              <h2>Become an Businesss Partner</h2>
               <p>Let’s collaborate and build better spaces together. Join forces with Deeraj Modulars for reliable, white-label manufacturing.</p>
               
               <div className="mf-target-audience">

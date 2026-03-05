@@ -1902,7 +1902,7 @@ export default function Home() {
       </section>
 
       {/* Our Products Section */}
-      <section className="home-products-section">
+      {/* <section className="home-products-section">
         <div className="home-products-wrapper">
           <h2>OUR PRODUCTS</h2>
           <p className="home-section-subtitle">
@@ -2075,7 +2075,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Services Overview Section */}
       <section className="home-services-section">
@@ -2347,7 +2347,7 @@ export default function Home() {
     <div className="di-footer-addresses">
       
       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Main Branch</span>
+        <span className="di-footer-branch">experience Center</span>
         <p>
           PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>
           SUCHITRA CIRCLE, PET BASHEERABAD,<br/>
@@ -2356,7 +2356,7 @@ export default function Home() {
       </div>
 
       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Second Branch</span>
+        <span className="di-footer-branch">Modular Factory</span>
         <p>
           PLOT 205, BESIDE HYPOTHETICAL PLAZA,<br/>
           JUBILEE HILLS CHECKPOST,<br/>

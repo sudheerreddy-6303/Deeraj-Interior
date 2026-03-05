@@ -46,8 +46,8 @@ export default function Navbar() {
   About Us
 </NavLink>
 
-            <ul className="dropdown-menu">
-              <li>
+            {/* <ul className="dropdown-menu"> */}
+              {/* <li>
                 <NavLink
                   to="/about-us/company-story"
                   className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
@@ -55,7 +55,7 @@ export default function Navbar() {
                 >
                   Company Story
                 </NavLink>
-              </li>
+              </li> */}
               {/* <li>
                 <NavLink
                   to="/about-us/our-team"
@@ -92,7 +92,7 @@ export default function Navbar() {
                   Careers
                 </NavLink>
               </li> */}
-            </ul>
+            {/* </ul> */}
           </li>
 
           {/* Services Dropdown */}
@@ -117,6 +117,17 @@ export default function Navbar() {
                   Office/Commercial spaces
                 </NavLink>
               </li>
+
+   <li>
+                <NavLink
+                  to="/about-us/our-process"
+                  className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+                  onClick={closeMenu}
+                >
+                  Our Process
+                </NavLink>
+              </li>
+
               <li>
                 <NavLink
                   to="/services/turnkey-projects"
@@ -135,15 +146,7 @@ export default function Navbar() {
                   Renovation & Re-modelling
                 </NavLink>
               </li>
-                <li>
-                <NavLink
-                  to="/about-us/our-process"
-                  className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
-                  onClick={closeMenu}
-                >
-                  Our Process
-                </NavLink>
-              </li>
+             
             </ul>
           </li>
 
@@ -209,7 +212,7 @@ export default function Navbar() {
           {/* Partner Us Dropdown */}
           <li className="dropdown">
             <NavLink
-              to="/partner-us"
+              to="/partner-us/franchise"
               className={({ isActive }) =>
                 isActive ? 'nav-link active dropdown-toggle' : 'nav-link dropdown-toggle'
               }

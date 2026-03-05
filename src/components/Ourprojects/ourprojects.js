@@ -178,7 +178,7 @@ function OurProjects() {
 
         {/* Shorts Section - Right to Left Marquee */}
         <div className="ourprojects-shorts-section">
-          <h2 className="ourprojects-shorts-title">OUR SHORTS</h2>
+          <h2 className="ourprojects-shorts-title">YOUTUBE SHORTS</h2>
           <p className="ourprojects-shorts-subtitle">Quick Inspiring Glimpses of Our Work</p>
 
           <div className="ourprojects-marquee-wrapper">

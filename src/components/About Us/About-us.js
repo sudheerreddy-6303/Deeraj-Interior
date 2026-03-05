@@ -76,7 +76,7 @@ const AboutUs = () => {
       </section>
 
       {/* --- THE EXPERTISE (Bento Grid Style) --- */}
-      <section className="section bg-warm">
+      {/* <section className="section bg-warm">
         <div className="container">
           <div className="section-header">
             <h2 className="heading-md">Design Specialization</h2>
@@ -95,25 +95,26 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* --- STRATEGIC PILLARS --- */}
       <section className="section pillars">
         <div className="container">
           <div className="pillars-wrapper">
             <div className="pillar-image-box">
-              <img src="https://whitehillsinterior.in/wp-content/uploads/2023/11/modern-interior-open-office-workspace-3d-rendering111-scaled-1.webp" alt="Factory Office" />
+              <img src="https://t4.ftcdn.net/jpg/03/65/21/75/360_F_365217542_SqD0byWky3uWnd8NHDdxRF6j4mgzPKzh.jpg" alt="Factory Office" />
               <div className="experience-tag">Experience Center <br/><strong>Kompally</strong></div>
             </div>
             <div className="pillar-content">
+                <div className="pillar-block">
+                <h3>The Vision</h3>
+                <p>To become the definitive execution partner for architects and developers across Telangana, recognized for radical transparency and industrial-grade finishing.</p>
+              </div>
               <div className="pillar-block">
                 <h3>The Mission</h3>
                 <p>To scale craftsmanship. We aim to deliver 100+ quality-controlled projects annually while expanding our physical Experience Center footprint by 5 hubs every year.</p>
               </div>
-              <div className="pillar-block">
-                <h3>The Vision</h3>
-                <p>To become the definitive execution partner for architects and developers across Telangana, recognized for radical transparency and industrial-grade finishing.</p>
-              </div>
+            
             </div>
           </div>
         </div>
@@ -136,10 +137,11 @@ const AboutUs = () => {
                   <img src={leader.image} alt={leader.name} className="leader-img" />
                 </div>
                 <div className="editorial-text-wrap">
-                  <span className="leader-designation">{leader.role}</span>
                   <h3 className="leader-name">{leader.name}</h3>
+                  <span className="leader-designation">{leader.role}</span>
+                  
                   <p className="leader-bio-text">{leader.bio}</p>
-                  <div className="leader-signature">Deeraj Interiors Execution Team</div>
+                  {/* <div className="leader-signature">Deeraj Interiors Execution Team</div> */}
                 </div>
               </div>
             ))}
@@ -209,7 +211,7 @@ const AboutUs = () => {
     <div className="di-footer-addresses">
       
       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Main Branch</span>
+        <span className="di-footer-branch">Experiance Center</span>
         <p>
           PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>
           SUCHITRA CIRCLE, PET BASHEERABAD,<br/>
@@ -218,7 +220,7 @@ const AboutUs = () => {
       </div>
 
       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Second Branch</span>
+        <span className="di-footer-branch">Modular Factory</span>
         <p>
           PLOT 205, BESIDE HYPOTHETICAL PLAZA,<br/>
           JUBILEE HILLS CHECKPOST,<br/>
