@@ -124,17 +124,41 @@ const TurnkeyProjects = () => {
         <div className="turnkey-cta-area">
           <a href="/contact-us" className="turnkey-cta-button">SCHEDULE A CALL</a>
         </div>
+<footer className="di-footer">
+  <div className="di-footer-container">
+    <p className="di-footer-links">Privacy Policy | Terms and Conditions</p>
+    <p className="di-footer-title"><strong>DEERAJ INTERIORS</strong></p>
 
-        {/* Footer */}
-        {/* <footer className="turnkey-page-footer">
-          <p>Privacy Policy • Terms & Conditions</p>
-          <p className="turnkey-contact-info">
-            DEAR INTERIORS<br />
-            PLOT NO. 115, ABOVE TRENDS FOOTWEAR, SUCHITRA CIRCLE, BACHUPALLY ROAD,<br />
-            HYDERABAD, TS 500090<br />
-            +91 9000705000
-          </p>
-        </footer> */}
+    {/* Split Address Section */}
+    <div className="di-footer-addresses">
+      
+      <div className="di-footer-address-card">
+        <span className="di-footer-branch">Experience Center</span>
+        <p>
+          PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>
+          SUCHITRA CIRCLE, PET BASHEERABAD,<br/>
+          HYDERABAD, TS 500067
+        </p>
+      </div>
+
+      <div className="di-footer-address-card">
+        <span className="di-footer-branch">Modular Factory</span>
+        <p>
+          PLOT 205, BESIDE HYPOTHETICAL PLAZA,<br/>
+          JUBILEE HILLS CHECKPOST,<br/>
+          HYDERABAD, TS 500033
+        </p>
+      </div>
+
+    </div>
+
+    <p className="di-footer-phone">+91 9000700910 / 9000700930</p>
+
+    <p className="di-footer-copy">
+      COPYRIGHT © 2025 DEERAJ INTERIORS - ALL RIGHTS RESERVED.
+    </p>
+  </div>
+</footer>
 
       </div>
 
@@ -183,42 +207,7 @@ const TurnkeyProjects = () => {
           </div>
         )}
       </div>
-      <footer className="di-footer">
-  <div className="di-footer-container">
-    <p className="di-footer-links">Privacy Policy | Terms and Conditions</p>
-    <p className="di-footer-title"><strong>DEERAJ INTERIORS</strong></p>
-
-    {/* Split Address Section */}
-    <div className="di-footer-addresses">
-      
-      <div className="di-footer-address-card">
-        <span className="di-footer-branch">Main Branch</span>
-        <p>
-          PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>
-          SUCHITRA CIRCLE, PET BASHEERABAD,<br/>
-          HYDERABAD, TS 500067
-        </p>
-      </div>
-
-      <div className="di-footer-address-card">
-        <span className="di-footer-branch">Second Branch</span>
-        <p>
-          PLOT 205, BESIDE HYPOTHETICAL PLAZA,<br/>
-          JUBILEE HILLS CHECKPOST,<br/>
-          HYDERABAD, TS 500033
-        </p>
-      </div>
-
-    </div>
-
-    <p className="di-footer-phone">+91 9000700910 / 9000700930</p>
-
-    <p className="di-footer-copy">
-      COPYRIGHT © 2025 DEERAJ INTERIORS - ALL RIGHTS RESERVED.
-    </p>
-  </div>
-</footer>
-
+     
     </section>
   );
 };

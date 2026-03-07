@@ -211,7 +211,7 @@ const AboutUs = () => {
     <div className="di-footer-addresses">
       
       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Experiance Center</span>
+        <span className="di-footer-branch">Experience Center</span>
         <p>
           PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>
           SUCHITRA CIRCLE, PET BASHEERABAD,<br/>

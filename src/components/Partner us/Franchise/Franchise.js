@@ -320,7 +320,7 @@ const Franchise = () => {
           </div>
         )}
       </div>
-      <footer className="di-footer">
+<footer className="di-footer">
   <div className="di-footer-container">
     <p className="di-footer-links">Privacy Policy | Terms and Conditions</p>
     <p className="di-footer-title"><strong>DEERAJ INTERIORS</strong></p>
@@ -329,7 +329,7 @@ const Franchise = () => {
     <div className="di-footer-addresses">
       
       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Main Branch</span>
+        <span className="di-footer-branch">Experience Center</span>
         <p>
           PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>
           SUCHITRA CIRCLE, PET BASHEERABAD,<br/>
@@ -338,7 +338,7 @@ const Franchise = () => {
       </div>
 
       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Second Branch</span>
+        <span className="di-footer-branch">Modular Factory</span>
         <p>
           PLOT 205, BESIDE HYPOTHETICAL PLAZA,<br/>
           JUBILEE HILLS CHECKPOST,<br/>
