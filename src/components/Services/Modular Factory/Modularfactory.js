@@ -7,7 +7,7 @@ import './Modularfactory.css';
 const I = {
   // Hero
   heroMain:   'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80',
-  heroFloat:  'https://images.unsplash.com/photo-1565008576549-57c92eff9a23?auto=format&fit=crop&w=400&q=80',
+  heroFloat:  'https://static.vecteezy.com/system/resources/previews/037/962/164/non_2x/ai-generated-laser-cutting-of-metal-on-cnc-machines-modern-industrial-technology-for-manufacturing-industrial-parts-modern-metalworking-photo.jpg',
   // Gallery strip — all verified
   gal1: 'https://images.unsplash.com/photo-1602028915047-37269d1a73f7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9kdWxhciUyMGtpdGNoZW58ZW58MHx8MHx8fDA%3D',
   gal2: 'https://static.vecteezy.com/system/resources/thumbnails/028/623/809/small/indoor-close-up-realistic-minimalist-modern-cupboard-ai-generative-free-photo.jpg',
@@ -47,6 +47,7 @@ const I = {
    SCROLL REVEAL HOOK
 ═══════════════════════════════════════════════════ */
 function useReveal() {
+  
   const ref = useRef(null);
   useEffect(() => {
     const el = ref.current;
@@ -77,6 +78,7 @@ function R({ children, dir = '', delay = 0, className = '' }) {
 ═══════════════════════════════════════════════════ */
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 60);
     window.addEventListener('scroll', fn);
@@ -830,6 +832,7 @@ function FormSection() {
    FOOTER
 ═══════════════════════════════════════════════════ */
 function Footer() {
+  
   return (
     <footer className="footer">
       <div className="footer-inner">
@@ -864,12 +867,14 @@ function Footer() {
       </div>
     </footer>
   );
+
 }
 
 /* ═══════════════════════════════════════════════════
    ROOT EXPORT
 ═══════════════════════════════════════════════════ */
 export default function ModularFactory() {
+  const [whatsappOpen, setWhatsappOpen] = useState(false);
   return (
     <div className="mf">
       <Nav />
@@ -890,5 +895,7 @@ export default function ModularFactory() {
       <FormSection />
       <Footer />
     </div>
+    
   );
+  
 }
