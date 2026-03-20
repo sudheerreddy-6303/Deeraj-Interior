@@ -2736,7 +2736,7 @@ export default function Home() {
       {/* Services Overview Section */}
       <section className="home-services-section">
         <div className="home-services-wrapper">
-          <h2>OUR DESIGN SERVICES</h2>
+          <h2>OUR SERVICES</h2>
           <p className="home-section-subtitle">Everything you need. All under one roof.</p>
           <div className="home-services-grid">
             <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')` }}>

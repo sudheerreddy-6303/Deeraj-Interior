@@ -507,7 +507,7 @@ function B2B() {
               </p>
               <div style={{ display:'flex', gap: 14, flexWrap:'wrap' }}>
                 <a href="#form" className="btn btn-orange">🤝 Partner With Us</a>
-                <a href="https://wa.me/919999999999" className="btn btn-outline-white">💬 WhatsApp Us</a>
+                <a href="https://wa.me/91 9000700930" className="btn btn-outline-white">💬 WhatsApp Us</a>
               </div>
             </div>
           </R>
@@ -567,7 +567,7 @@ function Banner() {
               </p>
               <div className="banner-btns">
                 <a href="#form" className="btn btn-orange">📍 Book a Factory Visit</a>
-                <a href="tel:+919999999999" className="btn btn-outline-white">📞 Call Now</a>
+                <a href="tel:+91 9000700930" className="btn btn-outline-white">📞 Call Now</a>
               </div>
             </>
           </R>
@@ -737,8 +737,8 @@ function CTAStrip() {
           <div className="cta-strip-btns">
             <a href="#form" className="btn btn-white">🤝 Become a Business Associate</a>
             <a href="#form" className="btn btn-outline-white">📅 Schedule Collaboration</a>
-            <a href="tel:+919999999999" className="btn btn-outline-white">📞 Call Now</a>
-            <a href="https://wa.me/919999999999" className="btn btn-outline-white">💬 WhatsApp</a>
+            <a href="tel:+91 9000700930" className="btn btn-outline-white">📞 Call Now</a>
+            <a href="https://wa.me/91 9000700930" className="btn btn-outline-white">💬 WhatsApp</a>
           </div>
         </R>
       </div>
@@ -766,9 +766,9 @@ function FormSection() {
               </p>
               <ul className="form-contacts">
                 <li><span style={{ fontSize: '1.2rem' }}>📍</span> Experience Center, Kompally, Hyderabad</li>
-                <li><span style={{ fontSize: '1.2rem' }}>📞</span> +91 99999 99999</li>
-                <li><span style={{ fontSize: '1.2rem' }}>💬</span> WhatsApp: +91 99999 99999</li>
-                <li><span style={{ fontSize: '1.2rem' }}>✉️</span> info@deerajmodulars.com</li>
+                <li><span style={{ fontSize: '1.2rem' }}>📞</span> +91 9000700930</li>
+                <li><span style={{ fontSize: '1.2rem' }}>💬</span> WhatsApp: +91 9000700930</li>
+                <li><span style={{ fontSize: '1.2rem' }}>✉️</span> deerajinteriors@gmail.com</li>
               </ul>
             </div>
           </R>
