@@ -2872,35 +2872,50 @@ export default function Home() {
 </footer>
 
       {/* WhatsApp Floating Button + Popup */}
-      <div className="home-whatsapp-container">
-        <div className="home-whatsapp-float" onClick={() => setWhatsappOpen(!whatsappOpen)}>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-        </div>
-        {whatsappOpen && (
-          <div className="home-whatsapp-popup">
-            <h3>Start WhatsApp Chat</h3>
-            <input type="text" placeholder="Your Name" id="wa-name" />
-            <input type="text" placeholder="Project Type (2BHK / Kitchen / Office)" id="wa-project" />
-            <textarea placeholder="Your Message" id="wa-message"></textarea>
-            <button
-              onClick={() => {
-                const name = document.getElementById("wa-name").value;
-                const project = document.getElementById("wa-project").value;
-                const message = document.getElementById("wa-message").value;
-                const finalMessage =
-                  `Hello Deeraj Interiors,%0A%0A` +
-                  `Name: ${name}%0A` +
-                  `Project: ${project}%0A` +
-                  `Message: ${message}%0A%0A` +
-                  `I am interested in discussing my interior project.`;
-                window.open(`https://wa.me/919000700930?text=${finalMessage}`, "_blank");
-              }}
-            >
-              Chat on WhatsApp
-            </button>
-          </div>
-        )}
-      </div>
+   <div className="whatsapp-container">
+
+  <div
+    className="whatsapp-float"
+    onClick={() => setWhatsappOpen(!whatsappOpen)}
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp"
+    />
+  </div>
+
+  {whatsappOpen && (
+    <div className="whatsapp-popup">
+      <h3>Start WhatsApp Chat</h3>
+
+      <input type="text" placeholder="Your Name" id="wa-name" />
+      <input type="text" placeholder="Project Type (Home / Office / Consultation)" id="wa-project" />
+      <textarea placeholder="Your Message" id="wa-message"></textarea>
+
+      <button
+        onClick={() => {
+          const name = document.getElementById("wa-name").value;
+          const project = document.getElementById("wa-project").value;
+          const message = document.getElementById("wa-message").value;
+
+          const finalMessage =
+            `Hello Deeraj Interiors,%0A%0A` +
+            `Name: ${name}%0A` +
+            `Project: ${project}%0A` +
+            `Message: ${message}%0A%0A` +
+            `I am interested in discussing my interior project.`;
+
+          window.open(
+            `https://wa.me/919000700930?text=${finalMessage}`,
+            "_blank"
+          );
+        }}
+      >
+        Chat on WhatsApp
+      </button>
+    </div>
+  )}
+</div>
 {/* ── Phone Call Floating Button ── */}
 <div className="home-phone-container">
   <a 
