@@ -9,28 +9,28 @@ const I = {
   heroMain:   'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80',
   heroFloat:  'https://images.unsplash.com/photo-1565008576549-57c92eff9a23?auto=format&fit=crop&w=400&q=80',
   // Gallery strip — all verified
-  gal1: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80',
-  gal2: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=600&q=80',
-  gal3: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80',
-  gal4: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80',
-  gal5: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80',
-  gal6: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80',
+  gal1: 'https://images.unsplash.com/photo-1602028915047-37269d1a73f7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9kdWxhciUyMGtpdGNoZW58ZW58MHx8MHx8fDA%3D',
+  gal2: 'https://static.vecteezy.com/system/resources/thumbnails/028/623/809/small/indoor-close-up-realistic-minimalist-modern-cupboard-ai-generative-free-photo.jpg',
+  gal3: 'https://t4.ftcdn.net/jpg/06/95/15/09/360_F_695150920_qoXcO4ANBZb78TJSbgclOrWYExfZ7MeG.jpg',
+  gal4: 'https://www.avikalp.com/cdn/shop/products/MWZ3345_wallpaper3.jpg?v=1746037987',
+  gal5: 'https://img.freepik.com/free-photo/closeup-worker-spraying-paint-processed-wood-production-facility_637285-12069.jpg?semt=ais_hybrid&w=740&q=80',
+  gal6: 'https://images6.alphacoders.com/329/thumb-1920-329921.jpg',
   // Why Factory
-  whyBig: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
-  whySm1: 'https://images.unsplash.com/photo-1565008576549-57c92eff9a23?auto=format&fit=crop&w=400&q=80',
-  whySm2: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80',
+  whyBig: 'https://t4.ftcdn.net/jpg/07/26/28/45/360_F_726284561_WEUmKV7Ia5NacUcdbMje3PZ7H1thGvbQ.jpg',
+  whySm1: 'https://s3.ap-south-1.amazonaws.com/images.woodenstreet.de/image/data/blog-images/cnc-cutting-design/cnc-laser-cutting-design.jpg',
+  whySm2: 'https://thumbs.dreamstime.com/b/carpenter-works-edge-banding-machine-workshop-carpenter-works-edge-banding-machine-workshop-115246708.jpg',
   // Showcase
-  sc1: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
-  sc2: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=600&q=80',
-  sc3: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80',
+  sc1: 'https://www.finetoshine.com/wp-content/uploads/2020/07/Modular-Kitchen-Designs-Hd-Photos.png',
+  sc2: 'https://5.imimg.com/data5/SELLER/Default/2023/2/BQ/TU/AF/33934380/modern-bedroom-wardrobe.jpg',
+  sc3: 'https://i.pinimg.com/originals/82/2f/d3/822fd3a227370187957ecef8ee6f2f0e.jpg',
   sc4: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80',
-  sc5: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80',
+  sc5: 'https://www.craftedbeds.co.uk/cdn/shop/articles/c6229643564835.57f4204983b16.jpg?v=1654414798',
   // Materials
   matTall: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80',
   matSm1:  'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=400&q=80',
   matSm2:  'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=400&q=80',
   // B2B
-  b2b: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
+  b2b: 'https://media.istockphoto.com/id/134581710/photo/man-constructing-cabinet-units-in-new-kitchen.jpg?s=612x612&w=0&k=20&c=qM8RekDmXiTt-T66n2AJSW7hiBJ6whwctBPw9D-j2xk=',
   // Ideal cards
   ideal1: 'https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?auto=format&fit=crop&w=600&q=80',
   ideal2: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80',
@@ -38,9 +38,9 @@ const I = {
   // Banner
   banner: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80',
   // About
-  aboutTall: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=700&q=80',
-  aboutSm1:  'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=400&q=80',
-  aboutSm2:  'https://images.unsplash.com/photo-1565008576549-57c92eff9a23?auto=format&fit=crop&w=400&q=80',
+  aboutTall: 'https://img.freepik.com/free-photo/marking-wall_1098-19455.jpg?semt=ais_rp_50_assets&w=740&q=80',
+  aboutSm1:  'https://media.istockphoto.com/id/134581710/photo/man-constructing-cabinet-units-in-new-kitchen.jpg?s=612x612&w=0&k=20&c=qM8RekDmXiTt-T66n2AJSW7hiBJ6whwctBPw9D-j2xk=',
+  aboutSm2:  'https://thumbs.dreamstime.com/b/advanced-cnc-wood-cutting-machine-exemplifies-precision-automation-modern-woodworking-its-numerical-control-system-350876452.jpg',
 };
 
 /* ═══════════════════════════════════════════════════
