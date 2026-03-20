@@ -48,9 +48,11 @@ const AboutUs = () => {
                 <span className="outline-text">Precision</span> Standard.
               </h1>
               <div className="hero-stats">
-                <div className="stat-item"><strong>15k</strong> <span>sq.ft Factory</span></div>
+                <div className="stat-item"><strong>15000</strong> <span>sq.ft Modular Factory</span></div>
                 <div className="stat-sep"></div>
-                <div className="stat-item"><strong>100+</strong> <span>Annual Projects</span></div>
+                <div className="stat-item"><strong>250+</strong> <span> Happy Customers</span></div>
+                <div className="stat-item"><strong>140+ </strong> <span>Projects Execution </span></div>
+                <div className="stat-item"><strong>1,40,000 </strong> <span>SFT work execution</span></div>
               </div>
             </div>
           </div>
@@ -237,6 +239,29 @@ const AboutUs = () => {
     </p>
   </div>
 </footer>
+
+{/* ── NEW: Phone Call Floating Button ── */}
+     {/* ── Phone Call Floating Button ── */}
+<div className="home-phone-container">
+  <a 
+    href="/contact-us" 
+    className="home-phone-float"
+    title="Contact Us / Call"
+  >
+    <svg 
+      width="32" 
+      height="32" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path 
+        d="M20.9999 15.46C20.1199 15.46 19.2499 15.3 18.4099 15.06C18.1199 14.99 17.8099 15.05 17.5799 15.29L15.4099 18.12C12.2499 16.67 7.32988 11.79 5.87988 8.61998L8.70988 6.41998C8.95988 6.16998 9.01988 5.85998 8.94988 5.58998C8.69988 4.74998 8.53988 3.87998 8.53988 2.99998C8.53988 2.44998 8.08988 1.99998 7.53988 1.99998H4.49988C3.94988 1.99998 3.49988 2.44998 3.49988 2.99998C3.49988 13.28 10.7199 20.5 20.9999 20.5C21.5499 20.5 21.9999 20.05 21.9999 19.5V16.46C21.9999 15.91 21.5499 15.46 20.9999 15.46Z" 
+        fill="#ffffff"
+      />
+    </svg>
+  </a>
+</div>
     </div>
   );
 };

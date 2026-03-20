@@ -1,87 +1,93 @@
-import React, { useState } from 'react';
-import './Gallery.css';
+import React, { useState } from "react";
+import "./Gallery.css";
 
 const Gallery = () => {
   const [selectedFolder, setSelectedFolder] = useState(null);
 
   const folders = [
-    { id: 1, name: "Diwali 2025", count: "12 Photos", cover: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=800" },
-    { id: 2, name: "Sankranti Celebrations", count: "8 Photos", cover: "https://i.pinimg.com/736x/e2/f3/9f/e2f39ff983a394c682549c65176a400d.jpg" },
-    { id: 3, name: "Office Anniversary", count: "15 Photos", cover: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=800" },
-    { id: 4, name: "Dussehra Event", count: "20 Photos", cover: "https://i.pinimg.com/originals/a5/16/d1/a516d1980343dd723fe75eaa72739176.gif" },
-
-    // New additions with related images
-    { 
-      id: 5, 
-      name: "Modular Kitchens", 
-      count: "Featured Designs", 
-      cover: "https://media.designcafe.com/wp-content/uploads/2020/01/21001355/l-shape-modular-kitchen-designs-for-indian-homes.jpg" 
+    {
+      id: 1,
+      name: "Office Spaces",
+      cover:
+        "https://cdn.prod.website-files.com/66a08e07fa6352714fc1d6da/66a0af5c7b2aef75b6a961a0_HAM_3797-scaled.webp",
+      images: [
+        "https://images.unsplash.com/photo-1497366216548-37526070297c",
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+        "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+      ],
     },
-    { 
-      id: 6, 
-      name: "Wardrobes", 
-      count: "Custom Solutions", 
-      cover: "https://dwella.in/cdn/shop/articles/36.png?v=1735575868" 
+    {
+      id: 2,
+      name: "Retail Spaces",
+      cover:
+        "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a",
+      images: [
+        "https://images.unsplash.com/photo-1524758631624-e2822e304c36",
+        "https://images.unsplash.com/photo-1507919984745-5c7e1c0b7c6a",
+        "https://images.unsplash.com/photo-1481437156560-3205f6a55735",
+      ],
     },
-    { 
-      id: 7, 
-      name: "TV Units", 
-      count: "Modern Designs", 
-      cover: "https://www.simpolo.com/_next/image?url=https%3A%2F%2Fsimpolo-web.s3.ap-south-1.amazonaws.com%2Fuploads%2Fmedia%2Fblogs%2Foxidize-smoke.jpg&w=3840&q=75&dpl=dpl_7u7cuhdRBVWzwx6YtiWu631xVKDM" 
+    {
+      id: 3,
+      name: "Hospitals",
+      cover:
+        "https://images.unsplash.com/photo-1586773860418-d37222d8fce3",
+      images: [
+        "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
+        "https://images.unsplash.com/photo-1580281657527-47e33e10c8b5",
+        "https://images.unsplash.com/photo-1538108149393-fbbd81895907",
+      ],
     },
-    { 
-      id: 8, 
-      name: "Office Spaces", 
-      count: "Professional Interiors", 
-      cover: "https://cdn.prod.website-files.com/66a08e07fa6352714fc1d6da/66a0af5c7b2aef75b6a961a0_HAM_3797-scaled.webp" 
+    {
+      id: 4,
+      name: "Schools",
+      cover:
+        "https://images.unsplash.com/photo-1580582932707-520aed937b7b",
+      images: [
+        "https://images.unsplash.com/photo-1509062522246-3755977927d7",
+        "https://images.unsplash.com/photo-1600195077909-46e573870d99",
+        "https://images.unsplash.com/photo-1588072432836-e10032774350",
+      ],
     },
   ];
 
   return (
     <div className="gallery-page">
-      <section className="gallery-section">
-        <div className="gallery-container">
-          <div className="gallery-section-header gallery-text-center">
-            <span className="gallery-eyebrow">Moments at Deeraj</span>
-            <h2 className="gallery-heading-md">Our Work Gallery</h2>
-            <p className="gallery-description-text">Explore our event celebrations and premium interior projects including kitchens, wardrobes, TV units, and office spaces.</p>
-          </div>
+      <h2 className="gallery-title">Our Interior Projects</h2>
 
-          {!selectedFolder ? (
-            <div className="gallery-folder-grid">
-              {folders.map((folder) => (
-                <div 
-                  key={folder.id} 
-                  className="gallery-folder-card"
-                  onClick={() => setSelectedFolder(folder.name)}
-                >
-                  <div className="gallery-folder-cover">
-                    <img src={folder.cover} alt={folder.name} />
-                    <div className="gallery-folder-overlay">
-                      <span>View Gallery ↗</span>
-                    </div>
-                  </div>
-                  <div className="gallery-folder-info">
-                    <h3>{folder.name}</h3>
-                    <p>{folder.count}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="gallery-album-view">
-              <button className="gallery-btn-outline gallery-mb-4" onClick={() => setSelectedFolder(null)}>
-                ← Back to Folders
-              </button>
-              <h3 className="gallery-album-title">{selectedFolder}</h3>
-              <div className="gallery-photo-placeholder-grid">
-                <p>Images for {selectedFolder} will appear here... (Add your project photos in this grid)</p>
-                {/* Example: Map through actual images array for the selected folder */}
+      {!selectedFolder ? (
+        <div className="gallery-slider">
+          {folders.map((folder) => (
+            <div
+              key={folder.id}
+              className="gallery-slide-card"
+              onClick={() => setSelectedFolder(folder)}
+            >
+              <img src={folder.cover} alt={folder.name} />
+              <div className="gallery-slide-overlay">
+                <h3>{folder.name}</h3>
               </div>
             </div>
-          )}
+          ))}
         </div>
-      </section>
+      ) : (
+        <div className="gallery-folder-view">
+          <button
+            className="gallery-back-btn"
+            onClick={() => setSelectedFolder(null)}
+          >
+            ← Back
+          </button>
+
+          <h2>{selectedFolder.name}</h2>
+
+          <div className="gallery-images-grid">
+            {selectedFolder.images.map((img, index) => (
+              <img key={index} src={img} alt="project" />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -512,3 +512,46 @@
     padding: 18px 20px;
   }
 }
+
+/* Phone floating button */
+.home-phone-container {
+  position: fixed;
+  bottom: 110px;           /* ↑ higher than WhatsApp so they don't overlap */
+  right: 25px;
+  z-index: 999;
+}
+
+.home-phone-float {
+  width: 60px;
+  height: 60px;
+  background: #007bff;     /* blue – or use #25D366 green if you want similar to WA */
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.home-phone-float:hover {
+  transform: scale(1.08);
+  background: #0056b3;
+}
+
+.home-phone-float svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Optional: pulse animation like WhatsApp */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(0, 123, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0); }
+}
+
+.home-phone-float {
+  animation: pulse 2s infinite;
+}
