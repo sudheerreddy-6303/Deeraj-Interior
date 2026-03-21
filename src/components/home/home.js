@@ -2743,42 +2743,42 @@ export default function Home() {
               <div className="home-service-title">Bedrooms</div>
               <div className="home-service-hover-content">
                 <p>Create a peaceful and restful sanctuary with our expert bedroom design services. From custom bed frames to luxurious bedding, we help you create a space that's both comfortable and stylish.</p>
-                <button className="home-btn home-primary" onClick={() => openWhatsApp("Hello! I'm interested in your Bedroom Design services. Can we discuss possibilities?")}>Know More</button>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
               </div>
             </div>
             <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1611048267451-e6ed903d4a38?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
               <div className="home-service-title">Living Rooms </div>
               <div className="home-service-hover-content">
                 <p>Whether you're looking for a cozy space to relax with family or a stylish entertaining area for guests, we can create a living room that suits your lifestyle and reflects your personality.</p>
-                <button className="home-btn home-primary" onClick={() => openWhatsApp("Hi! Looking to redesign my Living Room. Interested in your designs.")}>Know More</button>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
               </div>
             </div>
             <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1722605090433-41d1183a792d?q=80&w=1330&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
               <div className="home-service-title">Kitchens </div>
               <div className="home-service-hover-content">
                 <p>At Deeraj Interiors, we specialize in crafting kitchen interiors that are as beautiful as they are functional — thoughtfully designed to reflect your style and suit your everyday needs.</p>
-                <button className="home-btn home-primary" onClick={() => openWhatsApp("Hello! Interested in your modular Kitchen design services. Can we talk?")}>Know More</button>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
               </div>
             </div>
             <div className="home-service-card" style={{ backgroundImage: `url('https://plus.unsplash.com/premium_photo-1663126298656-33616be83c32?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
               <div className="home-service-title">Home Offices </div>
               <div className="home-service-hover-content">
                 <p>With more people working from home, it's important to have a functional and inspiring home office. Let us help you create a space that's both productive and stylish.</p>
-                <button className="home-btn home-primary" onClick={() => openWhatsApp("Hi! I need help designing a Home Office. Interested in your work.")}>Know More</button>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
               </div>
             </div>
             <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')` }}>
               <div className="home-service-title">Bathrooms </div>
               <div className="home-service-hover-content">
                 <p>Transform your bathroom into a spa-like retreat with our expert design services. From luxurious showers to elegant fixtures, we create a space that's both beautiful and functional.</p>
-                <button className="home-btn home-primary" onClick={() => openWhatsApp("Hello! Looking to redesign my Bathroom. Can we discuss your services?")}>Know More</button>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
               </div>
             </div>
             <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')` }}>
               <div className="home-service-title">Outdoor Livings </div>
               <div className="home-service-hover-content">
                 <p>Extend your living space to the outdoors with our expert outdoor living design services. From cozy fire pits to luxurious outdoor kitchens, we help you create a space that's perfect for entertaining and relaxation.</p>
-                <button className="home-btn home-primary" onClick={() => openWhatsApp("Hi! Interested in Outdoor Living / Terrace design. Let's talk!")}>Know More</button>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
               </div>
             </div>
           </div>
