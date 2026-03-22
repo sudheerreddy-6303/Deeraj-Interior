@@ -221,18 +221,18 @@ const AboutUs = () => {
         </p>
       </div>
 
-      <div className="di-footer-address-card">
+       <div className="di-footer-address-card">
         <span className="di-footer-branch">Modular Factory</span>
         <p>
-          PLOT 205, BESIDE HYPOTHETICAL PLAZA,<br/>
-          JUBILEE HILLS CHECKPOST,<br/>
+          Pudur Medchal,<br/>
+          5 Minutes From ORR Exit No:06,<br/>
           HYDERABAD, TS 500033
         </p>
       </div>
 
     </div>
 
-    <p className="di-footer-phone">+91 9000700910 / 9000700930</p>
+    <p className="di-footer-phone">+91 9000700910 / 9000700930 / 9014300930</p>
 
     <p className="di-footer-copy">
       COPYRIGHT © 2025 DEERAJ INTERIORS - ALL RIGHTS RESERVED.
