@@ -372,6 +372,7 @@ const projects = [
     title: "3BHK Interior – My Home Tridasa",
     youtubeId: "mHPCmdXdE24",
     client: "Mr. Moin",
+    clientImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
     location: "Kukatpally, Hyderabad",
     projectValue: "₹13 Lakhs",
     testimonial: "Deeraj Interiors completed 3BHK interiors with excellent modular finish and installation quality was impressive. The team maintained good workmanship and delivered full project on time.",
@@ -381,6 +382,7 @@ const projects = [
     title: "NCL Sindhu 3BHK Kompally Hyderabad",
     youtubeId: "mHPCmdXdE24",
     client: "Client Name",
+    clientImage: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
     location: "Kompally, Hyderabad",
     projectValue: "₹12.5 Lakhs",
     testimonial: "Very professional approach, excellent finishing touches and on-time handover. Highly recommended.",
@@ -390,6 +392,7 @@ const projects = [
     title: "Gorgeous Makeover of Mr. Mahender Independent Flat Alwal Hyderabad",
     youtubeId: "7OiztXQrRcQ",
     client: "Mr. Mahender",
+    clientImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
     location: "Alwal, Hyderabad",
     projectValue: "₹11 Lakhs",
     testimonial: "Transformed our old flat into a modern dream home. Superb work and cooperative team.",
@@ -398,16 +401,18 @@ const projects = [
   {
     title: "Beautifully Crafted Modular Kitchens",
     youtubeId: "P31tLqpvEtw",
-    client: null,
+    client: "Vignan Reddy",
+    clientImage: "https://images.unsplash.com/photo-1519085360753-38b2b54e3f7c?w=400&h=400&fit=crop&crop=face",
     location: "Hyderabad & Andhra Pradesh",
-   projectValue: "₹13 Lakhs",
+    projectValue: "₹13 Lakhs",
     testimonial: "Deeraj Interiors completed 3BHK interiors with excellent modular finish and installation quality was impressive. The team maintained good workmanship and delivered full project on time.",
     ctaText: "Watch Full Walkthrough →",  
   },
   {
     title: "LG Classic Home Interiors Hyderabad",
     youtubeId: "PxyZkSwWJ84",
-    client: null,
+    client: "Ramesh Reddy",
+    clientImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
     location: "Hyderabad",
     projectValue: "₹10 Lakhs",
     testimonial: "Luxury interiors executed with great attention to detail. Truly satisfied with the final outcome.",
@@ -417,6 +422,7 @@ const projects = [
     title: "Srinivasa Rao Beautiful Abode Uppal Hyderabad",
     youtubeId: "4gB_37HzH-4",
     client: "Mr. Srinivasa Rao",
+    clientImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
     location: "Uppal, Hyderabad",
     projectValue: "₹18 Lakhs",
     testimonial: "Luxury interiors executed with great attention to detail. Truly satisfied with the final outcome.",
@@ -426,6 +432,7 @@ const projects = [
     title: "Mr. Krishnamurthy & Mrs. Divya Madam 2BHK Alwal Hyderabad",
     youtubeId: "v-ILQISMb-I",
     client: "Mr. Krishnamurthy & Mrs. Divya",
+    clientImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
     location: "Alwal, Hyderabad",
     projectValue: "₹9.5 Lakhs",
     testimonial: "Beautiful false ceiling and modern furniture layout. Team was very punctual.",
@@ -434,28 +441,31 @@ const projects = [
   {
     title: "Aparna Serenity 3BHK Render Video",
     youtubeId: "mVBJ4BrYV_w",
-    client: null,
+    client: "Leena Teresa",
+    clientImage: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
     location: "Hyderabad",
-     projectValue: "₹9.5 Lakhs",
+    projectValue: "₹9.5 Lakhs",
     testimonial: "Beautiful false ceiling and modern furniture layout. Team was very punctual.",
     ctaText: "Watch Full Walkthrough →",
   },
   {
     title: "Deeraj Interiors - Beautiful Art Work & Deco Painting",
     youtubeId: "xqK0gUujh5U",
-    client: null,
+    client: "Jairam Rao",
+    clientImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
     location: "Hyderabad",
-   projectValue: "₹10 Lakhs",
+    projectValue: "₹10 Lakhs",
     testimonial: "Luxury interiors executed with great attention to detail. Truly satisfied with the final outcome.",
     ctaText: "Watch Full Walkthrough →",
   },
   {
     title: "Deeraj Interiors Home Furnishings & Decor Kompally",
     youtubeId: "pppQxUat30g",
-    client: null,
+    client: "Pawan Kalyan",
+    clientImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
     location: "Kompally, Hyderabad",
     projectValue: null,
-    testimonial: null,
+    testimonial: "Beautiful false ceiling and modern furniture layout. Team was very punctual.",
     ctaText: "Watch Video →",
   },
 ];
@@ -539,8 +549,17 @@ function OurProjects() {
               </div>
 
               <div className="project-details">
+                {/* Client Image + Name Section */}
                 {project.client && (
-                  <h4 className="client-name">{project.client}</h4>
+                  <div className="client-header">
+                    <div className="client-image">
+                      <img 
+                        src={project.clientImage} 
+                        alt={project.client}
+                      />
+                    </div>
+                    <h4 className="client-name">{project.client}</h4>
+                  </div>
                 )}
 
                 {project.testimonial && (
@@ -555,9 +574,6 @@ function OurProjects() {
 
                 <div className="project-meta">
                   <span className="project-location">{project.location}</span>
-                  {project.projectValue && (
-                    <span className="project-value">Project Value: {project.projectValue}</span>
-                  )}
                 </div>
 
                 <a
@@ -568,8 +584,6 @@ function OurProjects() {
                 >
                   {project.ctaText || "Watch Full Walkthrough →"}
                 </a>
-
-                <p className="project-brand">Deeraj Interiors</p>
               </div>
             </div>
           ))}
@@ -730,14 +744,14 @@ function OurProjects() {
               </p>
             </div>
 
-             <div className="di-footer-address-card">
-        <span className="di-footer-branch">Modular Factory</span>
-        <p>
-          Pudur Medchal,<br/>
-          5 Minutes From ORR Exit No:06,<br/>
-          HYDERABAD, TS 500033
-        </p>
-      </div>
+            <div className="di-footer-address-card">
+              <span className="di-footer-branch">Modular Factory</span>
+              <p>
+                Pudur Medchal,<br/>
+                5 Minutes From ORR Exit No:06,<br/>
+                HYDERABAD, TS 500033
+              </p>
+            </div>
           </div>
 
           <p className="di-footer-phone">+91 9000700910 / 9000700930 /9014300930 </p>
