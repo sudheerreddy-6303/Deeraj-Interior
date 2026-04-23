@@ -283,13 +283,13 @@ const Renovation = () => {
     <p className="di-footer-phone">+91 9000700910 / 9000700930 /9014300930</p>
 
     <p className="di-footer-copy">
-      COPYRIGHT © 2025 DEERAJ INTERIORS - ALL RIGHTS RESERVED.
+      COPYRIGHT © DEERAJ TECHNOLOGIES PRIVATE LIMITED - ALL RIGHTS RESERVED.
     </p>
   </div>
 </footer>
 {/* ── NEW: Phone Call Floating Button ── */}
    {/* ── Phone Call Floating Button ── */}
-<div className="home-phone-container">
+{/* <div className="home-phone-container">
   <a 
     href="/contact-us" 
     className="home-phone-float"
@@ -308,7 +308,7 @@ const Renovation = () => {
       />
     </svg>
   </a>
-</div>
+</div> */}
     </section>
   );
 };

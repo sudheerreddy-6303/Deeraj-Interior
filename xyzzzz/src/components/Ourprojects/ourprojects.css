@@ -1,0 +1,622 @@
+/* src/components/ourprojects/ourprojects.css */
+
+/* ────────────────────────────────────────────────
+   Main Layout & Typography
+──────────────────────────────────────────────── */
+
+.our-projects-page {
+  padding: 60px 20px 100px;
+  background: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.projects-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #64748b;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+/* ────────────────────────────────────────────────
+   Project Cards Grid – Testimonial Style
+──────────────────────────────────────────────── */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 32px;
+}
+
+.project-item {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-14px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.14);
+}
+
+/* ────────────────────────────────────────────────
+   Shared Thumbnail + Play Button Styles
+──────────────────────────────────────────────── */
+
+.video-thumbnail-wrapper {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.project-item:hover .thumbnail,
+.ourprojects-short-item:hover .thumbnail {
+  transform: scale(1.09);
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.play-overlay:hover {
+  background: rgba(59, 130, 246, 0.55);
+}
+
+.play-icon {
+  width: 65px;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.6rem;
+  color: #ff0000;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.play-overlay:hover .play-icon {
+  transform: scale(1.15);
+  background: white;
+}
+
+/* ────────────────────────────────────────────────
+   Project Details – Testimonial Focused
+──────────────────────────────────────────────── */
+
+.project-details {
+  padding: 24px;
+  text-align: center;
+}
+
+.client-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  justify-content: flex-start;
+}
+
+.client-image {
+  flex-shrink: 0;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #f1f5f9;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.client-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-name {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.25;
+  text-align: left;
+}
+
+/* Slight adjustment for testimonial when client header exists */
+.project-details .testimonial {
+  margin-top: 6px;
+}
+
+.testimonial {
+  background: #f1f5f9;
+  padding: 18px 22px;
+  border-radius: 10px;
+  margin: 0 0 20px 0;
+  font-style: italic;
+  border-left: 5px solid orangered;
+}
+
+.testimonial-text {
+  margin: 0;
+  font-size: 1.03rem;
+  color: #334155;
+  line-height: 1.55;
+}
+
+.project-title {
+  font-size: 1.38rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 14px 0;
+  line-height: 1.3;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 18px 0;
+  font-size: 0.98rem;
+  color: #475569;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.project-location {
+  font-weight: 500;
+}
+
+.project-value {
+  font-weight: 600;
+  color: orangered;
+}
+
+.watch-cta {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 20px auto;
+  padding: 14px 0;
+  background: orangered;
+  color: white;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.watch-cta:hover {
+  background: orangered;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.3);
+}
+
+.project-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: orangered;
+  margin: 0;
+}
+
+/* ────────────────────────────────────────────────
+   Shorts Section – Faster Right-to-Left Marquee
+──────────────────────────────────────────────── */
+
+.ourprojects-shorts-section {
+  margin: 80px 0 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ourprojects-shorts-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.ourprojects-shorts-subtitle {
+  font-size: 1.3rem;
+  color: #64748b;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.ourprojects-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.ourprojects-marquee-track {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scrollLeft 26s linear infinite;
+  will-change: transform;
+}
+
+.ourprojects-short-item {
+  flex: 0 0 auto;
+  width: 360px;
+  margin-right: 32px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+}
+
+.ourprojects-short-item:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.ourprojects-marquee-wrapper:hover .ourprojects-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ────────────────────────────────────────────────
+   Pagination Controls
+──────────────────────────────────────────────── */
+
+.pagination-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin: 40px 0 60px;
+  flex-wrap: wrap;
+}
+
+.pagination-btn {
+  padding: 10px 16px;
+  min-width: 48px;
+  min-height: 48px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  background: #e2e8f0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #cbd5e1;
+  transform: translateY(-2px);
+}
+
+.pagination-btn.active {
+  background: #2563eb;
+  color: white;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ────────────────────────────────────────────────
+   Footer
+──────────────────────────────────────────────── */
+
+.di-footer {
+  padding: 80px 5% 50px;
+  background: #0f172a;
+  color: #e2e8f0;
+  text-align: center;
+}
+
+.di-footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.di-footer-links {
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  color: #94a3b8;
+}
+
+.di-footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.di-footer-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+  color: white;
+}
+
+.di-footer-addresses {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.di-footer-address-card {
+  background: rgba(255,255,255,0.05);
+  padding: 24px;
+  border-radius: 12px;
+  min-width: 260px;
+}
+
+.di-footer-branch {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: orangered;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.di-footer-address-card p {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 0.97rem;
+}
+
+.di-footer-phone {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #60a5fa;
+  margin: 24px 0;
+}
+
+.di-footer-copy {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-top: 20px;
+}
+
+/* ────────────────────────────────────────────────
+   WhatsApp & Phone Floating Buttons
+──────────────────────────────────────────────── */
+
+.whatsapp-container,
+.home-phone-container {
+  position: fixed;
+  right: 25px;
+  z-index: 999;
+}
+
+.whatsapp-float,
+.home-phone-float {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float {
+  bottom: 25px;
+  background: #25D366;
+}
+
+.home-phone-container {
+  bottom: 100px;
+}
+
+.home-phone-float {
+  background: #007bff;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover,
+.home-phone-float:hover {
+  transform: scale(1.08);
+}
+
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+}
+
+.home-phone-float svg {
+  width: 32px;
+  height: 32px;
+}
+
+.whatsapp-popup {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.whatsapp-popup h3 {
+  margin: 0 0 8px;
+  color: #111;
+}
+
+.whatsapp-popup input,
+.whatsapp-popup textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.whatsapp-popup textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.whatsapp-popup button {
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.whatsapp-popup button:hover {
+  background: #20b358;
+}
+
+/* ────────────────────────────────────────────────
+   Responsive Design
+──────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 28px;
+  }
+  .ourprojects-short-item {
+    width: 320px;
+    margin-right: 24px;
+  }
+  .video-thumbnail-wrapper {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-projects-page {
+    padding: 40px 15px 80px;
+  }
+  .page-title {
+    font-size: 2.8rem;
+  }
+  .page-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  .ourprojects-marquee-track {
+    animation-duration: 32s;
+  }
+  .ourprojects-short-item {
+    width: 280px;
+    margin-right: 20px;
+  }
+  .video-thumbnail-wrapper {
+    height: 200px;
+  }
+  .pagination-controls {
+    justify-content: center;
+  }
+  .di-footer-addresses {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .ourprojects-short-item {
+    width: 85vw;
+    margin-right: 16px;
+  }
+  .ourprojects-marquee-track {
+    animation-duration: 38s;
+  }
+  .video-thumbnail-wrapper {
+    height: 180px;
+  }
+  .page-title {
+    font-size: clamp(2.1rem, 8vw, 2.6rem);
+  }
+  .client-name {
+    font-size: 1.45rem;
+  }
+  .watch-cta {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .ourprojects-short-item {
+    width: 90vw;
+  }
+  .video-thumbnail-wrapper {
+    height: 160px;
+  }
+}
+
+/* Pulse animation for phone button */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(0, 123, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0); }
+}
+
+.home-phone-float {
+  animation: pulse 2s infinite;
+}

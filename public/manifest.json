@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Deeraj Interiors",
+  "name": "Deeraj Interiors - Best Interior Designers in Hyderabad",
+  "description": "Top-rated interior design company in Hyderabad. Home interiors, office interiors, modular kitchens & renovation near you.",
   "icons": [
     {
       "src": "favicon.ico",

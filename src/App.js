@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+import BookingForm from './components/form/form';
 import Navbar from './components/navbar/navbar';
 import Home from './components/home/home';
 import ContactUs from './components/contact/contact';
@@ -17,10 +19,48 @@ import BusinessAssociate from "./components/Partner us/Business Associate/busine
 import './App.css';
 
 function App() {
+  const [showForm, setShowForm] = useState(true);
+
   return (
     <Router>
       <div className="App">
         <Navbar />
+
+        {/* Floating Booking Form - Top Right Corner, visible on every page */}
+        <div style={{
+          position: 'fixed',
+          top: '90px',
+          right: '20px',
+          zIndex: 9999,
+        }}>
+          {showForm ? (
+            <BookingForm key={showForm} onClose={() => setShowForm(false)} />
+          ) : (
+           <button
+  onClick={() => setShowForm(true)}
+  style={{
+    background: 'linear-gradient(135deg, orangered, #ff6b35)',
+    color: 'white',
+    border: 'none',
+    borderRadius: '50px',
+    padding: '12px 20px',
+    fontWeight: '700',
+    fontSize: '0.85rem',
+    cursor: 'pointer',
+    boxShadow: '0 4px 15px rgba(255, 69, 0, 0.4)',
+    whiteSpace: 'nowrap',
+    fontFamily: 'Inter, system-ui, sans-serif',
+
+    position: 'fixed',
+    bottom: '95px',
+    right: '20px',   // change to left: '50%' + transform if you want center
+    zIndex: 1000
+  }}
+>
+  📅 Book Free Slot
+</button>
+          )}
+        </div>
 
         <div style={{ paddingTop: '80px' }}>
           <Routes>
@@ -49,13 +89,6 @@ function App() {
                    <Route path="/about-us" element={<AboutUs />} />
                    
                    <Route path="/Gallery" element={<Gallery />} />
-
-                   
-                  
-                  
-
-
-             
 
             <Route path="*" element={<div><h1>404 - Page Not Found</h1></div>} />
           </Routes>

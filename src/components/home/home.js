@@ -2866,7 +2866,7 @@ export default function Home() {
     <p className="di-footer-phone">+91 9000700910 / 9000700930 / 9014300930</p>
 
     <p className="di-footer-copy">
-      COPYRIGHT © 2025 DEERAJ INTERIORS - ALL RIGHTS RESERVED.
+      COPYRIGHT © DEERAJ TECHNOLOGIES PRIVATE LIMITED - ALL RIGHTS RESERVED.
     </p>
   </div>
 </footer>
@@ -2917,7 +2917,7 @@ export default function Home() {
   )}
 </div>
 {/* ── Phone Call Floating Button ── */}
-  <div className="home-phone-container">
+  {/* <div className="home-phone-container">
       <div
         onClick={() => navigate("/contact-us")}
         className="home-phone-float"
@@ -2936,7 +2936,7 @@ export default function Home() {
           />
         </svg>
       </div>
-    </div>
+    </div> */}
 
 
     </div>

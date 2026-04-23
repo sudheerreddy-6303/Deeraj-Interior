@@ -1,0 +1,665 @@
+/* src/components/businessassociate.css */
+
+/* ──────────────────────────────────────────────── */
+/* Base & Global Styles                             */
+/* ──────────────────────────────────────────────── */
+.business-associate-wrapper {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Fix: Scoped headers so they DO NOT affect other pages */
+.business-associate-wrapper h1, 
+.business-associate-wrapper h2, 
+.business-associate-wrapper h3, 
+.business-associate-wrapper h4 {
+  font-weight: 700;
+  color: #0d1b2a;
+}
+
+/* ──────────────────────────────────────────────── */
+/* Hero Section (FIXED LEFT/RIGHT SPLIT)            */
+/* ──────────────────────────────────────────────── */
+.business-hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 100px;
+  padding: 40px 0;
+}
+
+/* Left Side Text Content */
+.business-hero-content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center; 
+}
+
+.business-main-title {
+  font-size: clamp(2.5rem, 4vw, 3.2rem);
+  line-height: 1.2;
+  background: orangered;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.business-highlight-box {
+  padding: 0 20px;
+}
+
+.business-highlight-box h2 {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+
+.business-lead-text {
+  font-size: 1.15rem;
+  color: #555;
+  margin-top: 15px;
+}
+
+.business-growth-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.business-big-number {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: orangered;
+  line-height: 1;
+}
+
+.business-by-year {
+  font-size: 1.2rem;
+  color: #778da9;
+  font-weight: 600;
+}
+
+/* Right Side Stacked Images */
+.business-hero-images-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-end; 
+  width: 100%;
+}
+
+.business-stacked-image {
+  width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.business-stacked-image:hover {
+  transform: scale(1.02);
+}
+
+.business-top-image {
+  height: 300px;
+  align-self: flex-start; 
+}
+
+.business-bottom-image {
+  height: 350px;
+  margin-top: -80px; 
+  border: 8px solid white; 
+  z-index: 2;
+}
+
+/* ──────────────────────────────────────────────── */
+/* Common Section Styles                            */
+/* ──────────────────────────────────────────────── */
+.business-who-should-join,
+.business-why-choose-us,
+.business-about-company,
+.business-why-stands-apart,
+.business-your-role,
+.business-rewards-recognition,
+.business-investment-analysis {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.business-who-should-join h2,
+.business-why-choose-us h2,
+.business-why-stands-apart h2,
+.business-your-role h2,
+.business-rewards-recognition h2,
+.business-investment-analysis h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 3rem;
+}
+
+/* ──────────────────────────────────────────────── */
+/* Grids & Cards                                    */
+/* ──────────────────────────────────────────────── */
+.business-cards-grid,
+.business-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.business-card,
+.business-benefit-card {
+  background: #f8f9fa;
+  padding: 2.2rem;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.25s ease;
+  text-align: left;
+}
+
+.business-card h3, .business-benefit-card h3 {
+  color: orangered;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.business-card:hover,
+.business-benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* ──────────────────────────────────────────────── */
+/* Images (global)                                  */
+/* ──────────────────────────────────────────────── */
+.business-card-image,
+.business-benefit-image,
+.business-segment-image,
+.business-stands-apart-img,
+.business-role-img,
+.business-strategy-img,
+.business-onboarding-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+}
+
+.business-segment-image { height: 160px; }
+.business-card-image, .business-benefit-image { height: 180px; }
+
+/* ──────────────────────────────────────────────── */
+/* About Company - Segments                         */
+/* ──────────────────────────────────────────────── */
+.business-segments {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.business-segment {
+  background: #f1f5f9;
+  padding: 1.8rem;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.business-segment h3 {
+  color: orangered;
+  margin-bottom: 1rem;
+  font-size: xx-large;
+}
+
+.business-segment ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.business-segment li {
+  margin: 0.6rem 0;
+  font-size: 1.05rem;
+}
+
+/* ──────────────────────────────────────────────── */
+/* Split Layouts (Role, Stands Apart, Strategy)     */
+/* ──────────────────────────────────────────────── */
+.business-why-stands-apart,
+.business-your-role-grid,
+.business-strategy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  text-align: left;
+}
+
+.business-stands-apart-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.business-proven-model h3,
+.business-customer-satisfaction h3,
+.business-tech-integration h3 {
+  color: orangered;
+  margin-bottom: 0.8rem;
+}
+
+.business-role-subtitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: orangered;
+  margin-bottom: 1.5rem;
+}
+
+.business-role-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.business-role-list li {
+  font-size: 1.15rem;
+  margin: 1.2rem 0;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.business-role-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #2a9d8f;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* ──────────────────────────────────────────────── */
+/* Rewards & Recognition                            */
+/* ──────────────────────────────────────────────── */
+.business-rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.business-reward-card {
+  background: #f8f9fa;
+  padding: 2.5rem 1.8rem;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.business-reward-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+.business-reward-value {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: orangered;
+  margin: 1rem 0;
+}
+
+/* ──────────────────────────────────────────────── */
+/* Investment & Onboarding                          */
+/* ──────────────────────────────────────────────── */
+.business-key-highlights {
+  background: #f8f9fa;
+  padding: 2.2rem;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+}
+
+.business-key-highlights h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: orangered;
+}
+
+.business-key-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.business-key-highlights li {
+  font-size: 1.15rem;
+  margin: 1rem 0;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.business-key-highlights li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: orangered;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.business-onboarding-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.business-onboarding-step {
+  background: #f8f9fa;
+  padding: 1.8rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.business-onboarding-step h4 {
+  font-size: 1.4rem;
+  color: orangered;
+  margin: 1rem 0 0.8rem;
+}
+
+.business-ready-transform {
+  margin-top: 4rem;
+  background: #3f4041;
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+}
+
+.business-ready-transform h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.business-requirements,
+.business-steps {
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+.business-requirements h4,
+.business-steps h4 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  color: orangered;
+}
+
+.business-requirements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.business-requirements li {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+}
+
+/* ──────────────────────────────────────────────── */
+/* Connect With Us Today                            */
+/* ──────────────────────────────────────────────── */
+.business-connect-today {
+  margin-top: 5rem;
+  padding: 3rem 2rem;
+  background: #f8f9fa;
+  border-radius: 16px;
+}
+
+.business-connect-today h3 {
+  font-size: 2.2rem;
+  color: orangered;
+  margin-bottom: 2.5rem;
+}
+
+.business-connect-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.business-connect-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.business-connect-card h4{
+  color: orangered;
+  font-size: xx-large;
+}
+
+.business-connect-card:hover {
+  transform: translateY(-8px);
+}
+
+.business-connect-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.2rem;
+  object-fit: contain;
+}
+
+.business-success-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.business-success-img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+  object-fit: cover;
+}
+
+.business-footer-info {
+  margin-top: 4rem;
+  font-size: 1rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* ──────────────────────────────────────────────── */
+/* Final CTA                                        */
+/* ──────────────────────────────────────────────── */
+.business-cta-final {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.business-cta-button {
+  background: orangered;
+  color: white;
+  border: none;
+  padding: 1.2rem 3.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.business-cta-button:hover {
+  background: #d9531e;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 69, 0, 0.3);
+}
+
+.business-small-note {
+  margin-top: 1.5rem;
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+/* ──────────────────────────────────────────────── */
+/* Responsive                                       */
+/* ──────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .business-hero-section,
+  .business-why-stands-apart,
+  .business-your-role-grid,
+  .business-strategy-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .business-hero-images-right {
+    align-items: center;
+  }
+
+  .business-top-image {
+    align-self: center;
+    width: 80%;
+  }
+
+  .business-bottom-image {
+    width: 85%;
+    margin-top: -60px;
+  }
+
+  .business-strategy-image-right { order: 1; }
+  .business-strategy-content-left { order: 2; }
+  .business-role-image-left { order: 1; }
+  .business-role-content-right { order: 2; }
+}
+
+@media (max-width: 768px) {
+  .business-main-title { font-size: 2.2rem; }
+  .business-big-number { font-size: 2.8rem; }
+  .business-card-image, .business-benefit-image { height: 160px; }
+  .business-bottom-image { margin-top: -40px; }
+}
+
+@media (max-width: 640px) {
+  .business-cta-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+}
+
+/* ================= WHATSAPP FLOAT ================= */
+
+.whatsapp-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Floating Button */
+.whatsapp-float {
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Popup Box */
+.whatsapp-popup {
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+  width: 300px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease forwards;
+}
+
+/* Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.whatsapp-popup h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+/* Inputs */
+.whatsapp-popup input,
+.whatsapp-popup textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.whatsapp-popup input:focus,
+.whatsapp-popup textarea:focus {
+  border-color: #25D366;
+}
+
+.whatsapp-popup textarea {
+  resize: none;
+  height: 70px;
+}
+
+/* Button */
+.whatsapp-popup button {
+  width: 100%;
+  padding: 12px;
+  background-color: #25D366;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-popup button:hover {
+  background-color: #1ebc59;
+}

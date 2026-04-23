@@ -365,6 +365,7 @@
 
 // src/components/ourprojects/ourprojects.js
 import React, { useState } from 'react';
+import { FaUserCircle } from 'react-icons/fa';
 import './ourprojects.css';
 
 const projects = [
@@ -372,7 +373,6 @@ const projects = [
     title: "3BHK Interior – My Home Tridasa",
     youtubeId: "mHPCmdXdE24",
     client: "Mr. Moin",
-    clientImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
     location: "Kukatpally, Hyderabad",
     projectValue: "₹13 Lakhs",
     testimonial: "Deeraj Interiors completed 3BHK interiors with excellent modular finish and installation quality was impressive. The team maintained good workmanship and delivered full project on time.",
@@ -382,7 +382,6 @@ const projects = [
     title: "NCL Sindhu 3BHK Kompally Hyderabad",
     youtubeId: "mHPCmdXdE24",
     client: "Client Name",
-    clientImage: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
     location: "Kompally, Hyderabad",
     projectValue: "₹12.5 Lakhs",
     testimonial: "Very professional approach, excellent finishing touches and on-time handover. Highly recommended.",
@@ -392,7 +391,6 @@ const projects = [
     title: "Gorgeous Makeover of Mr. Mahender Independent Flat Alwal Hyderabad",
     youtubeId: "7OiztXQrRcQ",
     client: "Mr. Mahender",
-    clientImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
     location: "Alwal, Hyderabad",
     projectValue: "₹11 Lakhs",
     testimonial: "Transformed our old flat into a modern dream home. Superb work and cooperative team.",
@@ -402,7 +400,6 @@ const projects = [
     title: "Beautifully Crafted Modular Kitchens",
     youtubeId: "P31tLqpvEtw",
     client: "Vignan Reddy",
-    clientImage: "https://images.unsplash.com/photo-1519085360753-38b2b54e3f7c?w=400&h=400&fit=crop&crop=face",
     location: "Hyderabad & Andhra Pradesh",
     projectValue: "₹13 Lakhs",
     testimonial: "Deeraj Interiors completed 3BHK interiors with excellent modular finish and installation quality was impressive. The team maintained good workmanship and delivered full project on time.",
@@ -412,7 +409,6 @@ const projects = [
     title: "LG Classic Home Interiors Hyderabad",
     youtubeId: "PxyZkSwWJ84",
     client: "Ramesh Reddy",
-    clientImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
     location: "Hyderabad",
     projectValue: "₹10 Lakhs",
     testimonial: "Luxury interiors executed with great attention to detail. Truly satisfied with the final outcome.",
@@ -422,7 +418,6 @@ const projects = [
     title: "Srinivasa Rao Beautiful Abode Uppal Hyderabad",
     youtubeId: "4gB_37HzH-4",
     client: "Mr. Srinivasa Rao",
-    clientImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
     location: "Uppal, Hyderabad",
     projectValue: "₹18 Lakhs",
     testimonial: "Luxury interiors executed with great attention to detail. Truly satisfied with the final outcome.",
@@ -432,7 +427,6 @@ const projects = [
     title: "Mr. Krishnamurthy & Mrs. Divya Madam 2BHK Alwal Hyderabad",
     youtubeId: "v-ILQISMb-I",
     client: "Mr. Krishnamurthy & Mrs. Divya",
-    clientImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
     location: "Alwal, Hyderabad",
     projectValue: "₹9.5 Lakhs",
     testimonial: "Beautiful false ceiling and modern furniture layout. Team was very punctual.",
@@ -442,7 +436,6 @@ const projects = [
     title: "Aparna Serenity 3BHK Render Video",
     youtubeId: "mVBJ4BrYV_w",
     client: "Leena Teresa",
-    clientImage: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
     location: "Hyderabad",
     projectValue: "₹9.5 Lakhs",
     testimonial: "Beautiful false ceiling and modern furniture layout. Team was very punctual.",
@@ -452,7 +445,6 @@ const projects = [
     title: "Deeraj Interiors - Beautiful Art Work & Deco Painting",
     youtubeId: "xqK0gUujh5U",
     client: "Jairam Rao",
-    clientImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
     location: "Hyderabad",
     projectValue: "₹10 Lakhs",
     testimonial: "Luxury interiors executed with great attention to detail. Truly satisfied with the final outcome.",
@@ -460,9 +452,8 @@ const projects = [
   },
   {
     title: "Deeraj Interiors Home Furnishings & Decor Kompally",
-    youtubeId: "pppQxUat30g",
-    client: "Pawan Kalyan",
-    clientImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
+    youtubeId: "Ae46w9YIJHQ",
+    client: "Dr.Ratnakar&Dr.Lalitha",
     location: "Kompally, Hyderabad",
     projectValue: null,
     testimonial: "Beautiful false ceiling and modern furniture layout. Team was very punctual.",
@@ -549,14 +540,10 @@ function OurProjects() {
               </div>
 
               <div className="project-details">
-                {/* Client Image + Name Section */}
                 {project.client && (
                   <div className="client-header">
-                    <div className="client-image">
-                      <img 
-                        src={project.clientImage} 
-                        alt={project.client}
-                      />
+                    <div className="client-icon">
+                      <FaUserCircle />
                     </div>
                     <h4 className="client-name">{project.client}</h4>
                   </div>
@@ -619,14 +606,12 @@ function OurProjects() {
           </div>
         )}
 
-        {/* Shorts Section - Right to Left Marquee */}
         <div className="ourprojects-shorts-section">
           <h2 className="ourprojects-shorts-title">YOUTUBE SHORTS</h2>
           <p className="ourprojects-shorts-subtitle">Quick Inspiring Glimpses of Our Work</p>
 
           <div className="ourprojects-marquee-wrapper">
             <div className="ourprojects-marquee-track">
-              {/* First set */}
               {shorts.map((short, index) => (
                 <div key={index} className="ourprojects-short-item">
                   <div className="video-thumbnail-wrapper">
@@ -653,7 +638,6 @@ function OurProjects() {
                 </div>
               ))}
 
-              {/* Duplicate set for seamless infinite loop */}
               {shorts.map((short, index) => (
                 <div key={`duplicate-${index}`} className="ourprojects-short-item">
                   <div className="video-thumbnail-wrapper">
@@ -683,7 +667,6 @@ function OurProjects() {
           </div>
         </div>
 
-        {/* WHATSAPP FLOAT */}
         <div className="whatsapp-container">
           <div
             className="whatsapp-float"
@@ -698,24 +681,20 @@ function OurProjects() {
           {whatsappOpen && (
             <div className="whatsapp-popup">
               <h3>Start WhatsApp Chat</h3>
-
               <input type="text" placeholder="Your Name" id="wa-name" />
-              <input type="text" placeholder="Project Type (Home / Office / Consultation)" id="wa-project" />
+              <input type="text" placeholder="Project Type" id="wa-project" />
               <textarea placeholder="Your Message" id="wa-message"></textarea>
-
               <button
                 onClick={() => {
                   const name = document.getElementById("wa-name").value;
                   const project = document.getElementById("wa-project").value;
                   const message = document.getElementById("wa-message").value;
-
                   const finalMessage =
                     `Hello Deeraj Interiors,%0A%0A` +
                     `Name: ${name}%0A` +
                     `Project: ${project}%0A` +
                     `Message: ${message}%0A%0A` +
                     `I am interested in discussing my interior project.`;
-
                   window.open(
                     `https://wa.me/919000700930?text=${finalMessage}`,
                     "_blank"
@@ -733,7 +712,6 @@ function OurProjects() {
         <div className="di-footer-container">
           <p className="di-footer-links">Privacy Policy | Terms and Conditions</p>
           <p className="di-footer-title"><strong>DEERAJ INTERIORS</strong></p>
-
           <div className="di-footer-addresses">
             <div className="di-footer-address-card">
               <span className="di-footer-branch">Experience Center</span>
@@ -743,7 +721,6 @@ function OurProjects() {
                 HYDERABAD, TS 500067
               </p>
             </div>
-
             <div className="di-footer-address-card">
               <span className="di-footer-branch">Modular Factory</span>
               <p>
@@ -753,36 +730,12 @@ function OurProjects() {
               </p>
             </div>
           </div>
-
           <p className="di-footer-phone">+91 9000700910 / 9000700930 /9014300930 </p>
-
           <p className="di-footer-copy">
-            COPYRIGHT © 2025 DEERAJ INTERIORS - ALL RIGHTS RESERVED.
+            COPYRIGHT © DEERAJ TECHNOLOGIES PRIVATE LIMITED - ALL RIGHTS RESERVED.
           </p>
         </div>
       </footer>
-
-      {/* Phone Call Floating Button */}
-      <div className="home-phone-container">
-        <a 
-          href="/contact-us" 
-          className="home-phone-float"
-          title="Contact Us / Call"
-        >
-          <svg 
-            width="32" 
-            height="32" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path 
-              d="M20.9999 15.46C20.1199 15.46 19.2499 15.3 18.4099 15.06C18.1199 14.99 17.8099 15.05 17.5799 15.29L15.4099 18.12C12.2499 16.67 7.32988 11.79 5.87988 8.61998L8.70988 6.41998C8.95988 6.16998 9.01988 5.85998 8.94988 5.58998C8.69988 4.74998 8.53988 3.87998 8.53988 2.99998C8.53988 2.44998 8.08988 1.99998 7.53988 1.99998H4.49988C3.94988 1.99998 3.49988 2.44998 3.49988 2.99998C3.49988 13.28 10.7199 20.5 20.9999 20.5C21.5499 20.5 21.9999 20.05 21.9999 19.5V16.46C21.9999 15.91 21.5499 15.46 20.9999 15.46Z" 
-              fill="#ffffff"
-            />
-          </svg>
-        </a>
-      </div>
     </div>
   );
 }
