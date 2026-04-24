@@ -57,7 +57,7 @@ function App() {
     zIndex: 1000
   }}
 >
-  📅 Book Free Slot
+  📅 Book Free Consultation
 </button>
           )}
         </div>

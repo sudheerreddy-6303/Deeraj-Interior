@@ -2259,79 +2259,85 @@
 // ==================
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
+import sridharreddy from '../../assets/sridhar vreddy sir.jpeg';
+import anveshreddy from "../../assets/anvesh reddy sir.jpeg";
+import sunilimage from "../../assets/dr sunil sir image1.jpeg";
+import sudhakar from "../../assets/sudhakar sir image1.jpeg";
+import kalpana from "../../assets/kalpana madam image.jpeg"
+
 import './home.css';
 
 const testimonials = [
   {
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=faces",
-    rating: "Excellent",
-    text: "The work is excellent, and there's absolutely no complaints. They transformed our home beautifully!",
-    name: "Rajesh",
-    address: "Kukatpally, Hyderabad"
+    avatar: sridharreddy,
+    // rating: "Excellent",
+    text: "Deeraj Interiors provided exceptional, timely, and professional designs for Trividya College. Their attention to detail is unmatched. We highly recommend them for institutional and corporate interiors.",
+    name: "Mr.Sreedhar Reddy ",
+    address: "Suchitra, Hyderabad"
   },
   {
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop&crop=faces",
-    rating: "Fantastic style",
-    text: "A big thanks to everyone at Deeraj Interiors! My tired old apartment looks like a luxury hotel now.",
-    name: "Nagadivya Goli",
-    address: "Gachibowli, Hyderabad"
+    avatar: anveshreddy,
+    // rating: "Fantastic style",
+    text: "The quality of materials and finishing is outstanding. From modular kitchen to wardrobes, everything has a premium factory finish. You can clearly see the difference in precision and durability.",
+    name: "Mr.Anvesh Reddy",
+    address: "Alwal, Hyderabad"
   },
   {
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=faces",
-    rating: "Outstanding",
-    text: "Very professional team. They understood our requirements perfectly and delivered the 3BHK exactly on time with premium finishes.",
-    name: "Srinivas Reddy",
+    avatar: "https://sunshinebji.com/img/doctors/drratnakr.png",
+    // rating: "Outstanding",
+    text: "Very transparent pricing with no hidden costs. They helped us design our 3BHK within budget while maintaining good quality and aesthetics. Honest and reliable team.",
+    name: "Dr.Ratnakar",
+    address: "Kompally, Hyderabad"
+  },
+  {
+    avatar: sunilimage,
+    // rating: "Highly Recommended",
+    text: "We got our 4BHK interiors done by Deeraj Interiors. The design is modern, functional, and perfectly aligned with our lifestyle. Every space is thoughtfully planned with great attention to detail.",
+    name: "Dr.Sunil & Dr.Savya",
+    address: "Suchitra, Hyderabad"
+  },
+  {
+    avatar: sudhakar,
+    // rating: "Perfect Execution",
+    text: "From design to final handover, everything was handled professionally. The transformation of our 4BHK home is beautiful. Highly recommend them for complete home interiors.",
+    name: "Mr.Sudhakar Chowdary",
+    address: "Alwal, Hyderabad"
+  },
+  {
+    avatar: kalpana,
+    // rating: "Villa 68,Subshi forest edge",
+    text: "One of our biggest concerns was timelines, but the team delivered our 3BHK interiors exactly as promised. The execution was smooth, well-planned, and completed without delays.",
+    name: "Mr. Chandan & Mrs.Kalpana",
     address: "Madhapur, Hyderabad"
   },
-  {
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=faces",
-    rating: "Highly Recommended",
-    text: "Best interior designers in Hyderabad! Great attention to detail, excellent communication and value for money.",
-    name: "Priya Sharma",
-    address: "Jubilee Hills, Hyderabad"
-  },
-  {
-    avatar: "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=300&h=300&fit=crop&crop=faces",
-    rating: "Perfect Execution",
-    text: "From 3D design to final handover — everything was flawless. Our modular kitchen is a dream now. Thank you team!",
-    name: "Anjali Mehta",
-    address: "Banjara Hills, Hyderabad"
-  },
-  {
-    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&crop=faces",
-    rating: "Superb Work",
-    text: "We were worried about renovating our old house, but Deeraj Interiors made it look completely modern and spacious. Super happy!",
-    name: "Karthik Rao",
-    address: "Ameerpet, Hyderabad"
-  },
-  {
-    avatar: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=300&fit=crop&crop=faces",
-    rating: "Elegant & Functional",
-    text: "They created a beautiful yet practical living + dining space for our family. Guests keep asking who did the interiors!",
-    name: "Meghana Varma",
-    address: "Manikonda, Hyderabad"
-  },
-  {
-    avatar: "https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=300&h=300&fit=crop&crop=faces",
-    rating: "Top Class",
-    text: "Premium materials, clean workmanship, and on-time completion. Our office cabin looks like a high-end corporate setup now.",
-    name: "Vikram Singh",
-    address: "Hitech City, Hyderabad"
-  },
-  {
-    avatar: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=300&fit=crop&crop=faces",
-    rating: "Beyond Expectations",
-    text: "We just wanted minor changes but they suggested better ideas that completely transformed our 2BHK. Truly impressive!",
-    name: "Lakshmi Iyer",
-    address: "Uppal, Hyderabad"
-  },
-  {
-    avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop&crop=faces",
-    rating: "Creative & Reliable",
-    text: "Loved the creative wall panels and lighting concepts. Team was very patient and completed everything within budget.",
-    name: "Harsha Vardhan",
-    address: "Secunderabad, Hyderabad"
-  }
+  // {
+  //   avatar: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=300&fit=crop&crop=faces",
+  //   rating: "Elegant & Functional",
+  //   text: "They created a beautiful yet practical living + dining space for our family. Guests keep asking who did the interiors!",
+  //   name: "Meghana Varma",
+  //   address: "Manikonda, Hyderabad"
+  // },
+  // {
+  //   avatar: "https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=300&h=300&fit=crop&crop=faces",
+  //   rating: "Top Class",
+  //   text: "Premium materials, clean workmanship, and on-time completion. Our office cabin looks like a high-end corporate setup now.",
+  //   name: "Vikram Singh",
+  //   address: "Hitech City, Hyderabad"
+  // },
+  // {
+  //   avatar: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=300&fit=crop&crop=faces",
+  //   rating: "Beyond Expectations",
+  //   text: "We just wanted minor changes but they suggested better ideas that completely transformed our 2BHK. Truly impressive!",
+  //   name: "Lakshmi Iyer",
+  //   address: "Uppal, Hyderabad"
+  // },
+  // {
+  //   avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop&crop=faces",
+  //   rating: "Creative & Reliable",
+  //   text: "Loved the creative wall panels and lighting concepts. Team was very patient and completed everything within budget.",
+  //   name: "Harsha Vardhan",
+  //   address: "Secunderabad, Hyderabad"
+  // }
 ];
 
 const heroSlides = [
@@ -2758,7 +2764,7 @@ export default function Home() {
               <div className="home-service-hover-content">
                 <p>At Deeraj Interiors, we specialize in crafting kitchen interiors that are as beautiful as they are functional — thoughtfully designed to reflect your style and suit your everyday needs.</p>
                 <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
-              </div>
+              </div> 
             </div>
             <div className="home-service-card" style={{ backgroundImage: `url('https://plus.unsplash.com/premium_photo-1663126298656-33616be83c32?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
               <div className="home-service-title">Home Offices </div>
@@ -2767,13 +2773,13 @@ export default function Home() {
                 <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
               </div>
             </div>
-            <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')` }}>
-              <div className="home-service-title">Bathrooms </div>
-              <div className="home-service-hover-content">
-                <p>Transform your bathroom into a spa-like retreat with our expert design services. From luxurious showers to elegant fixtures, we create a space that's both beautiful and functional.</p>
-                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
-              </div>
-            </div>
+           <div className="home-service-card" style={{ backgroundImage: `url('https://i.pinimg.com/736x/c3/56/d9/c356d90952bdbe0bde96672e4906a6c7.jpg` }}>
+  <div className="home-service-title">Wardrobes</div>
+  <div className="home-service-hover-content">
+    <p>Maximize your space with bespoke wardrobe solutions tailored to your lifestyle. From sleek walk-in closets to smart modular designs, we blend elegant aesthetics with intelligent storage.</p>
+    <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
+  </div>
+</div>
             <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')` }}>
               <div className="home-service-title">Outdoor Livings </div>
               <div className="home-service-hover-content">
@@ -2807,16 +2813,18 @@ export default function Home() {
                   <div className="home-testimonial-left">
                     <div className="home-avatar-circle">
                       <img src={item.avatar} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '15%' }} />
+                      
                     </div>
                     <div className="home-testimonial-name-below">{item.name}</div>
                   </div>
                   <div className="home-testimonial-right">
-                    <div className="home-stars">
-                      <span className="home-star">★</span><span className="home-star">★</span><span className="home-star">★</span><span className="home-star">★</span><span className="home-star">★</span>
-                    </div>
+                   
                     <h3 className="home-testimonial-rating">{item.rating}</h3>
                     <p className="home-testimonial-text">"{item.text}"</p>
                     <div className="home-testimonial-address">{item.address}</div>
+                     <div className="home-stars">
+                      <span className="home-star">★</span><span className="home-star">★</span><span className="home-star">★</span><span className="home-star">★</span><span className="home-star">★</span>
+                    </div>
                   </div>
                 </div>
               ));
