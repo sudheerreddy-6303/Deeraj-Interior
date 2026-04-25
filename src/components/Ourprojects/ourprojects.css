@@ -1,6 +1,3 @@
-/* ────────────────────────────────────────────────
-   1. Main Layout & Typography
-──────────────────────────────────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
 .our-projects-page {
@@ -11,7 +8,7 @@
 }
 
 .projects-container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -21,7 +18,6 @@
   font-weight: 800;
   color: #1e293b;
   margin-bottom: 12px;
-  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -30,37 +26,70 @@
   font-size: 1.4rem;
   color: #64748b;
   margin-bottom: 50px;
-  font-weight: 400;
 }
 
 /* ────────────────────────────────────────────────
-   2. Project Cards Grid (Main Sections)
+   INFINITE MARQUEE LOGIC (SHARED)
 ──────────────────────────────────────────────── */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 32px;
+.ourprojects-marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
 }
 
-.project-item {
+.ourprojects-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 40s linear infinite;
+}
+
+.ourprojects-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ────────────────────────────────────────────────
+   PROJECTS MARQUEE SPECIFIC
+──────────────────────────────────────────────── */
+.main-projects-marquee .marquee-item {
+  width: 420px; /* Large cards for main projects */
+  margin-right: 32px;
+  flex-shrink: 0;
   background: white;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s ease;
 }
 
-.project-item:hover {
-  transform: translateY(-14px);
-  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.14);
+/* Ensure the marquee speed is suitable for reading testimonials */
+.main-projects-marquee .ourprojects-marquee-track {
+  animation-duration: 60s; /* Slower for main projects */
 }
 
 /* ────────────────────────────────────────────────
-   3. Video Thumbnails & Overlays
+   SHORTS MARQUEE SPECIFIC
+──────────────────────────────────────────────── */
+.ourprojects-short-item {
+  width: 300px;
+  margin-right: 25px;
+  flex-shrink: 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* ────────────────────────────────────────────────
+   CARD INTERNALS (Project Details)
 ──────────────────────────────────────────────── */
 .video-thumbnail-wrapper {
   position: relative;
-  height: 260px;
+  height: 240px;
   overflow: hidden;
 }
 
@@ -71,312 +100,68 @@
   transition: transform 0.45s ease;
 }
 
-.project-item:hover .thumbnail,
-.ourprojects-short-item:hover .thumbnail {
-  transform: scale(1.09);
+.marquee-item:hover .thumbnail {
+  transform: scale(1.1);
 }
 
 .play-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.25);
-  transition: background 0.3s ease;
-  text-decoration: none;
+  top: 0; left: 0; width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.2);
 }
 
 .play-icon {
-  width: 65px;
-  height: 65px;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.6rem;
-  color: #ff0000;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+  width: 60px; height: 60px;
+  background: white; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #ff0000; font-size: 2rem;
 }
 
-/* ────────────────────────────────────────────────
-   4. Project Details & Client Icons
-──────────────────────────────────────────────── */
 .project-details {
-  padding: 24px;
-  text-align: left; /* Aligned left for cleaner testimonial flow */
+  padding: 20px;
+  text-align: left;
 }
 
-.client-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 18px;
-}
-
-.client-icon {
-  flex-shrink: 0;
-  width: 65px;
-  height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 60px;
-  color: #cbd5e1;
-  background: #f1f5f9;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-
-.project-item:hover .client-icon {
-  color: orangered;
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(255, 69, 0, 0.2);
-}
-
-.client-name {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #1e293b;
-  margin: 0;
-  line-height: 1.2;
-}
+.client-header { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; }
+.client-icon { font-size: 40px; color: #cbd5e1; }
+.client-name { font-size: 1.2rem; font-weight: 700; color: #1e293b; margin: 0; }
 
 .testimonial {
   background: #f1f5f9;
-  padding: 18px 22px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid orangered;
   font-style: italic;
-  border-left: 5px solid orangered;
+  font-size: 0.9rem;
 }
 
-.testimonial-text {
-  margin: 0;
-  font-size: 1rem;
-  color: #334155;
-  line-height: 1.6;
-}
-
-.project-title {
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 10px;
-}
-
-.project-meta {
-  font-size: 0.95rem;
-  color: #64748b;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
+.project-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+.project-meta { font-size: 0.85rem; color: #64748b; margin-bottom: 15px; }
 
 .watch-cta {
   display: block;
-  text-align: center;
   background: orangered;
   color: white;
-  padding: 14px;
-  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.3s ease;
-}
-
-.watch-cta:hover {
-  background: #ff4500;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(255, 69, 0, 0.3);
 }
 
 /* ────────────────────────────────────────────────
-   5. Pagination Controls
+   WHATSAPP & FOOTER (Static)
 ──────────────────────────────────────────────── */
-.pagination-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin: 50px 0;
-}
-
-.pagination-btn {
-  padding: 10px 18px;
-  border: none;
-  border-radius: 8px;
-  background: #e2e8f0;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.pagination-btn.active {
-  background: #2563eb;
-  color: white;
-}
-
-.pagination-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-/* ────────────────────────────────────────────────
-   6. Shorts Section & Marquee Animation
-──────────────────────────────────────────────── */
-.ourprojects-shorts-section {
-  margin-top: 80px;
-  text-align: center;
-}
-
-.ourprojects-marquee-wrapper {
-  overflow: hidden;
-  width: 100%;
-  padding: 20px 0;
-}
-
-.ourprojects-marquee-track {
-  display: flex;
-  width: max-content;
-  animation: scrollLeft 30s linear infinite;
-}
-
-.ourprojects-marquee-track:hover {
-  animation-play-state: paused;
-}
-
-.ourprojects-short-item {
-  width: 300px;
-  margin-right: 25px;
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-
-@keyframes scrollLeft {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-/* ────────────────────────────────────────────────
-   7. Floating WhatsApp & Popup
-──────────────────────────────────────────────── */
-.whatsapp-container {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  z-index: 1000;
-}
-
-.whatsapp-float {
-  width: 60px;
-  height: 60px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.whatsapp-float:hover { transform: scale(1.1); }
-
+.whatsapp-container { position: fixed; bottom: 25px; right: 25px; z-index: 1000; }
+.whatsapp-float { width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; }
 .whatsapp-float img { width: 35px; }
 
-.whatsapp-popup {
-  position: absolute;
-  bottom: 80px;
-  right: 0;
-  width: 300px;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+.di-footer { background: #0f172a; color: white; padding: 60px 20px; text-align: center; margin-top: 60px; }
+.di-footer-branch { color: orangered; font-weight: 700; display: block; margin-top: 10px; }
 
-.whatsapp-popup input, .whatsapp-popup textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-family: inherit;
-}
-
-.whatsapp-popup button {
-  background: #25D366;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-/* ────────────────────────────────────────────────
-   8. Footer Styles
-──────────────────────────────────────────────── */
-.di-footer {
-  background: #0f172a;
-  color: #e2e8f0;
-  padding: 80px 20px 40px;
-  margin-top: 100px;
-  text-align: center;
-}
-
-.di-footer-container { max-width: 1100px; margin: 0 auto; }
-
-.di-footer-title {
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 30px;
-}
-
-.di-footer-addresses {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.di-footer-address-card {
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-  border-radius: 10px;
-  flex: 1;
-  min-width: 280px;
-}
-
-.di-footer-branch {
-  color: orangered;
-  font-weight: 700;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.di-footer-phone {
-  font-size: 1.2rem;
-  color: #60a5fa;
-  margin: 20px 0;
-}
-
-/* ────────────────────────────────────────────────
-   9. Responsive Media Queries
-──────────────────────────────────────────────── */
 @media (max-width: 768px) {
-  .page-title { font-size: 2.5rem; }
-  .projects-grid { grid-template-columns: 1fr; }
-  .client-icon { width: 50px; height: 50px; font-size: 45px; }
-  .di-footer-addresses { flex-direction: column; }
+  .main-projects-marquee .marquee-item { width: 300px; }
+  .page-title { font-size: 2rem; }
 }
