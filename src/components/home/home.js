@@ -2270,75 +2270,48 @@ import './home.css';
 const testimonials = [
   {
     avatar: sridharreddy,
-    // rating: "Excellent",
-    text: "Deeraj Interiors provided exceptional, timely, and professional designs for Trividya College. Their attention to detail is unmatched. We highly recommend them for institutional and corporate interiors.",
-    name: "Mr.Sreedhar Reddy ",
+    text: "Deeraj Interiors provided exceptional, timely, and professional designs for Trividya College...",
+    name: "Mr. Sreedhar Reddy",
+    designation: "MD & CEO, Trividya College", // Added designation
     address: "Suchitra, Hyderabad"
   },
   {
     avatar: anveshreddy,
-    // rating: "Fantastic style",
-    text: "The quality of materials and finishing is outstanding. From modular kitchen to wardrobes, everything has a premium factory finish. You can clearly see the difference in precision and durability.",
-    name: "Mr.Anvesh Reddy",
+    text: "The quality of materials and finishing is outstanding...",
+    name: "Mr. Anvesh Reddy",
+    designation: "Seed Development chairman/TS", // Added designation
     address: "Alwal, Hyderabad"
   },
   {
     avatar: "https://sunshinebji.com/img/doctors/drratnakr.png",
-    // rating: "Outstanding",
-    text: "Very transparent pricing with no hidden costs. They helped us design our 3BHK within budget while maintaining good quality and aesthetics. Honest and reliable team.",
-    name: "Dr.Ratnakar",
+    text: "Very transparent pricing with no hidden costs...",
+    name: "Dr. Ratnakar",
+    designation: "(KIMS-SUNSHINE) Orthopedic Surgeon", // Added designation
     address: "Kompally, Hyderabad"
   },
   {
     avatar: sunilimage,
-    // rating: "Highly Recommended",
-    text: "We got our 4BHK interiors done by Deeraj Interiors. The design is modern, functional, and perfectly aligned with our lifestyle. Every space is thoughtfully planned with great attention to detail.",
-    name: "Dr.Sunil & Dr.Savya",
+    text: "We got our 4BHK interiors done by Deeraj Interiors...",
+    name: "Dr. Sunil & Dr. Savya",
+    designation: "Medical Professionals", // Added designation
     address: "Suchitra, Hyderabad"
   },
   {
     avatar: sudhakar,
-    // rating: "Perfect Execution",
-    text: "From design to final handover, everything was handled professionally. The transformation of our 4BHK home is beautiful. Highly recommend them for complete home interiors.",
-    name: "Mr.Sudhakar Chowdary",
+    text: "From design to final handover, everything was handled professionally...",
+    name: "Mr. Sudhakar Chowdary",
+    designation: "CEO, Tech Solutions", // Added designation
     address: "Alwal, Hyderabad"
   },
   {
     avatar: kalpana,
-    // rating: "Villa 68,Subshi forest edge",
-    text: "One of our biggest concerns was timelines, but the team delivered our 3BHK interiors exactly as promised. The execution was smooth, well-planned, and completed without delays.",
-    name: "Mr. Chandan & Mrs.Kalpana",
+    text: "One of our biggest concerns was timelines...",
+    name: "Mr.Chandan & Mrs.Kalpana",
+    designation: "Business Owners", // Added designation
     address: "Madhapur, Hyderabad"
-  },
-  // {
-  //   avatar: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=300&fit=crop&crop=faces",
-  //   rating: "Elegant & Functional",
-  //   text: "They created a beautiful yet practical living + dining space for our family. Guests keep asking who did the interiors!",
-  //   name: "Meghana Varma",
-  //   address: "Manikonda, Hyderabad"
-  // },
-  // {
-  //   avatar: "https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=300&h=300&fit=crop&crop=faces",
-  //   rating: "Top Class",
-  //   text: "Premium materials, clean workmanship, and on-time completion. Our office cabin looks like a high-end corporate setup now.",
-  //   name: "Vikram Singh",
-  //   address: "Hitech City, Hyderabad"
-  // },
-  // {
-  //   avatar: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=300&fit=crop&crop=faces",
-  //   rating: "Beyond Expectations",
-  //   text: "We just wanted minor changes but they suggested better ideas that completely transformed our 2BHK. Truly impressive!",
-  //   name: "Lakshmi Iyer",
-  //   address: "Uppal, Hyderabad"
-  // },
-  // {
-  //   avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop&crop=faces",
-  //   rating: "Creative & Reliable",
-  //   text: "Loved the creative wall panels and lighting concepts. Team was very patient and completed everything within budget.",
-  //   name: "Harsha Vardhan",
-  //   address: "Secunderabad, Hyderabad"
-  // }
+  }
 ];
+
 
 const heroSlides = [
   { type: 'image', image: "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=2340&q=100", tagline: "Luxury Living Spaces Tailored to Your Taste" },
@@ -2816,6 +2789,7 @@ export default function Home() {
                       
                     </div>
                     <div className="home-testimonial-name-below">{item.name}</div>
+                    <div className="home-testimonial-designation">{item.designation}</div>
                   </div>
                   <div className="home-testimonial-right">
                    

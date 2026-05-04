@@ -279,9 +279,9 @@ import './About-us.css';
 
 import shanthiImg from '../../assets/shanti madam image.png';
 
-import sunderimg from '../../assets/sunder sir image.png';
+// import sunderimg from '../../assets/sunder sir image.png';
 
-import Seshagiriimg from '../../assets/sashagiri sir.png';
+import Seshagiriimg from '../../assets/sashusir photo.jpeg';
 
 const AboutUs = () => {
 
@@ -315,7 +315,7 @@ const AboutUs = () => {
 
     role: "Founder & Managing Director",
 
-    bio: "Ms. Shanthi leads Deeraj Interiors with a strong emphasis on structured operations, customer experience, and sustainable brand growth. She is committed to building a professionally managed modular manufacturing ecosystem.",
+    bio: "Ms. Shanthi’s leadership at Deeraj Interiors is defined by a commitment to operational rigor. By integrating advanced modular manufacturing processes, she has successfully bridged the gap between creative design and industrial efficiency. This focus on structured operations allows the firm to deliver consistent, high-quality results while scaling sustainably. Her dedication to customer-centric growth ensures that as Deeraj Interiors expands, the core promise of quality and professional management remains uncompromised.",
 
     image: shanthiImg
 
@@ -327,9 +327,9 @@ const AboutUs = () => {
 
       role: "Director – Operations | Sales | Execution",
 
-      bio: "Mr. Sunder plays a key role in driving sales growth while overseeing factory production, project execution, and quality control.",
+      bio: "Mr. Sunder serves as the operational backbone of the organization, seamlessly bridging the gap between market demand and technical execution. By overseeing the entire lifecycle of a project—from the initial sales strategy to the final quality audit—he ensures that the company’s promise of excellence is realized in every square foot produced. His unique dual-focus on sales growth and factory production allows for a highly responsive manufacturing process that adapts to client needs without ever compromising on industrial precision or project timelines.",
 
-      image: sunderimg
+      image: "https://cdn.vectorstock.com/i/1000v/08/40/user-icon-male-person-profile-avatar-symbol-vector-20910840.jpg"
 
     },
 
@@ -339,7 +339,7 @@ const AboutUs = () => {
 
       role: "Advisory Director – Strategy | Expansion",
 
-      bio: "Mr. Seshagiri Raju supports strategic planning, business expansion, and sales development initiatives.",
+      bio: "MMr. Seshagiri Raju plays a pivotal role in the organizational evolution of the company. His contributions span the critical pillars of strategic planning and sales development, creating a roadmap for sustainable business growth. He works at the intersection of market analysis and business development, ensuring that every expansion effort is backed by data and strategic logic. His leadership in sales development has been instrumental in broadening the brand’s reach and establishing a strong, resilient market presence.",
 
       image: Seshagiriimg  
 
