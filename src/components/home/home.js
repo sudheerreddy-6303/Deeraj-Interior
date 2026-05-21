@@ -2326,6 +2326,14 @@ export default function Home() {
   const [currentPair, setCurrentPair] = React.useState(0);
   const [whatsappOpen, setWhatsappOpen] = useState(false);
 
+  // Mobile detection
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   // Hero slideshow state
   const [heroIndex, setHeroIndex] = useState(0);
   const [heroFading, setHeroFading] = useState(false);
@@ -2549,12 +2557,29 @@ export default function Home() {
       )}
 
       {/* HERO SECTION - With Left/Right Navigation Buttons */}
-      <header className="home-hero" style={{ position: 'relative', overflow: 'hidden', minHeight: '100vh', height: '100vh' }}>
+      <header className="home-hero" style={isMobile ? {
+        position: 'relative',
+        overflow: 'hidden',
+        background: '#111',
+        display: 'block',
+      } : {
+        position: 'relative',
+        overflow: 'hidden',
+        minHeight: '100vh',
+        height: '100vh',
+      }}>
 
         {heroSlides.map((slide, i) => (
           <div
             key={i}
-            style={{
+            style={isMobile ? {
+              position: i === heroIndex ? 'relative' : 'absolute',
+              inset: i === heroIndex ? 'unset' : 0,
+              opacity: i === heroIndex ? 1 : 0,
+              transition: 'opacity 0.8s ease-in-out',
+              zIndex: i === heroIndex ? 0 : -1,
+              width: '100%',
+            } : {
               position: 'absolute',
               inset: 0,
               opacity: i === heroIndex ? 1 : 0,
@@ -2565,7 +2590,12 @@ export default function Home() {
             <img
               src={slide.image}
               alt={`Hero slide ${i + 1}`}
-              style={{
+              style={isMobile ? {
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                objectFit: 'contain',
+              } : {
                 width: '100%',
                 height: '100%',
                 objectFit: 'cover',
@@ -2581,7 +2611,7 @@ export default function Home() {
           onClick={goToPrevSlide}
           style={{
             position: 'absolute',
-            left: '20px',
+            left: isMobile ? '10px' : '20px',
             top: '50%',
             transform: 'translateY(-50%)',
             zIndex: 3,
@@ -2589,9 +2619,9 @@ export default function Home() {
             color: 'white',
             border: 'none',
             borderRadius: '50%',
-            width: '50px',
-            height: '50px',
-            fontSize: '24px',
+            width: isMobile ? '36px' : '50px',
+            height: isMobile ? '36px' : '50px',
+            fontSize: isMobile ? '16px' : '24px',
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
@@ -2610,7 +2640,7 @@ export default function Home() {
           onClick={goToNextSlide}
           style={{
             position: 'absolute',
-            right: '20px',
+            right: isMobile ? '10px' : '20px',
             top: '50%',
             transform: 'translateY(-50%)',
             zIndex: 3,
@@ -2618,9 +2648,9 @@ export default function Home() {
             color: 'white',
             border: 'none',
             borderRadius: '50%',
-            width: '50px',
-            height: '50px',
-            fontSize: '24px',
+            width: isMobile ? '36px' : '50px',
+            height: isMobile ? '36px' : '50px',
+            fontSize: isMobile ? '16px' : '24px',
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
@@ -2636,15 +2666,26 @@ export default function Home() {
 
         {/* NO OVERLAY - COMPLETELY REMOVED */}
 
-        <div className="home-hero-content" style={{ 
-          position: 'relative', 
-          zIndex: 2, 
-          height: '100%', 
-          display: 'flex', 
-          flexDirection: 'column', 
-          justifyContent: 'flex-end', 
+        {/* Dots — on mobile shown below image as a block element, on desktop overlaid */}
+        <div className="home-hero-content" style={isMobile ? {
+          position: 'relative',
+          zIndex: 2,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          paddingBottom: '12px',
+          paddingTop: '10px',
+          background: '#111',
+          textAlign: 'center',
+        } : {
+          position: 'relative',
+          zIndex: 2,
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'flex-end',
           paddingBottom: '80px',
-          textAlign: 'center'
+          textAlign: 'center',
         }}>
 
           <div className="home-hero-buttons">
@@ -2662,7 +2703,7 @@ export default function Home() {
             </button>
           </div>
 
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '30px' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: isMobile ? '0' : '30px' }}>
             {heroSlides.map((_, i) => (
               <span
                 key={i}
