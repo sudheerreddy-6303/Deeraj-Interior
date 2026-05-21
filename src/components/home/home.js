@@ -2263,7 +2263,10 @@ import sridharreddy from '../../assets/sridhar vreddy sir.jpeg';
 import anveshreddy from "../../assets/anvesh reddy sir.jpeg";
 import sunilimage from "../../assets/dr sunil sir image1.jpeg";
 import sudhakar from "../../assets/sudhakar sir image1.jpeg";
-import kalpana from "../../assets/kalpana madam image.jpeg"
+import kalpana from "../../assets/kalpana madam image.jpeg";
+import First from "../../assets/first add image.png";
+import Second from "../../assets/add Second image.png";
+import Third from "../../assets/add Third image.png";
 
 import './home.css';
 
@@ -2272,67 +2275,50 @@ const testimonials = [
     avatar: sridharreddy,
     text: "Deeraj Interiors provided exceptional, timely, and professional designs for Trividya College...",
     name: "Mr. Sreedhar Reddy",
-    designation: "MD & CEO, Trividya College", // Added designation
+    designation: "MD & CEO, Trividya College",
     address: "Suchitra, Hyderabad"
   },
   {
     avatar: anveshreddy,
     text: "The quality of materials and finishing is outstanding...",
     name: "Mr. Anvesh Reddy",
-    designation: "Seed Development chairman/TS", // Added designation
+    designation: "Seed Development chairman/TS",
     address: "Alwal, Hyderabad"
   },
   {
     avatar: "https://sunshinebji.com/img/doctors/drratnakr.png",
     text: "Very transparent pricing with no hidden costs...",
     name: "Dr. Ratnakar",
-    designation: "(KIMS-SUNSHINE) Orthopedic Surgeon", // Added designation
+    designation: "(KIMS-SUNSHINE) Orthopedic Surgeon",
     address: "Kompally, Hyderabad"
   },
   {
     avatar: sunilimage,
     text: "We got our 4BHK interiors done by Deeraj Interiors...",
     name: "Dr. Sunil & Dr. Savya",
-    designation: "Medical Professionals", // Added designation
+    designation: "Medical Professionals",
     address: "Suchitra, Hyderabad"
   },
   {
     avatar: sudhakar,
     text: "From design to final handover, everything was handled professionally...",
     name: "Mr. Sudhakar Chowdary",
-    designation: "CEO, Tech Solutions", // Added designation
+    designation: "CEO, Tech Solutions",
     address: "Alwal, Hyderabad"
   },
   {
     avatar: kalpana,
     text: "One of our biggest concerns was timelines...",
     name: "Mr.Chandan & Mrs.Kalpana",
-    designation: "Business Owners", // Added designation
+    designation: "Business Owners",
     address: "Madhapur, Hyderabad"
   }
 ];
 
-
 const heroSlides = [
-  { type: 'image', image: "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=2340&q=100", tagline: "Luxury Living Spaces Tailored to Your Taste" },
-  { type: 'image', image: "https://www.mydomaine.com/thmb/kqpD_FfR-tqNAxxWuDCBVgZUpmY=/2000x0/filters:no_upscale():strip_icc()/RD_LaurelWay_0111_F-43c9ae05930b4c0682d130eee3ede5df.jpg", tagline: "Modern Kitchens Where Memories Are Made" },
-  { type: 'image', image: "https://www.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_33053395.htm#fromView=search&page=1&position=4&uuid=28d0ee48-c6b6-4b91-8308-302e94fb0ca0&query=INTERIOR+DESIGN+", tagline: "Every Corner Crafted with Passion" },
-  { type: 'image', image: "https://www.mydomaine.com/thmb/aJrVHaGS-hJNZbCod1-hGgDTQvE=/1500x0/filters:no_upscale():strip_icc()/rustic-bedrooms-8-44cbcb704764478a9c8af7bc5ecd9d63.jpg", tagline: "Dreamy Bedrooms Designed for Deep Rest" },
-  { type: 'image', image: "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=2340&q=100", tagline: "Timeless Dining Spaces for Cherished Moments" },
-  { type: 'image', image: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=2340&q=100", tagline: "Refined Aesthetics for the Modern Home" },
-  { type: 'image', image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=2340&q=100", tagline: "Sophisticated Interiors for Discerning Homeowners" },
-  { type: 'image', image: "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=2340&q=100", tagline: "Craftsmanship & Detail in Every Corner" },
-  { type: 'image', image: "https://cdn.home-designing.com/wp-content/uploads/2018/03/home-office-setup.jpg", tagline: "Inspired Workspaces That Fuel Creativity" },
-  { type: 'image', image: "https://www.thespruce.com/thmb/SDKwWDl5Qf0OchfS0wepZn3AEvE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/perfect-spa-retreat-style-bathrooms-1975792-hero-f565696830d147c08dae9d0ef8c8a59c.jpg", tagline: "Spa-Like Bathrooms for Ultimate Relaxation" },
-  { type: 'image', image: "https://germaniaconstruction.com/wp-content/uploads/2022/11/park-city-custom-home-builder-great-room.jpg", tagline: "Elegant Spaces That Tell Your Story" },
-  { type: 'image', image: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=2340&q=100", tagline: "Where Comfort Meets Contemporary Design" },
-  { type: 'image', image: "https://images.squarespace-cdn.com/content/v1/65a8583b3f2bb32732bff587/fa5d488b-e385-4c3b-a80a-5b2a40ba968c/1897+Lilac+Ln-44.jpg", tagline: "Transforming Houses into Dream Homes" },
-  { type: 'image', image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2340&q=100", tagline: "Bold Statements in Every Room We Design" },
-  { type: 'image', image: "https://www.bhg.com/thmb/tMC_sOM2oF-NhItXBZOChTXSFUs=/4000x0/filters:no_upscale():strip_icc()/Open-concept-living-room-TWP0380-CV1hghhEaBBAkX_uv8K9cw-3313dfd39e2b42f5b37f43b8dfa14e08.jpg", tagline: "Where Architecture Meets Artistic Vision" },
-  { type: 'image', image: "https://www.decorilla.com/online-decorating/wp-content/uploads/2022/10/Modern-open-floor-plan-design-by-Decorilla-designer-Alessia-G.jpeg", tagline: "Living Rooms Designed for Life & Laughter" },
-  { type: 'image', image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=2340&q=100", tagline: "Spaces That Inspire, Rooms That Delight" },
-  { type: 'image', image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2340&q=100", tagline: "Premium Finishes, Timeless Design" },
-  { type: 'image', image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=2340&q=100", tagline: "Kitchens Built for Culinary Dreams" },
+  { type: 'image', image: First },
+  // { type: 'image', image: Second },
+  // { type: 'image', image: Third },
 ];
 
 export default function Home() {
@@ -2352,7 +2338,53 @@ export default function Home() {
   const [offerPhone, setOfferPhone] = useState('');
   const [offerSubmitted, setOfferSubmitted] = useState(false);
 
-  // Helper function to open WhatsApp with pre-filled message
+  // Products Auto Scroll
+  const productsRef = React.useRef(null);
+  const [isHovering, setIsHovering] = useState(false);
+
+  const products = [
+    { name: "Book Shelf", image: "https://m.media-amazon.com/images/I/81irP73vuqL.jpg" },
+    { name: "Book Shelf", image: "https://ashleyfurniture.scene7.com/is/image/AshleyFurniture/H600000035_2?fit=fit&wid=1200&hei=900" },
+    { name: "Modern Center Table", image: "https://m.media-amazon.com/images/I/51Oht6zQFML._AC_UF894,1000_QL80_.jpg" },
+    { name: "Printed Melamine Dinner Plate", image: "https://m.media-amazon.com/images/I/71tFMmZr3dL._AC_UF894,1000_QL80_.jpg" },
+    { name: "Flower Vase", image: "https://m.media-amazon.com/images/I/71R33gKo8hL.jpg_BO30,255,255,255_UF750,750_SR1910,1000,0,C_QL100_.jpg" },
+    { name: "Classic Wall Art", image: "https://m.media-amazon.com/images/I/91FtfQJ-hfL._AC_UF894,1000_QL80_.jpg" },
+    { name: "Green Aluminium Deer Sculpture", image: "https://m.media-amazon.com/images/S/aplus-media-library-service-media/dbfff93e-7141-4777-84dc-9b7220c66674.__CR0,0,970,600_PT0_SX970_V1___.jpg" },
+    { name: "Decoration Leaf", image: "https://m.media-amazon.com/images/S/aplus-media-library-service-media/03870a4f-9af8-4a26-b94f-10f922dd6a01.__CR0,0,970,600_PT0_SX970_V1___.jpg" },
+    { name: "Beautiful Wall Mirror", image: "https://m.media-amazon.com/images/I/71yIOkGTTIL.jpg_BO30,255,255,255_UF750,750_SR1910,1000,0,C_QL100_.jpg" },
+    { name: "Gold Aluminium Face Sculpture", image: "https://salsify-ecdn.com/images/0de564332f8386e2f3c73905415624e8.jpg" },
+    { name: "Black Alloy Metal Floral Shape", image: "https://m.media-amazon.com/images/S/aplus-media-library-service-media/b3b53ac2-4451-48a4-b85e-ffff6650c5c0.__CR0,0,800,600_PT0_SX800_V1___.jpg" },
+    { name: "Gold Aluminium Antique Leaf", image: "https://m.media-amazon.com/images/S/aplus-media-library-service-media/7f63a722-0f87-4268-9127-9667b2109201.__CR0,0,970,600_PT0_SX970_V1___.jpg" },
+  ];
+
+  // Auto Scroll Effect for Products
+  useEffect(() => {
+    const scrollContainer = productsRef.current;
+    if (!scrollContainer) return;
+
+    let scrollInterval;
+
+    const startAutoScroll = () => {
+      scrollInterval = setInterval(() => {
+        if (scrollContainer) {
+          const cardWidth = 280 + 20;
+          scrollContainer.scrollLeft += cardWidth;
+
+          if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth - 50) {
+            scrollContainer.scrollLeft = 0;
+          }
+        }
+      }, 2500);
+    };
+
+    if (!isHovering) {
+      startAutoScroll();
+    }
+
+    return () => clearInterval(scrollInterval);
+  }, [isHovering]);
+
+  // Helper function to open WhatsApp
   const openWhatsApp = (message) => {
     const phone = "919000700930";
     const encodedMessage = encodeURIComponent(message);
@@ -2395,22 +2427,49 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  // Hero slideshow auto-rotate — 2s per image
+  // Hero slideshow auto-rotate - disabled when user interacts
+  const [autoRotate, setAutoRotate] = useState(true);
+  
   useEffect(() => {
+    if (!autoRotate) return;
+    
     const timer = setTimeout(() => {
       setHeroFading(true);
       setTimeout(() => {
         setHeroIndex((prev) => (prev + 1) % heroSlides.length);
         setHeroFading(false);
       }, 500);
-    }, 2000);
+    }, 5000);
+    
     return () => clearTimeout(timer);
-  }, [heroIndex]);
+  }, [heroIndex, autoRotate]);
+
+  const goToPrevSlide = () => {
+    setAutoRotate(false);
+    setHeroFading(true);
+    setTimeout(() => {
+      setHeroIndex((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
+      setHeroFading(false);
+      // Resume auto-rotate after 10 seconds of inactivity
+      setTimeout(() => setAutoRotate(true), 10000);
+    }, 500);
+  };
+
+  const goToNextSlide = () => {
+    setAutoRotate(false);
+    setHeroFading(true);
+    setTimeout(() => {
+      setHeroIndex((prev) => (prev + 1) % heroSlides.length);
+      setHeroFading(false);
+      // Resume auto-rotate after 10 seconds of inactivity
+      setTimeout(() => setAutoRotate(true), 10000);
+    }, 500);
+  };
 
   return (
     <div className="home-container">
 
-      {/* ── OFFER POSTER (shows on page load) ── */}
+      {/* Offer Poster */}
       {showPoster && (
         <div className="offer-poster-overlay" onClick={handleClosePoster}>
           <div className="offer-poster-container" onClick={(e) => e.stopPropagation()}>
@@ -2448,18 +2507,14 @@ export default function Home() {
         </div>
       )}
 
-      {/* ── OFFER POPUP (shows after 30 seconds) ── */}
+      {/* Offer Popup */}
       {showOfferPopup && (
         <div className="offer-overlay" onClick={(e) => { if (e.target.classList.contains('offer-overlay')) handleClosePopup(); }}>
           <div className="offer-popup">
             <button className="offer-close-btn" onClick={handleClosePopup}>✕</button>
             <div className="offer-popup-badge">🎉 LIMITED TIME OFFER</div>
             <div className="offer-popup-header">
-              <img
-                src="https://img1.wsimg.com/isteam/ip/e7e3142b-3f26-4173-bc29-b2315178edb8/DI%20logo%20(2).png/:/rs=w:559,h:192,cg:true,m/cr=w:559,h:192/qt=q:95"
-                alt="Deeraj Interiors"
-                className="offer-popup-logo"
-              />
+              <img src="https://img1.wsimg.com/isteam/ip/e7e3142b-3f26-4173-bc29-b2315178edb8/DI%20logo%20(2).png/:/rs=w:559,h:192,cg:true,m/cr=w:559,h:192/qt=q:95" alt="Deeraj Interiors" className="offer-popup-logo" />
               <h2 className="offer-popup-title">Transform Your Home<br /><span>in Just 45 Days!</span></h2>
             </div>
             <div className="offer-popup-perks">
@@ -2493,51 +2548,104 @@ export default function Home() {
         </div>
       )}
 
-      {/* ── UPDATED HERO SECTION with slideshow ── */}
-      <header className="home-hero" style={{ position: 'relative', overflow: 'hidden' }}>
+      {/* HERO SECTION - With Left/Right Navigation Buttons */}
+      <header className="home-hero" style={{ position: 'relative', overflow: 'hidden', minHeight: '100vh', height: '100vh' }}>
 
-        {/* Background image layers — crossfade via opacity */}
         {heroSlides.map((slide, i) => (
           <div
             key={i}
             style={{
               position: 'absolute',
               inset: 0,
-              backgroundImage: `url('${slide.image}')`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
               opacity: i === heroIndex ? 1 : 0,
-              transition: 'opacity 0.5s ease-in-out',
-              zIndex: 0
-            }}
-          />
-        ))}
-
-        {/* Dark overlay */}
-        <div style={{
-          position: 'absolute',
-          inset: 0,
-          background: 'linear-gradient(rgba(0,0,0,0.48), rgba(0,0,0,0.58))',
-          zIndex: 1
-        }} />
-
-        {/* Hero content */}
-        <div className="home-hero-content" style={{ position: 'relative', zIndex: 2 }}>
-          <h1 className="home-hero-title-home">
-            Interior <span className="home-highlight">Studio</span>
-          </h1>
-
-          {/* Animated tagline that changes with slide */}
-          <p
-            className="home-hero-subtitle"
-            style={{
-              opacity: heroFading ? 0 : 1,
-              transform: heroFading ? 'translateY(8px)' : 'translateY(0)',
-              transition: 'opacity 0.3s ease, transform 0.3s ease'
+              transition: 'opacity 0.8s ease-in-out',
+              zIndex: 0,
             }}
           >
-            {heroSlides[heroIndex].tagline}
-          </p>
+            <img
+              src={slide.image}
+              alt={`Hero slide ${i + 1}`}
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'center center',
+                display: 'block',
+              }}
+            />
+          </div>
+        ))}
+
+        {/* Left Navigation Button */}
+        <button
+          onClick={goToPrevSlide}
+          style={{
+            position: 'absolute',
+            left: '20px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            zIndex: 3,
+            background: 'rgba(0,0,0,0.5)',
+            color: 'white',
+            border: 'none',
+            borderRadius: '50%',
+            width: '50px',
+            height: '50px',
+            fontSize: '24px',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.3s ease',
+            backdropFilter: 'blur(4px)',
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.8)'}
+          onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.5)'}
+        >
+          ❮
+        </button>
+
+        {/* Right Navigation Button */}
+        <button
+          onClick={goToNextSlide}
+          style={{
+            position: 'absolute',
+            right: '20px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            zIndex: 3,
+            background: 'rgba(0,0,0,0.5)',
+            color: 'white',
+            border: 'none',
+            borderRadius: '50%',
+            width: '50px',
+            height: '50px',
+            fontSize: '24px',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.3s ease',
+            backdropFilter: 'blur(4px)',
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.8)'}
+          onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.5)'}
+        >
+          ❯
+        </button>
+
+        {/* NO OVERLAY - COMPLETELY REMOVED */}
+
+        <div className="home-hero-content" style={{ 
+          position: 'relative', 
+          zIndex: 2, 
+          height: '100%', 
+          display: 'flex', 
+          flexDirection: 'column', 
+          justifyContent: 'flex-end', 
+          paddingBottom: '80px',
+          textAlign: 'center'
+        }}>
 
           <div className="home-hero-buttons">
             <button
@@ -2554,32 +2662,32 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Slide indicator dots */}
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '10px',
-            marginTop: '2.5rem'
-          }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '30px' }}>
             {heroSlides.map((_, i) => (
               <span
                 key={i}
-                onClick={() => { setHeroFading(true); setTimeout(() => { setHeroIndex(i); setHeroFading(false); }, 800); }}
+                onClick={() => {
+                  setAutoRotate(false);
+                  setHeroFading(true);
+                  setTimeout(() => {
+                    setHeroIndex(i);
+                    setHeroFading(false);
+                    setTimeout(() => setAutoRotate(true), 10000);
+                  }, 500);
+                }}
                 style={{
                   width: i === heroIndex ? '28px' : '10px',
                   height: '10px',
                   borderRadius: '5px',
-                  background: i === heroIndex ? 'orangered' : 'rgba(255,255,255,0.5)',
+                  background: i === heroIndex ? '#ff6600' : 'rgba(255,255,255,0.6)',
                   cursor: 'pointer',
                   transition: 'all 0.4s ease',
-                  display: 'inline-block'
                 }}
               />
             ))}
           </div>
         </div>
       </header>
-      {/* ── END UPDATED HERO SECTION ── */}
 
       {/* About Section */}
       <section className="home-about-section">
@@ -2607,7 +2715,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us - Fade Carousel */}
+      {/* Why Choose Us */}
       <section className="home-why-choose-section">
         <div className="home-why-wrapper">
           <div className="home-why-content">
@@ -2623,87 +2731,48 @@ export default function Home() {
               EXPLORE OUR EDGE →
             </button>
           </div>
-       <div className="single-image-container">
-  <div
-    className="single-image"
-    style={{
-      backgroundImage:
-        "url('https://images.unsplash.com/photo-1648881806148-e5c51179c826?q=80&w=1958&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    }}
-  ></div>
-</div>
-</div>
+          <div className="single-image-container">
+            <div
+              className="single-image"
+              style={{
+                backgroundImage: "url('https://images.unsplash.com/photo-1648881806148-e5c51179c826?q=80&w=1958&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+              }}
+            ></div>
+          </div>
+        </div>
       </section>
 
-      {/* Our Products Section */}
+      {/* Products Section - Auto Scroll */}
       <section className="home-products-section">
         <div className="home-products-wrapper">
           <h2>OUR PRODUCTS</h2>
           <p className="home-section-subtitle">
             Premium ready-to-use interior products crafted with quality & style
           </p>
-          <div className="home-products-grid">
-            <div className="home-product-card">
-              <div className="home-product-image" style={{ backgroundImage: `url('https://m.media-amazon.com/images/I/81irP73vuqL.jpg')` }}></div>
-              <h3>Book Shelf</h3>
-              <button className="home-btn home-primary home-small" onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}>View in Store →</button>
-            </div>
-            <div className="home-product-card">
-              <div className="home-product-image" style={{ backgroundImage: `url('https://ashleyfurniture.scene7.com/is/image/AshleyFurniture/H600000035_2?fit=fit&wid=1200&hei=900')` }}></div>
-              <h3>Book Shelf</h3>
-              <button className="home-btn home-primary home-small" onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}>View in Store →</button>
-            </div>
-            <div className="home-product-card">
-              <div className="home-product-image" style={{ backgroundImage: `url('https://m.media-amazon.com/images/I/51Oht6zQFML._AC_UF894,1000_QL80_.jpg')` }}></div>
-              <h3>Modern Center Table</h3>
-              <button className="home-btn home-primary home-small" onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}>View in Store →</button>
-            </div>
-            <div className="home-product-card">
-              <div className="home-product-image" style={{ backgroundImage: `url('https://m.media-amazon.com/images/I/71tFMmZr3dL._AC_UF894,1000_QL80_.jpg')` }}></div>
-              <h3>Printed Melamine Dinner Plate</h3>
-              <button className="home-btn home-primary home-small" onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}>View in Store →</button>
-            </div>
-            <div className="home-product-card">
-              <div className="home-product-image" style={{ backgroundImage: `url('https://m.media-amazon.com/images/I/71R33gKo8hL.jpg_BO30,255,255,255_UF750,750_SR1910,1000,0,C_QL100_.jpg')` }}></div>
-              <h3>Flower Vase</h3>
-              <button className="home-btn home-primary home-small" onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}>View in Store →</button>
-            </div>
-            <div className="home-product-card">
-              <div className="home-product-image" style={{ backgroundImage: `url('https://m.media-amazon.com/images/I/91FtfQJ-hfL._AC_UF894,1000_QL80_.jpg')` }}></div>
-              <h3>Classic Wall Art</h3>
-              <button className="home-btn home-primary home-small" onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}>View in Store →</button>
-            </div>
-            <div className="home-product-card">
-              <div className="home-product-image" style={{ backgroundImage: `url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/dbfff93e-7141-4777-84dc-9b7220c66674.__CR0,0,970,600_PT0_SX970_V1___.jpg')` }}></div>
-              <h3>Green Aluminium Deer Sculpture</h3>
-              <button className="home-btn home-primary home-small" onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}>View in Store →</button>
-            </div>
-            <div className="home-product-card">
-              <div className="home-product-image" style={{ backgroundImage: `url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/03870a4f-9af8-4a26-b94f-10f922dd6a01.__CR0,0,970,600_PT0_SX970_V1___.jpg')` }}></div>
-              <h3>Decoration Leaf</h3>
-              <button className="home-btn home-primary home-small" onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}>View in Store →</button>
-            </div>
-            <div className="home-product-card">
-              <div className="home-product-image" style={{ backgroundImage: `url('https://m.media-amazon.com/images/I/71yIOkGTTIL.jpg_BO30,255,255,255_UF750,750_SR1910,1000,0,C_QL100_.jpg')` }}></div>
-              <h3>Beautiful Wall Mirror</h3>
-              <button className="home-btn home-primary home-small" onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}>View in Store →</button>
-            </div>
-            <div className="home-product-card">
-              <div className="home-product-image" style={{ backgroundImage: `url('https://salsify-ecdn.com/images/0de564332f8386e2f3c73905415624e8.jpg')` }}></div>
-              <h3>Gold Aluminium Face Sculpture</h3>
-              <button className="home-btn home-primary home-small" onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}>View in Store →</button>
-            </div>
-            <div className="home-product-card">
-              <div className="home-product-image" style={{ backgroundImage: `url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/b3b53ac2-4451-48a4-b85e-ffff6650c5c0.__CR0,0,800,600_PT0_SX800_V1___.jpg')` }}></div>
-              <h3>Black Alloy Metal Floral Shape</h3>
-              <button className="home-btn home-primary home-small" onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}>View in Store →</button>
-            </div>
-            <div className="home-product-card">
-              <div className="home-product-image" style={{ backgroundImage: `url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/7f63a722-0f87-4268-9127-9667b2109201.__CR0,0,970,600_PT0_SX970_V1___.jpg')` }}></div>
-              <h3>Gold Aluminium Antique Leaf</h3>
-              <button className="home-btn home-primary home-small" onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}>View in Store →</button>
-            </div>
+          
+          <div 
+            className="home-products-horizontal-scroll" 
+            ref={productsRef}
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+          >
+            {products.map((product, index) => (
+              <div className="home-product-card" key={index}>
+                <div 
+                  className="home-product-image" 
+                  style={{ backgroundImage: `url('${product.image}')` }}
+                ></div>
+                <h3>{product.name}</h3>
+                <button 
+                  className="home-btn home-primary home-small" 
+                  onClick={() => window.open("https://id.vyaparify.com/deeraj-interiors", "_blank")}
+                >
+                  View in Store →
+                </button>
+              </div>
+            ))}
           </div>
+
           <div className="home-products-cta">
             <button className="home-btn home-primary home-explore-btn" onClick={() => window.open(`https://id.vyaparify.com/deeraj-interiors`, "_blank")}>
               View All Products →
@@ -2746,13 +2815,13 @@ export default function Home() {
                 <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
               </div>
             </div>
-           <div className="home-service-card" style={{ backgroundImage: `url('https://i.pinimg.com/736x/c3/56/d9/c356d90952bdbe0bde96672e4906a6c7.jpg` }}>
-  <div className="home-service-title">Wardrobes</div>
-  <div className="home-service-hover-content">
-    <p>Maximize your space with bespoke wardrobe solutions tailored to your lifestyle. From sleek walk-in closets to smart modular designs, we blend elegant aesthetics with intelligent storage.</p>
-    <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
-  </div>
-</div>
+            <div className="home-service-card" style={{ backgroundImage: `url('https://i.pinimg.com/736x/c3/56/d9/c356d90952bdbe0bde96672e4906a6c7.jpg')` }}>
+              <div className="home-service-title">Wardrobes</div>
+              <div className="home-service-hover-content">
+                <p>Maximize your space with bespoke wardrobe solutions tailored to your lifestyle. From sleek walk-in closets to smart modular designs, we blend elegant aesthetics with intelligent storage.</p>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
+              </div>
+            </div>
             <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')` }}>
               <div className="home-service-title">Outdoor Livings </div>
               <div className="home-service-hover-content">
@@ -2764,7 +2833,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Updated Testimonials - Horizontal Cards with Dots */}
+      {/* Testimonials */}
       <section className="home-testimonials-section" style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`,
         backgroundSize: 'cover',
@@ -2786,17 +2855,14 @@ export default function Home() {
                   <div className="home-testimonial-left">
                     <div className="home-avatar-circle">
                       <img src={item.avatar} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '15%' }} />
-                      
                     </div>
                     <div className="home-testimonial-name-below">{item.name}</div>
                     <div className="home-testimonial-designation">{item.designation}</div>
                   </div>
                   <div className="home-testimonial-right">
-                   
-                    <h3 className="home-testimonial-rating">{item.rating}</h3>
                     <p className="home-testimonial-text">"{item.text}"</p>
                     <div className="home-testimonial-address">{item.address}</div>
-                     <div className="home-stars">
+                    <div className="home-stars">
                       <span className="home-star">★</span><span className="home-star">★</span><span className="home-star">★</span><span className="home-star">★</span><span className="home-star">★</span>
                     </div>
                   </div>
@@ -2816,110 +2882,60 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact/Footer Section */}
- <footer className="di-footer">
-  <div className="di-footer-container">
-    <p className="di-footer-links">Privacy Policy | Terms and Conditions</p>
-    <p className="di-footer-title"><strong>DEERAJ INTERIORS</strong></p>
+      {/* Footer */}
+      <footer className="di-footer" style={{ backgroundColor: '#1a1a1a', color: '#ffffff' }}>
+        <div className="di-footer-container">
+          <div className="di-footer-addresses" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', marginBottom: '40px' }}>
+            <div className="di-footer-address-card">
+              <span className="di-footer-branch" style={{ color: '#ff6600', fontWeight: 'bold', fontSize: '1.1rem' }}>Suchitra Experience Center</span>
+              <p style={{ marginTop: '10px', color: '#ffffff' }}>PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>SUCHITRA CIRCLE, PET BASHEERABAD,<br/>HYDERABAD, TS 500067</p>
+              <p style={{ marginTop: '12px', color: '#ffcc80', fontWeight: 'bold' }}>📞 +91 9000700930</p>
+            </div>
+            <div className="di-footer-address-card">
+              <span className="di-footer-branch" style={{ color: '#ff6600', fontWeight: 'bold', fontSize: '1.1rem' }}>Medchal Modular Factory</span>
+              <p style={{ marginTop: '10px', color: '#ffffff' }}>Pudur Medchal,<br/>5 Minutes From ORR Exit No:06,<br/>HYDERABAD, TS 500033</p>
+              <p style={{ marginTop: '12px', color: '#ffcc80', fontWeight: 'bold' }}>📞 +91 9000700910</p>
+            </div>
+            <div className="di-footer-address-card">
+              <span className="di-footer-branch" style={{ color: '#ff6600', fontWeight: 'bold', fontSize: '1.1rem' }}>Nanakramguda, Hitech City Experience Center</span>
+              <p style={{ marginTop: '10px', color: '#ffffff' }}>1st Floor, Pavani Encore,<br/>342/P Narsingi - Nanakramguda Service Road,<br/>Adj to Nanakramguda Tollgate,<br/>Telangana 500075</p>
+              <p style={{ marginTop: '12px', color: '#ffcc80', fontWeight: 'bold' }}>📞 +91 9014300930</p>
+            </div>
+          </div>
 
-    {/* Split Address Section */}
-    <div className="di-footer-addresses">
-      
-      <div className="di-footer-address-card">
-        <span className="di-footer-branch">Experience Center</span>
-        <p>
-          PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>
-          SUCHITRA CIRCLE, PET BASHEERABAD,<br/>
-          HYDERABAD, TS 500067
-        </p>
+          <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
+            </div>
+          </div>
+
+          <p className="di-footer-links" style={{ color: '#cccccc', textAlign: 'center', fontWeight: '500', marginBottom: '15px' }}>Privacy Policy | Terms and Conditions</p>
+          <p className="di-footer-title" style={{ color: '#ff6600', textAlign: 'center', margin: '10px 0 20px 0', fontWeight: 'bold', fontSize: '1.45rem' }}>DEERAJ INTERIORS</p>
+          <p className="di-footer-copy" style={{ color: '#aaaaaa', textAlign: 'center', fontWeight: '500' }}>COPYRIGHT © DEERAJ TECHNOLOGIES PRIVATE LIMITED - ALL RIGHTS RESERVED.</p>
+        </div>
+      </footer>
+
+      {/* WhatsApp Floating Button */}
+      <div className="whatsapp-container">
+        <div className="whatsapp-float" onClick={() => setWhatsappOpen(!whatsappOpen)}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+        </div>
+
+        {whatsappOpen && (
+          <div className="whatsapp-popup">
+            <h3>Start WhatsApp Chat</h3>
+            <input type="text" placeholder="Your Name" id="wa-name" />
+            <input type="text" placeholder="Project Type (Home / Office / Consultation)" id="wa-project" />
+            <textarea placeholder="Your Message" id="wa-message"></textarea>
+            <button onClick={() => {
+              const name = document.getElementById("wa-name").value;
+              const project = document.getElementById("wa-project").value;
+              const message = document.getElementById("wa-message").value;
+              const finalMessage = `Hello Deeraj Interiors,%0A%0AName: ${name}%0AProject: ${project}%0AMessage: ${message}%0A%0AI am interested in discussing my interior project.`;
+              window.open(`https://wa.me/919000700930?text=${finalMessage}`, "_blank");
+            }}>Chat on WhatsApp</button>
+          </div>
+        )}
       </div>
-
-      <div className="di-footer-address-card">
-        <span className="di-footer-branch">Modular Factory</span>
-        <p>
-          Pudur Medchal,<br/>
-          5 Minutes From ORR Exit No:06,<br/>
-          HYDERABAD, TS 500033
-        </p>
-      </div>
-
-    </div>
-
-    <p className="di-footer-phone">+91 9000700910 / 9000700930 / 9014300930</p>
-
-    <p className="di-footer-copy">
-      COPYRIGHT © DEERAJ TECHNOLOGIES PRIVATE LIMITED - ALL RIGHTS RESERVED.
-    </p>
-  </div>
-</footer>
-
-      {/* WhatsApp Floating Button + Popup */}
-   <div className="whatsapp-container">
-
-  <div
-    className="whatsapp-float"
-    onClick={() => setWhatsappOpen(!whatsappOpen)}
-  >
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-      alt="WhatsApp"
-    />
-  </div>
-
-  {whatsappOpen && (
-    <div className="whatsapp-popup">
-      <h3>Start WhatsApp Chat</h3>
-
-      <input type="text" placeholder="Your Name" id="wa-name" />
-      <input type="text" placeholder="Project Type (Home / Office / Consultation)" id="wa-project" />
-      <textarea placeholder="Your Message" id="wa-message"></textarea>
-
-      <button
-        onClick={() => {
-          const name = document.getElementById("wa-name").value;
-          const project = document.getElementById("wa-project").value;
-          const message = document.getElementById("wa-message").value;
-
-          const finalMessage =
-            `Hello Deeraj Interiors,%0A%0A` +
-            `Name: ${name}%0A` +
-            `Project: ${project}%0A` +
-            `Message: ${message}%0A%0A` +
-            `I am interested in discussing my interior project.`;
-
-          window.open(
-            `https://wa.me/919000700930?text=${finalMessage}`,
-            "_blank"
-          );
-        }}
-      >
-        Chat on WhatsApp
-      </button>
-    </div>
-  )}
-</div>
-{/* ── Phone Call Floating Button ── */}
-  {/* <div className="home-phone-container">
-      <div
-        onClick={() => navigate("/contact-us")}
-        className="home-phone-float"
-        title="Contact Us / Call"
-        style={{ cursor: "pointer" }}
-      >
-        <svg
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-        >
-          <path
-            d="M20.9999 15.46C20.1199 15.46 19.2499 15.3 18.4099 15.06C18.1199 14.99 17.8099 15.05 17.5799 15.29L15.4099 18.12C12.2499 16.67 7.32988 11.79 5.87988 8.61998L8.70988 6.41998C8.95988 6.16998 9.01988 5.85998 8.94988 5.58998C8.69988 4.74998 8.53988 3.87998 8.53988 2.99998C8.53988 2.44998 8.08988 1.99998 7.53988 1.99998H4.49988C3.94988 1.99998 3.49988 2.44998 3.49988 2.99998C3.49988 13.28 10.7199 20.5 20.9999 20.5C21.5499 20.5 21.9999 20.05 21.9999 19.5V16.46C21.9999 15.91 21.5499 15.46 20.9999 15.46Z"
-            fill="#ffffff"
-          />
-        </svg>
-      </div>
-    </div> */}
-
 
     </div>
   );

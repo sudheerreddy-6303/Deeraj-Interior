@@ -272,287 +272,647 @@
 
 
 import React, { useState } from 'react';
+
 import { Helmet } from "react-helmet-async"; // ✅ ADDED
+
 import './About-us.css';
 
+import shanthiImg from '../../assets/shanti madam image.png';
+
+// import sunderimg from '../../assets/sunder sir image.png';
+
+import Seshagiriimg from '../../assets/sashusir photo.jpeg';
+
 const AboutUs = () => {
+
   const expertises = [
+
     { title: "Modular Kitchen Systems", desc: "Ergonomic, high-pressure laminate & acrylic finishes." },
+
     { title: "Smart Wardrobes", desc: "Floor-to-ceiling integration with intelligent lighting." },
+
     { title: "Corporate Workspaces", desc: "Performance-driven environments for modern teams." },
+
     { title: "Hospitality & Retail", desc: "Bespoke identity-driven interior execution." },
+
     { title: "Healthcare Interiors", desc: "Anti-bacterial, durable, and flow-optimized designs." },
+
     { title: "Institutional Design", desc: "Large-scale modular solutions for schools & hubs." }
+
   ];
+
+
 
   const [whatsappOpen, setWhatsappOpen] = useState(false);
 
-  const leaders = [
+
+
+ const leaders = [
+
+  {
+
+    name: "Ms. Shanthi",
+
+    role: "Founder & Managing Director",
+
+    bio: "Ms. Shanthi’s leadership at Deeraj Interiors is defined by a commitment to operational rigor. By integrating advanced modular manufacturing processes, she has successfully bridged the gap between creative design and industrial efficiency. This focus on structured operations allows the firm to deliver consistent, high-quality results while scaling sustainably. Her dedication to customer-centric growth ensures that as Deeraj Interiors expands, the core promise of quality and professional management remains uncompromised.",
+
+    image: shanthiImg
+
+  },
+
     {
-      name: "Ms. Shanthi",
-      role: "Founder & Managing Director",
-      bio: "Ms. Shanthi leads Deeraj Interiors with a strong emphasis on structured operations, customer experience, and sustainable brand growth. She is committed to building a professionally managed modular manufacturing ecosystem.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
-    },
-    {
+
       name: "Mr. Sunder",
+
       role: "Director – Operations | Sales | Execution",
-      bio: "Mr. Sunder plays a key role in driving sales growth while overseeing factory production, project execution, and quality control.",
-      image: "https://img.freepik.com/free-photo/businessman-with-his-arms-crossed-white-background_1368-6001.jpg"
+
+      bio: "Mr. Sunder serves as the operational backbone of the organization, seamlessly bridging the gap between market demand and technical execution. By overseeing the entire lifecycle of a project—from the initial sales strategy to the final quality audit—he ensures that the company’s promise of excellence is realized in every square foot produced. His unique dual-focus on sales growth and factory production allows for a highly responsive manufacturing process that adapts to client needs without ever compromising on industrial precision or project timelines.",
+
+      image: "https://cdn.vectorstock.com/i/1000v/08/40/user-icon-male-person-profile-avatar-symbol-vector-20910840.jpg"
+
     },
+
     {
+
       name: "Mr. Seshagiri Raju",
-      role: "Advisory Director – Strategy | Expansion",
-      bio: "Mr. Seshagiri Raju supports strategic planning, business expansion, and sales development initiatives.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+
+      role: "CEO & Co -Founder",
+
+      bio: "MMr. Seshagiri Raju plays a pivotal role in the organizational evolution of the company. His contributions span the critical pillars of strategic planning and sales development, creating a roadmap for sustainable business growth. He works at the intersection of market analysis and business development, ensuring that every expansion effort is backed by data and strategic logic. His leadership in sales development has been instrumental in broadening the brand’s reach and establishing a strong, resilient market presence.",
+
+      image: Seshagiriimg  
+
     }
+
   ];
 
+
+
   return (
+
     <>
+
       {/* ✅ SEO META TAGS */}
+
       <Helmet>
+
         <title>About Deeraj Interiors | Interior Designers in Hyderabad</title>
-        <meta 
-          name="description" 
-          content="Deeraj Interiors is a leading interior design company in Hyderabad offering modular kitchens, wardrobes, office interiors, and turnkey solutions." 
+
+        <meta
+
+          name="description"
+
+          content="Deeraj Interiors is a leading interior design company in Hyderabad offering modular kitchens, wardrobes, office interiors, and turnkey solutions."
+
         />
-        <meta 
-          name="keywords" 
-          content="Deeraj Interiors, interior designers Hyderabad, modular kitchen Hyderabad, home interiors Hyderabad, office interiors Hyderabad" 
+
+        <meta
+
+          name="keywords"
+
+          content="Deeraj Interiors, interior designers Hyderabad, modular kitchen Hyderabad, home interiors Hyderabad, office interiors Hyderabad"
+
         />
+
         <meta name="author" content="Deeraj Interiors" />
+
         <link rel="canonical" href="https://deerajinteriors.com/about" />
+
       </Helmet>
+
+
 
       <div className="about-us-premium">
 
+
+
         {/* --- CINEMATIC HERO --- */}
+
         <section className="hero-viewport">
+
           <div className="hero-background-overlay"></div>
+
           <div className="hero-content-overlay">
+
             <div className="container">
+
               <div className="reveal-text">
+
                 <span className="eyebrow">Established Excellence • Hyderabad</span>
 
+
+
                 {/* ✅ KEEP DESIGN SAME, JUST IMPROVE SEO TEXT */}
+
                 <h1 className="display-title">
-                  About Deeraj Interiors <br /> 
+
+                  About Deeraj Interiors <br />
+
                   <span className="outline-text">Precision Design Experts</span>
+
                 </h1>
 
+
+
                 <div className="hero-stats">
+
                   <div className="stat-item"><strong>15000</strong> <span>sq.ft Modular Factory</span></div>
+
                   <div className="stat-sep"></div>
+
                   <div className="stat-item"><strong>250+</strong> <span> Happy Customers</span></div>
+
                   <div className="stat-item"><strong>140+ </strong> <span>Projects Execution </span></div>
+
                   <div className="stat-item"><strong>1,40,000 </strong> <span>SFT work execution</span></div>
+
                 </div>
+
               </div>
+
             </div>
+
           </div>
+
         </section>
+
+
 
         {/* --- THE MANIFESTO --- */}
+
         <section className="section manifesto">
+
           <div className="container grid-manifesto">
+
             <div className="manifesto-label">
+
               <span className="vertical-text">SINCE 2024</span>
+
             </div>
+
             <div className="manifesto-content">
+
               <h2 className="heading-large">
+
                 Interior Designers in Hyderabad Bridging <span className="text-serif">Vision</span> and <span className="text-serif">Reality</span>.
+
               </h2>
+
               <p className="description-lead">
+
                 Deeraj Interiors is a leading interior design company in Hyderabad. We deliver modular kitchens, wardrobes, office interiors, and complete turnkey solutions with precision manufacturing.
+
               </p>
+
             </div>
+
           </div>
+
         </section>
+
+
 
         {/* --- STRATEGIC PILLARS --- */}
+
         <section className="section pillars">
+
           <div className="container">
+
             <div className="pillars-wrapper">
+
               <div className="pillar-image-box">
-                <img 
-                  src="https://t4.ftcdn.net/jpg/03/65/21/75/360_F_365217542_SqD0byWky3uWnd8NHDdxRF6j4mgzPKzh.jpg" 
+
+                <img
+
+                  src="https://t4.ftcdn.net/jpg/03/65/21/75/360_F_365217542_SqD0byWky3uWnd8NHDdxRF6j4mgzPKzh.jpg"
+
                   alt="Deeraj Interiors modular factory and experience center Hyderabad" // ✅ IMPROVED
+
                 />
+
                 <div className="experience-tag">Experience Center <br/><strong>Kompally</strong></div>
+
               </div>
+
+
 
               <div className="pillar-content">
-                <div className="pillar-block">
-                  <h3>The Vision</h3>
-                  <p>To become the definitive execution partner for architects and developers across Telangana.</p>
-                </div>
 
                 <div className="pillar-block">
-                  <h3>The Mission</h3>
-                  <p>To scale craftsmanship and deliver 100+ quality-controlled projects annually.</p>
+
+                  <h3>The Vision</h3>
+
+                  <p>To become the definitive execution partner for architects and developers across Telangana.</p>
+
                 </div>
+
+
+
+                <div className="pillar-block">
+
+                  <h3>The Mission</h3>
+
+                  <p>To scale craftsmanship and deliver 100+ quality-controlled projects annually.</p>
+
+                </div>
+
               </div>
+
             </div>
+
           </div>
+
         </section>
+
+
 
         {/* --- LEADERSHIP --- */}
+
         <section className="leadership-editorial-section">
+
           <div className="container">
+
             <div className="leadership-header">
+
               <span className="eyebrow">The Visionaries</span>
+
               <h2 className="display-title-md">Leadership Team</h2>
+
               <div className="accent-line"></div>
+
             </div>
+
+
 
             <div className="editorial-container">
+
               {leaders.map((leader, index) => (
+
                 <div key={index} className={`editorial-row ${index % 2 !== 0 ? 'reverse' : ''}`}>
+
                   <div className="editorial-image-wrap">
+
                     <div className="image-overlay-card">0{index + 1}</div>
 
+
+
                     {/* ✅ ALT TAG FIX */}
-                    <img 
-                      src={leader.image} 
-                      alt={`${leader.name} - Deeraj Interiors Leadership`} 
-                      className="leader-img" 
+
+                    <img
+
+                      src={leader.image}
+
+                      alt={`${leader.name} - Deeraj Interiors Leadership`}
+
+                      className="leader-img"
+
                     />
+
                   </div>
+
+
 
                   <div className="editorial-text-wrap">
+
                     <h3 className="leader-name">{leader.name}</h3>
+
                     <span className="leader-designation">{leader.role}</span>
+
                     <p className="leader-bio-text">{leader.bio}</p>
+
                   </div>
+
                 </div>
+
               ))}
+
             </div>
+
           </div>
+
         </section>
+
+
 
         {/* --- CLOSING --- */}
+
         <section className="final-cta">
+
           <div className="container">
+
             <h2>Looking for Interior Designers in Hyderabad?</h2>
+
             <p>Join the 100+ homeowners and developers choosing structured execution.</p>
 
+
+
             {/* ✅ INTERNAL LINK (SEO BOOST) */}
+
             <a href="/contact-us">
+
               <button className="btn-premium">Inquire About Your Project</button>
+
             </a>
+
           </div>
+
         </section>
 
+
+
         {/* REST OF YOUR CODE (WHATSAPP + FOOTER + PHONE BUTTON) — UNCHANGED */}
+
               {/* ================= WHATSAPP FLOAT ================= */}
+
 <div className="whatsapp-container">
 
+
+
   <div
+
     className="whatsapp-float"
+
     onClick={() => setWhatsappOpen(!whatsappOpen)}
+
   >
+
     <img
+
       src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+
       alt="WhatsApp"
+
     />
+
   </div>
 
+
+
   {whatsappOpen && (
+
     <div className="whatsapp-popup">
+
       <h3>Start WhatsApp Chat</h3>
 
+
+
       <input type="text" placeholder="Your Name" id="wa-name" />
+
       <input type="text" placeholder="Project Type (Home / Office / Consultation)" id="wa-project" />
+
       <textarea placeholder="Your Message" id="wa-message"></textarea>
 
+
+
       <button
+
         onClick={() => {
+
           const name = document.getElementById("wa-name").value;
+
           const project = document.getElementById("wa-project").value;
+
           const message = document.getElementById("wa-message").value;
 
+
+
           const finalMessage =
+
             `Hello Deeraj Interiors,%0A%0A` +
+
             `Name: ${name}%0A` +
+
             `Project: ${project}%0A` +
+
             `Message: ${message}%0A%0A` +
+
             `I am interested in discussing my interior project.`;
 
-          window.open(
-            `https://wa.me/919000700930?text=${finalMessage}`,
-            "_blank"
-          );
-        }}
-      >
-        Chat on WhatsApp
-      </button>
-    </div>
-  )}
-</div>
-<footer className="di-footer">
-  <div className="di-footer-container">
-    <p className="di-footer-links">Privacy Policy | Terms and Conditions</p>
-    <p className="di-footer-title"><strong>DEERAJ INTERIORS</strong></p>
 
-    {/* Split Address Section */}
-    <div className="di-footer-addresses">
+
+          window.open(
+
+            `https://wa.me/919000700930?text=${finalMessage}`,
+
+            "_blank"
+
+          );
+
+        }}
+
+      >
+
+        Chat on WhatsApp
+
+      </button>
+
+    </div>
+
+  )}
+
+</div>
+
+{/* Contact/Footer Section */}
+<footer className="di-footer" style={{
+  backgroundColor: '#1a1a1a',
+  color: '#ffffff'
+}}>
+  <div className="di-footer-container">
+
+    {/* Company Logo */}
+    {/* <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+      <img 
+        src="https://img1.wsimg.com/isteam/ip/e7e3142b-3f26-4173-bc29-b2315178edb8/DI%20logo%20(2).png/:/rs=w:559,h:192,cg:true,m/cr=w:559,h:192/qt=q:95" 
+        alt="Deeraj Interiors Logo" 
+        style={{ 
+          maxWidth: '220px', 
+          height: 'auto'
+        }} 
+      />
+    </div> */}
+
+    {/* Addresses Section */}
+    <div className="di-footer-addresses" style={{ 
+      display: 'grid', 
+      gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+      gap: '30px',
+      marginBottom: '40px'
+    }}>
       
       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Experience Center</span>
-        <p>
+        <span className="di-footer-branch" style={{ 
+          color: '#ff6600', 
+          fontWeight: 'bold',
+          fontSize: '1.1rem'
+        }}>
+          Suchitra Experience Center
+        </span>
+        <p style={{ marginTop: '10px', color: '#ffffff' }}>
           PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>
           SUCHITRA CIRCLE, PET BASHEERABAD,<br/>
           HYDERABAD, TS 500067
         </p>
+        <p style={{ marginTop: '12px', color: '#ffcc80', fontWeight: 'bold' }}>
+          📞 +91 9000700930
+        </p>
       </div>
 
-       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Modular Factory</span>
-        <p>
+      <div className="di-footer-address-card">
+        <span className="di-footer-branch" style={{ 
+          color: '#ff6600', 
+          fontWeight: 'bold',
+          fontSize: '1.1rem'
+        }}>
+          Medchal Modular Factory
+        </span>
+        <p style={{ marginTop: '10px', color: '#ffffff' }}>
           Pudur Medchal,<br/>
           5 Minutes From ORR Exit No:06,<br/>
           HYDERABAD, TS 500033
         </p>
+        <p style={{ marginTop: '12px', color: '#ffcc80', fontWeight: 'bold' }}>
+          📞 +91 9000700910
+        </p>
       </div>
 
+      <div className="di-footer-address-card">
+        <span className="di-footer-branch" style={{ 
+          color: '#ff6600', 
+          fontWeight: 'bold',
+          fontSize: '1.1rem'
+        }}>
+          Nanakramguda, Hitech City Experience Center
+        </span>
+        <p style={{ marginTop: '10px', color: '#ffffff' }}>
+          1st Floor, Pavani Encore,<br/>
+          342/P Narsingi - Nanakramguda Service Road,<br/>
+          Adj to Nanakramguda Tollgate,<br/>
+          Telangana 500075
+        </p>
+        <p style={{ marginTop: '12px', color: '#ffcc80', fontWeight: 'bold' }}>
+          📞 +91 9014300930
+        </p>
+      </div>
     </div>
 
-    <p className="di-footer-phone">+91 9000700910 / 9000700930 / 9014300930</p>
+    {/* Social Media Icons - Correct Brand Icons */}
+    <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
+        
+        {/* Facebook */}
+        <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://img.magnific.com/premium-vector/facebook-app-icon-social-media-logo-vector-illustration-meta_277909-402.jpg?semt=ais_hybrid&w=740&q=80" alt="Facebook" style={{ width: '28px', height: '28px' }} />
+        </a>
 
-    <p className="di-footer-copy">
-      COPYRIGHT © 2025 DEERAJ INTERIORS - ALL RIGHTS RESERVED.
+        {/* Instagram */}
+        <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://img.magnific.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?semt=ais_hybrid&w=740&q=80" alt="Instagram" style={{ width: '28px', height: '28px' }} />
+        </a>
+
+        {/* Twitter / X */}
+        <a href="https://www.linkedin.com/company/deerajinteriors/posts/?feedView=all" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" style={{ width: '28px', height: '28px' }} />
+        </a>
+
+        {/* Google */}
+        <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LMoozClIyyk2YLRSNagwTkpOskwyM01KSk5NSTMxtDKosDCxTEkxMDa3MEk1MrdMNvUSTMlITS1KzFLIzCtJLcrMLyoGADtiFx8&q=dheeraj+interiors&oq=deerajinteriors&gs_lcrp=EgZjaHJvbWUqDwgBEC4YDRivARjHARiABDIGCAAQRRg7Mg8IARAuGA0YrwEYxwEYgAQyDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDUxODRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://media.wired.com/photos/5926ffe47034dc5f91bed4e8/3:2/w_2560%2Cc_limit/google-logo.jpg" alt="Google" style={{ width: '28px', height: '28px' }} />
+        </a>
+
+        {/* YouTube */}
+        <a href="https://www.youtube.com/@Deeraj_Interiors" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/3840px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube" style={{ width: '30px', height: '22px' }} />
+        </a>
+
+      </div>
+    </div>
+
+    <p className="di-footer-links" style={{ 
+      color: '#cccccc', 
+      textAlign: 'center',
+      fontWeight: '500',
+      marginBottom: '15px'
+    }}>
+      Privacy Policy | Terms and Conditions
     </p>
+    
+    <p className="di-footer-title" style={{ 
+      color: '#ff6600', 
+      textAlign: 'center',
+      margin: '10px 0 20px 0',
+      fontWeight: 'bold',
+      fontSize: '1.45rem'
+    }}>
+      DEERAJ INTERIORS
+    </p>
+
+    <p className="di-footer-copy" style={{ 
+      color: '#aaaaaa', 
+      textAlign: 'center',
+      fontWeight: '500'
+    }}>
+      COPYRIGHT © DEERAJ TECHNOLOGIES PRIVATE LIMITED - ALL RIGHTS RESERVED.
+    </p>
+
   </div>
 </footer>
 
+
+
 {/* ── NEW: Phone Call Floating Button ── */}
+
      {/* ── Phone Call Floating Button ── */}
+
 {/* <div className="home-phone-container">
-  <a 
-    href="/contact-us" 
+
+  <a
+
+    href="/contact-us"
+
     className="home-phone-float"
+
     title="Contact Us / Call"
+
   >
-    <svg 
-      width="32" 
-      height="32" 
-      viewBox="0 0 24 24" 
-      fill="none" 
+
+    <svg
+
+      width="32"
+
+      height="32"
+
+      viewBox="0 0 24 24"
+
+      fill="none"
+
       xmlns="http://www.w3.org/2000/svg"
+
     >
-      <path 
-        d="M20.9999 15.46C20.1199 15.46 19.2499 15.3 18.4099 15.06C18.1199 14.99 17.8099 15.05 17.5799 15.29L15.4099 18.12C12.2499 16.67 7.32988 11.79 5.87988 8.61998L8.70988 6.41998C8.95988 6.16998 9.01988 5.85998 8.94988 5.58998C8.69988 4.74998 8.53988 3.87998 8.53988 2.99998C8.53988 2.44998 8.08988 1.99998 7.53988 1.99998H4.49988C3.94988 1.99998 3.49988 2.44998 3.49988 2.99998C3.49988 13.28 10.7199 20.5 20.9999 20.5C21.5499 20.5 21.9999 20.05 21.9999 19.5V16.46C21.9999 15.91 21.5499 15.46 20.9999 15.46Z" 
+
+      <path
+
+        d="M20.9999 15.46C20.1199 15.46 19.2499 15.3 18.4099 15.06C18.1199 14.99 17.8099 15.05 17.5799 15.29L15.4099 18.12C12.2499 16.67 7.32988 11.79 5.87988 8.61998L8.70988 6.41998C8.95988 6.16998 9.01988 5.85998 8.94988 5.58998C8.69988 4.74998 8.53988 3.87998 8.53988 2.99998C8.53988 2.44998 8.08988 1.99998 7.53988 1.99998H4.49988C3.94988 1.99998 3.49988 2.44998 3.49988 2.99998C3.49988 13.28 10.7199 20.5 20.9999 20.5C21.5499 20.5 21.9999 20.05 21.9999 19.5V16.46C21.9999 15.91 21.5499 15.46 20.9999 15.46Z"
+
         fill="#ffffff"
+
       />
+
     </svg>
+
   </a>
+
 </div> */}
 
 
-      </div>
-    </>
-  );
-};
 
+
+
+      </div>
+
+    </>
+
+  );
+
+};
 export default AboutUs;

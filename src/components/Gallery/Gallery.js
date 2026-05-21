@@ -261,6 +261,11 @@
 
 import React, { useState } from "react";
 import { FaUserCircle } from 'react-icons/fa'; // Added: Import User Icon
+import anveshreddy from "../../assets/anvesh reddy sir.jpeg";
+import sunilimage from "../../assets/dr sunil sir image1.jpeg";
+import sudhakar from "../../assets/sudhakar sir image1.jpeg";
+import kalpana from "../../assets/kalpana madam image.jpeg"
+import sridharreddy from '../../assets/sridhar vreddy sir.jpeg';
 import "./Gallery.css";
 
 const Gallery = () => {
@@ -270,8 +275,8 @@ const Gallery = () => {
   const clientProjects = [
     {
       id: "c1",
-      name: "Sudheer Reddy",
-      cover: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=800",
+      name: "Mr. Anvesh Reddy",
+      cover: anveshreddy,
       images: [
         "https://images.homify.com/v1575251056/p/photo/image/3278753/Bedroom.jpg",
         "https://images.woodenstreet.de/image/data%2FLooks%2F1.jpg",
@@ -281,8 +286,8 @@ const Gallery = () => {
     },
     {
       id: "c2",
-      name: "Priya Sharma",
-      cover: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800",
+      name: "Dr.Sunil Kumar",
+      cover: sunilimage,
       images: [
         "https://www.decorpot.com/images/1972745586modern-and-luxurious-living-room-interior-%20design-ideas_main.jpg",
         "https://images.pexels.com/photos/3926542/pexels-photo-3926542.jpeg?cs=srgb&dl=pexels-houzlook-3926542.jpg&fm=jpg",
@@ -291,14 +296,34 @@ const Gallery = () => {
     },
     {
       id: "c3",
-      name: "Amit Patel",
-      cover: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800",
+      name: "Mr. Sudhakar",
+      cover: sudhakar,
       images: [
         "https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_1280.jpg",
         "https://w0.peakpx.com/wallpaper/1009/686/HD-wallpaper-bathrooms-eclectic-interior-modern-interior-green-bathroom-ideas-for-the-bathroom-eclectic-bathrooms-style.jpg",
         "https://i.pinimg.com/736x/cd/8e/26/cd8e2620aee782e8865d8ea73a441955.jpg"
       ],
-    }
+    },
+        {
+        id: "c4",
+        name: "Mrs. kalpana",
+        cover: kalpana,
+        images: [
+          "https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_1280.jpg",
+          "https://w0.peakpx.com/wallpaper/1009/686/HD-wallpaper-bathrooms-eclectic-interior-modern-interior-green-bathroom-ideas-for-the-bathroom-eclectic-bathrooms-style.jpg",
+          "https://i.pinimg.com/736x/cd/8e/26/cd8e2620aee782e8865d8ea73a441955.jpg"
+        ],
+      },
+      {
+        id: "c5",
+        name: "Mr. Sridhar Reddy",
+        cover: sridharreddy,
+        images: [
+          "https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_1280.jpg",
+          "https://w0.peakpx.com/wallpaper/1009/686/HD-wallpaper-bathrooms-eclectic-interior-modern-interior-green-bathroom-ideas-for-the-bathroom-eclectic-bathrooms-style.jpg",
+          "https://i.pinimg.com/736x/cd/8e/26/cd8e2620aee782e8865d8ea73a441955.jpg"
+        ],
+      }
   ];
 
   const folders = [

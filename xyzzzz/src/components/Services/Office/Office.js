@@ -278,39 +278,148 @@ const Office = () => {
       </div>
 
       {/* Footer */}
-<footer className="di-footer">
+{/* Contact/Footer Section */}
+<footer className="di-footer" style={{
+  backgroundColor: '#1a1a1a',
+  color: '#ffffff'
+}}>
   <div className="di-footer-container">
-    <p className="di-footer-links">Privacy Policy | Terms and Conditions</p>
-    <p className="di-footer-title"><strong>DEERAJ INTERIORS</strong></p>
 
-    {/* Split Address Section */}
-    <div className="di-footer-addresses">
+    {/* Company Logo */}
+    {/* <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+      <img 
+        src="https://img1.wsimg.com/isteam/ip/e7e3142b-3f26-4173-bc29-b2315178edb8/DI%20logo%20(2).png/:/rs=w:559,h:192,cg:true,m/cr=w:559,h:192/qt=q:95" 
+        alt="Deeraj Interiors Logo" 
+        style={{ 
+          maxWidth: '220px', 
+          height: 'auto'
+        }} 
+      />
+    </div> */}
+
+    {/* Addresses Section */}
+    <div className="di-footer-addresses" style={{ 
+      display: 'grid', 
+      gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+      gap: '30px',
+      marginBottom: '40px'
+    }}>
       
       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Experience Center</span>
-        <p>
+        <span className="di-footer-branch" style={{ 
+          color: '#ff6600', 
+          fontWeight: 'bold',
+          fontSize: '1.1rem'
+        }}>
+          Suchitra Experience Center
+        </span>
+        <p style={{ marginTop: '10px', color: '#ffffff' }}>
           PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>
           SUCHITRA CIRCLE, PET BASHEERABAD,<br/>
           HYDERABAD, TS 500067
         </p>
+        <p style={{ marginTop: '12px', color: '#ffcc80', fontWeight: 'bold' }}>
+          📞 +91 9000700930
+        </p>
       </div>
 
       <div className="di-footer-address-card">
-        <span className="di-footer-branch">Modular Factory</span>
-        <p>
+        <span className="di-footer-branch" style={{ 
+          color: '#ff6600', 
+          fontWeight: 'bold',
+          fontSize: '1.1rem'
+        }}>
+          Medchal Modular Factory
+        </span>
+        <p style={{ marginTop: '10px', color: '#ffffff' }}>
           Pudur Medchal,<br/>
           5 Minutes From ORR Exit No:06,<br/>
           HYDERABAD, TS 500033
         </p>
+        <p style={{ marginTop: '12px', color: '#ffcc80', fontWeight: 'bold' }}>
+          📞 +91 9000700910
+        </p>
       </div>
 
+      <div className="di-footer-address-card">
+        <span className="di-footer-branch" style={{ 
+          color: '#ff6600', 
+          fontWeight: 'bold',
+          fontSize: '1.1rem'
+        }}>
+          Nanakramguda, Hitech City Experience Center
+        </span>
+        <p style={{ marginTop: '10px', color: '#ffffff' }}>
+          1st Floor, Pavani Encore,<br/>
+          342/P Narsingi - Nanakramguda Service Road,<br/>
+          Adj to Nanakramguda Tollgate,<br/>
+          Telangana 500075
+        </p>
+        <p style={{ marginTop: '12px', color: '#ffcc80', fontWeight: 'bold' }}>
+          📞 +91 9014300930
+        </p>
+      </div>
     </div>
 
-    <p className="di-footer-phone">+91 9000700910 / 9000700930 /9014300930 </p>
+    {/* Social Media Icons - Correct Brand Icons */}
+    <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
+        
+        {/* Facebook */}
+        <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://img.magnific.com/premium-vector/facebook-app-icon-social-media-logo-vector-illustration-meta_277909-402.jpg?semt=ais_hybrid&w=740&q=80" alt="Facebook" style={{ width: '28px', height: '28px' }} />
+        </a>
 
-    <p className="di-footer-copy">
-      COPYRIGHT © 2025 DEERAJ INTERIORS - ALL RIGHTS RESERVED.
+        {/* Instagram */}
+        <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://img.magnific.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?semt=ais_hybrid&w=740&q=80" alt="Instagram" style={{ width: '28px', height: '28px' }} />
+        </a>
+
+        {/* Twitter / X */}
+        <a href="https://www.linkedin.com/company/deerajinteriors/posts/?feedView=all" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" style={{ width: '28px', height: '28px' }} />
+        </a>
+
+        {/* Google */}
+        <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LMoozClIyyk2YLRSNagwTkpOskwyM01KSk5NSTMxtDKosDCxTEkxMDa3MEk1MrdMNvUSTMlITS1KzFLIzCtJLcrMLyoGADtiFx8&q=dheeraj+interiors&oq=deerajinteriors&gs_lcrp=EgZjaHJvbWUqDwgBEC4YDRivARjHARiABDIGCAAQRRg7Mg8IARAuGA0YrwEYxwEYgAQyDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDUxODRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://media.wired.com/photos/5926ffe47034dc5f91bed4e8/3:2/w_2560%2Cc_limit/google-logo.jpg" alt="Google" style={{ width: '28px', height: '28px' }} />
+        </a>
+
+        {/* YouTube */}
+        <a href="https://www.youtube.com/@Deeraj_Interiors" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/3840px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube" style={{ width: '30px', height: '22px' }} />
+        </a>
+
+      </div>
+    </div>
+
+    <p className="di-footer-links" style={{ 
+      color: '#cccccc', 
+      textAlign: 'center',
+      fontWeight: '500',
+      marginBottom: '15px'
+    }}>
+      Privacy Policy | Terms and Conditions
     </p>
+    
+    <p className="di-footer-title" style={{ 
+      color: '#ff6600', 
+      textAlign: 'center',
+      margin: '10px 0 20px 0',
+      fontWeight: 'bold',
+      fontSize: '1.45rem'
+    }}>
+      DEERAJ INTERIORS
+    </p>
+
+    <p className="di-footer-copy" style={{ 
+      color: '#aaaaaa', 
+      textAlign: 'center',
+      fontWeight: '500'
+    }}>
+      COPYRIGHT © DEERAJ TECHNOLOGIES PRIVATE LIMITED - ALL RIGHTS RESERVED.
+    </p>
+
   </div>
 </footer>
 

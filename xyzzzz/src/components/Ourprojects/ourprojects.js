@@ -363,111 +363,74 @@
 // export default OurProjects;
 
 
-// src/components/ourprojects/ourprojects.js
 import React, { useState } from 'react';
+import { FaUserCircle } from 'react-icons/fa';
 import './ourprojects.css';
 
 const projects = [
   {
-    title: "3BHK Interior – My Home Tridasa",
+    title: "My home tarkshaya",
     youtubeId: "mHPCmdXdE24",
-    client: "Mr. Moin",
-    clientImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-    location: "Kukatpally, Hyderabad",
+    client: "Mr. Naresh",
+    location: "kokapet, Hyderabad",
     projectValue: "₹13 Lakhs",
     testimonial: "Deeraj Interiors completed 3BHK interiors with excellent modular finish and installation quality was impressive. The team maintained good workmanship and delivered full project on time.",
     ctaText: "Watch Full Walkthrough →",
   },
   {
-    title: "NCL Sindhu 3BHK Kompally Hyderabad",
-    youtubeId: "mHPCmdXdE24",
-    client: "Client Name",
-    clientImage: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-    location: "Kompally, Hyderabad",
+    title: "Gorgeous Makeover of Mr. K.Raju Independent Home Bhimvaram Andhra Pradesh",
+    youtubeId: "mzg9jxGXaPE",
+    client: "Mr. K.Raju",
+    location: "Bhimvaram Andhra Pradesh",
     projectValue: "₹12.5 Lakhs",
     testimonial: "Very professional approach, excellent finishing touches and on-time handover. Highly recommended.",
     ctaText: "Watch Full Walkthrough →",
   },
   {
-    title: "Gorgeous Makeover of Mr. Mahender Independent Flat Alwal Hyderabad",
-    youtubeId: "7OiztXQrRcQ",
-    client: "Mr. Mahender",
-    clientImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
-    location: "Alwal, Hyderabad",
+    title: "Nsl East County",
+    youtubeId: "4gB_37HzH-4",
+    client: "Mr. Srinivas rao",
+    location: "Uppal Hyderabad",
     projectValue: "₹11 Lakhs",
     testimonial: "Transformed our old flat into a modern dream home. Superb work and cooperative team.",
     ctaText: "Watch Full Walkthrough →",
   },
   {
     title: "Beautifully Crafted Modular Kitchens",
-    youtubeId: "P31tLqpvEtw",
-    client: "Vignan Reddy",
-    clientImage: "https://images.unsplash.com/photo-1519085360753-38b2b54e3f7c?w=400&h=400&fit=crop&crop=face",
-    location: "Hyderabad & Andhra Pradesh",
+    youtubeId: "7OiztXQrRcQ",
+    client: "Mr.Mahendra",
+    location: "Alwal, Hyderabad",
     projectValue: "₹13 Lakhs",
     testimonial: "Deeraj Interiors completed 3BHK interiors with excellent modular finish and installation quality was impressive. The team maintained good workmanship and delivered full project on time.",
-    ctaText: "Watch Full Walkthrough →",  
+    ctaText: "Watch Full Walkthrough →", 
   },
   {
-    title: "LG Classic Home Interiors Hyderabad",
-    youtubeId: "PxyZkSwWJ84",
-    client: "Ramesh Reddy",
-    clientImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
-    location: "Hyderabad",
+    title: "NCL Sindhu kompally",
+    youtubeId: "Ae46w9YIJHQ",
+    client: "Dr.Ratnakar & Dr.Lalitha",
+    location: "kompally, Hyderabad",
     projectValue: "₹10 Lakhs",
     testimonial: "Luxury interiors executed with great attention to detail. Truly satisfied with the final outcome.",
     ctaText: "Watch Full Walkthrough →",
   },
   {
-    title: "Srinivasa Rao Beautiful Abode Uppal Hyderabad",
-    youtubeId: "4gB_37HzH-4",
-    client: "Mr. Srinivasa Rao",
-    clientImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
-    location: "Uppal, Hyderabad",
+    title: "Mr.Krishna murthy & Mrs.Divya Beautiful Home Abode Alwal Hyderabad",
+    youtubeId: "v-ILQISMb-I",
+    client: "Mr.Krishna murthy & Mrs.Divya",
+    location: "Alwal,Hyderabad",
     projectValue: "₹18 Lakhs",
     testimonial: "Luxury interiors executed with great attention to detail. Truly satisfied with the final outcome.",
     ctaText: "Watch Full Walkthrough →",
   },
   {
-    title: "Mr. Krishnamurthy & Mrs. Divya Madam 2BHK Alwal Hyderabad",
-    youtubeId: "v-ILQISMb-I",
-    client: "Mr. Krishnamurthy & Mrs. Divya",
-    clientImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
-    location: "Alwal, Hyderabad",
+    title: "NCL Sindhu kompally",
+    youtubeId: "A6itKyypZmQ",
+    client: "Dr.Sunil & Dr.Savya",
+    location: "kompally, Hyderabad",
     projectValue: "₹9.5 Lakhs",
     testimonial: "Beautiful false ceiling and modern furniture layout. Team was very punctual.",
     ctaText: "Watch Full Walkthrough →",
-  },
-  {
-    title: "Aparna Serenity 3BHK Render Video",
-    youtubeId: "mVBJ4BrYV_w",
-    client: "Leena Teresa",
-    clientImage: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
-    location: "Hyderabad",
-    projectValue: "₹9.5 Lakhs",
-    testimonial: "Beautiful false ceiling and modern furniture layout. Team was very punctual.",
-    ctaText: "Watch Full Walkthrough →",
-  },
-  {
-    title: "Deeraj Interiors - Beautiful Art Work & Deco Painting",
-    youtubeId: "xqK0gUujh5U",
-    client: "Jairam Rao",
-    clientImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-    location: "Hyderabad",
-    projectValue: "₹10 Lakhs",
-    testimonial: "Luxury interiors executed with great attention to detail. Truly satisfied with the final outcome.",
-    ctaText: "Watch Full Walkthrough →",
-  },
-  {
-    title: "Deeraj Interiors Home Furnishings & Decor Kompally",
-    youtubeId: "pppQxUat30g",
-    client: "Pawan Kalyan",
-    clientImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
-    location: "Kompally, Hyderabad",
-    projectValue: null,
-    testimonial: "Beautiful false ceiling and modern furniture layout. Team was very punctual.",
-    ctaText: "Watch Video →",
-  },
+  }
 ];
 
 const shorts = [
@@ -503,24 +466,61 @@ const shorts = [
   },
 ];
 
-const ITEMS_PER_PAGE = 6;
+// Helper Component to keep the UI consistent in both Original and Duplicate sets
+const ProjectCard = ({ project, uniqueKey }) => (
+  <div key={uniqueKey} className="project-item marquee-item">
+    <div className="video-thumbnail-wrapper">
+      <img
+        src={`https://img.youtube.com/vi/${project.youtubeId}/hqdefault.jpg`}
+        alt={project.title}
+        className="thumbnail"
+        loading="lazy"
+      />
+      <a
+        href={`https://www.youtube.com/watch?v=${project.youtubeId}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="play-overlay"
+      >
+        <div className="play-icon">▶</div>
+      </a>
+    </div>
+
+    <div className="project-details">
+      {project.client && (
+        <div className="client-header">
+          <div className="client-icon">
+            <FaUserCircle />
+          </div>
+          <h4 className="client-name">{project.client}</h4>
+        </div>
+      )}
+
+      {project.testimonial && (
+        <div className="testimonial">
+          <p className="testimonial-text">{project.testimonial}</p>
+        </div>
+      )}
+
+      <h3 className="project-title">{project.title}</h3>
+      <div className="project-meta">
+        <span className="project-location">{project.location}</span>
+      </div>
+
+      <a
+        href={`https://www.youtube.com/watch?v=${project.youtubeId}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="watch-cta"
+      >
+        {project.ctaText || "Watch Full Walkthrough →"}
+      </a>
+    </div>
+  </div>
+);
 
 function OurProjects() {
-  const [currentPage, setCurrentPage] = useState(1);
   const [whatsappOpen, setWhatsappOpen] = useState(false);
-
-  const totalPages = Math.ceil(projects.length / ITEMS_PER_PAGE);
-  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const visibleProjects = projects.slice(startIndex, startIndex + ITEMS_PER_PAGE);
-
-  const goToPage = (page) => {
-    if (page >= 1 && page <= totalPages) {
-      setCurrentPage(page);
-    }
-  };
-
-  const prevPage = () => goToPage(currentPage - 1);
-  const nextPage = () => goToPage(currentPage + 1);
 
   return (
     <div className="our-projects-page">
@@ -528,107 +528,30 @@ function OurProjects() {
         <h1 className="page-title">OUR PROJECTS</h1>
         <p className="page-subtitle">Transforming Spaces with Elegance & Style</p>
 
-        <div className="projects-grid">
-          {visibleProjects.map((project, index) => (
-            <div key={index} className="project-item">
-              <div className="video-thumbnail-wrapper">
-                <img
-                  src={`https://img.youtube.com/vi/${project.youtubeId}/hqdefault.jpg`}
-                  alt={project.title}
-                  className="thumbnail"
-                  loading="lazy"
-                />
-                <a
-                  href={`https://www.youtube.com/watch?v=${project.youtubeId}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="play-overlay"
-                >
-                  <div className="play-icon">▶</div>
-                </a>
-              </div>
-
-              <div className="project-details">
-                {/* Client Image + Name Section */}
-                {project.client && (
-                  <div className="client-header">
-                    <div className="client-image">
-                      <img 
-                        src={project.clientImage} 
-                        alt={project.client}
-                      />
-                    </div>
-                    <h4 className="client-name">{project.client}</h4>
-                  </div>
-                )}
-
-                {project.testimonial && (
-                  <div className="testimonial">
-                    <p className="testimonial-text">
-                      {project.testimonial}
-                    </p>
-                  </div>
-                )}
-
-                <h3 className="project-title">{project.title}</h3>
-
-                <div className="project-meta">
-                  <span className="project-location">{project.location}</span>
-                </div>
-
-                <a
-                  href={`https://www.youtube.com/watch?v=${project.youtubeId}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="watch-cta"
-                >
-                  {project.ctaText || "Watch Full Walkthrough →"}
-                </a>
-              </div>
-            </div>
-          ))}
+        {/* PROJECTS MARQUEE SECTION */}
+        <div className="ourprojects-marquee-wrapper main-projects-marquee">
+          <div className="ourprojects-marquee-track">
+            {/* Original Set */}
+            {projects.map((project, index) => (
+              <ProjectCard key={`orig-${index}`} project={project} />
+            ))}
+            
+            {/* Duplicate Set for Infinite Scroll - Exactly the same UI now */}
+            {projects.map((project, index) => (
+              <ProjectCard key={`dup-${index}`} project={project} />
+            ))}
+          </div>
         </div>
 
-        {totalPages > 1 && (
-          <div className="pagination-controls">
-            <button
-              onClick={prevPage}
-              disabled={currentPage === 1}
-              className="pagination-btn"
-            >
-              « Prev
-            </button>
-
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-              <button
-                key={page}
-                onClick={() => goToPage(page)}
-                className={`pagination-btn ${currentPage === page ? 'active' : ''}`}
-              >
-                {page}
-              </button>
-            ))}
-
-            <button
-              onClick={nextPage}
-              disabled={currentPage === totalPages}
-              className="pagination-btn"
-            >
-              Next »
-            </button>
-          </div>
-        )}
-
-        {/* Shorts Section - Right to Left Marquee */}
+        {/* SHORTS MARQUEE SECTION */}
         <div className="ourprojects-shorts-section">
           <h2 className="ourprojects-shorts-title">YOUTUBE SHORTS</h2>
           <p className="ourprojects-shorts-subtitle">Quick Inspiring Glimpses of Our Work</p>
 
           <div className="ourprojects-marquee-wrapper">
             <div className="ourprojects-marquee-track">
-              {/* First set */}
               {shorts.map((short, index) => (
-                <div key={index} className="ourprojects-short-item">
+                <div key={`short-orig-${index}`} className="ourprojects-short-item">
                   <div className="video-thumbnail-wrapper">
                     <img
                       src={`https://img.youtube.com/vi/${short.shortId}/hqdefault.jpg`}
@@ -653,22 +576,16 @@ function OurProjects() {
                 </div>
               ))}
 
-              {/* Duplicate set for seamless infinite loop */}
+              {/* Duplicate Set for Shorts */}
               {shorts.map((short, index) => (
-                <div key={`duplicate-${index}`} className="ourprojects-short-item">
+                <div key={`short-dup-${index}`} className="ourprojects-short-item">
                   <div className="video-thumbnail-wrapper">
                     <img
                       src={`https://img.youtube.com/vi/${short.shortId}/hqdefault.jpg`}
                       alt={short.title}
                       className="thumbnail"
-                      loading="lazy"
                     />
-                    <a
-                      href={`https://www.youtube.com/shorts/${short.shortId}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="play-overlay"
-                    >
+                    <a href={`https://www.youtube.com/shorts/${short.shortId}`} className="play-overlay">
                       <div className="play-icon">▶</div>
                     </a>
                   </div>
@@ -683,43 +600,25 @@ function OurProjects() {
           </div>
         </div>
 
-        {/* WHATSAPP FLOAT */}
+        {/* WHATSAPP POPUP */}
         <div className="whatsapp-container">
-          <div
-            className="whatsapp-float"
-            onClick={() => setWhatsappOpen(!whatsappOpen)}
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-              alt="WhatsApp"
-            />
+          <div className="whatsapp-float" onClick={() => setWhatsappOpen(!whatsappOpen)}>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
           </div>
 
           {whatsappOpen && (
             <div className="whatsapp-popup">
               <h3>Start WhatsApp Chat</h3>
-
               <input type="text" placeholder="Your Name" id="wa-name" />
-              <input type="text" placeholder="Project Type (Home / Office / Consultation)" id="wa-project" />
+              <input type="text" placeholder="Project Type" id="wa-project" />
               <textarea placeholder="Your Message" id="wa-message"></textarea>
-
               <button
                 onClick={() => {
                   const name = document.getElementById("wa-name").value;
                   const project = document.getElementById("wa-project").value;
                   const message = document.getElementById("wa-message").value;
-
-                  const finalMessage =
-                    `Hello Deeraj Interiors,%0A%0A` +
-                    `Name: ${name}%0A` +
-                    `Project: ${project}%0A` +
-                    `Message: ${message}%0A%0A` +
-                    `I am interested in discussing my interior project.`;
-
-                  window.open(
-                    `https://wa.me/919000700930?text=${finalMessage}`,
-                    "_blank"
-                  );
+                  const finalMessage = `Hello Deeraj Interiors,%0A%0AName: ${name}%0AProject: ${project}%0AMessage: ${message}`;
+                  window.open(`https://wa.me/919000700930?text=${finalMessage}`, "_blank");
                 }}
               >
                 Chat on WhatsApp
@@ -729,60 +628,151 @@ function OurProjects() {
         </div>
       </div>
 
-      <footer className="di-footer">
-        <div className="di-footer-container">
-          <p className="di-footer-links">Privacy Policy | Terms and Conditions</p>
-          <p className="di-footer-title"><strong>DEERAJ INTERIORS</strong></p>
+      {/* FOOTER */}
+    {/* Contact/Footer Section */}
+<footer className="di-footer" style={{
+  backgroundColor: '#1a1a1a',
+  color: '#ffffff'
+}}>
+  <div className="di-footer-container">
 
-          <div className="di-footer-addresses">
-            <div className="di-footer-address-card">
-              <span className="di-footer-branch">Experience Center</span>
-              <p>
-                PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>
-                SUCHITRA CIRCLE, PET BASHEERABAD,<br/>
-                HYDERABAD, TS 500067
-              </p>
-            </div>
+    {/* Company Logo */}
+    {/* <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+      <img 
+        src="https://img1.wsimg.com/isteam/ip/e7e3142b-3f26-4173-bc29-b2315178edb8/DI%20logo%20(2).png/:/rs=w:559,h:192,cg:true,m/cr=w:559,h:192/qt=q:95" 
+        alt="Deeraj Interiors Logo" 
+        style={{ 
+          maxWidth: '220px', 
+          height: 'auto'
+        }} 
+      />
+    </div> */}
 
-            <div className="di-footer-address-card">
-              <span className="di-footer-branch">Modular Factory</span>
-              <p>
-                Pudur Medchal,<br/>
-                5 Minutes From ORR Exit No:06,<br/>
-                HYDERABAD, TS 500033
-              </p>
-            </div>
-          </div>
+    {/* Addresses Section */}
+    <div className="di-footer-addresses" style={{ 
+      display: 'grid', 
+      gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+      gap: '30px',
+      marginBottom: '40px'
+    }}>
+      
+      <div className="di-footer-address-card">
+        <span className="di-footer-branch" style={{ 
+          color: '#ff6600', 
+          fontWeight: 'bold',
+          fontSize: '1.1rem'
+        }}>
+          Suchitra Experience Center
+        </span>
+        <p style={{ marginTop: '10px', color: '#ffffff' }}>
+          PLOT 119, ABOVE RELIANCE TRENDS FOOTWEAR,<br/>
+          SUCHITRA CIRCLE, PET BASHEERABAD,<br/>
+          HYDERABAD, TS 500067
+        </p>
+        <p style={{ marginTop: '12px', color: '#ffcc80', fontWeight: 'bold' }}>
+          📞 +91 9000700930
+        </p>
+      </div>
 
-          <p className="di-footer-phone">+91 9000700910 / 9000700930 /9014300930 </p>
+      <div className="di-footer-address-card">
+        <span className="di-footer-branch" style={{ 
+          color: '#ff6600', 
+          fontWeight: 'bold',
+          fontSize: '1.1rem'
+        }}>
+          Medchal Modular Factory
+        </span>
+        <p style={{ marginTop: '10px', color: '#ffffff' }}>
+          Pudur Medchal,<br/>
+          5 Minutes From ORR Exit No:06,<br/>
+          HYDERABAD, TS 500033
+        </p>
+        <p style={{ marginTop: '12px', color: '#ffcc80', fontWeight: 'bold' }}>
+          📞 +91 9000700910
+        </p>
+      </div>
 
-          <p className="di-footer-copy">
-            COPYRIGHT © 2025 DEERAJ INTERIORS - ALL RIGHTS RESERVED.
-          </p>
-        </div>
-      </footer>
+      <div className="di-footer-address-card">
+        <span className="di-footer-branch" style={{ 
+          color: '#ff6600', 
+          fontWeight: 'bold',
+          fontSize: '1.1rem'
+        }}>
+          Nanakramguda, Hitech City Experience Center
+        </span>
+        <p style={{ marginTop: '10px', color: '#ffffff' }}>
+          1st Floor, Pavani Encore,<br/>
+          342/P Narsingi - Nanakramguda Service Road,<br/>
+          Adj to Nanakramguda Tollgate,<br/>
+          Telangana 500075
+        </p>
+        <p style={{ marginTop: '12px', color: '#ffcc80', fontWeight: 'bold' }}>
+          📞 +91 9014300930
+        </p>
+      </div>
+    </div>
 
-      {/* Phone Call Floating Button */}
-      {/* <div className="home-phone-container">
-        <a 
-          href="/contact-us" 
-          className="home-phone-float"
-          title="Contact Us / Call"
-        >
-          <svg 
-            width="32" 
-            height="32" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path 
-              d="M20.9999 15.46C20.1199 15.46 19.2499 15.3 18.4099 15.06C18.1199 14.99 17.8099 15.05 17.5799 15.29L15.4099 18.12C12.2499 16.67 7.32988 11.79 5.87988 8.61998L8.70988 6.41998C8.95988 6.16998 9.01988 5.85998 8.94988 5.58998C8.69988 4.74998 8.53988 3.87998 8.53988 2.99998C8.53988 2.44998 8.08988 1.99998 7.53988 1.99998H4.49988C3.94988 1.99998 3.49988 2.44998 3.49988 2.99998C3.49988 13.28 10.7199 20.5 20.9999 20.5C21.5499 20.5 21.9999 20.05 21.9999 19.5V16.46C21.9999 15.91 21.5499 15.46 20.9999 15.46Z" 
-              fill="#ffffff"
-            />
-          </svg>
+    {/* Social Media Icons - Correct Brand Icons */}
+    <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
+        
+        {/* Facebook */}
+        <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://img.magnific.com/premium-vector/facebook-app-icon-social-media-logo-vector-illustration-meta_277909-402.jpg?semt=ais_hybrid&w=740&q=80" alt="Facebook" style={{ width: '28px', height: '28px' }} />
         </a>
-      </div> */}
+
+        {/* Instagram */}
+        <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://img.magnific.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?semt=ais_hybrid&w=740&q=80" alt="Instagram" style={{ width: '28px', height: '28px' }} />
+        </a>
+
+        {/* Twitter / X */}
+        <a href="https://www.linkedin.com/company/deerajinteriors/posts/?feedView=all" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" style={{ width: '28px', height: '28px' }} />
+        </a>
+
+        {/* Google */}
+        <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LMoozClIyyk2YLRSNagwTkpOskwyM01KSk5NSTMxtDKosDCxTEkxMDa3MEk1MrdMNvUSTMlITS1KzFLIzCtJLcrMLyoGADtiFx8&q=dheeraj+interiors&oq=deerajinteriors&gs_lcrp=EgZjaHJvbWUqDwgBEC4YDRivARjHARiABDIGCAAQRRg7Mg8IARAuGA0YrwEYxwEYgAQyDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDUxODRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://media.wired.com/photos/5926ffe47034dc5f91bed4e8/3:2/w_2560%2Cc_limit/google-logo.jpg" alt="Google" style={{ width: '28px', height: '28px' }} />
+        </a>
+
+        {/* YouTube */}
+        <a href="https://www.youtube.com/@Deeraj_Interiors" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/3840px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube" style={{ width: '30px', height: '22px' }} />
+        </a>
+
+      </div>
+    </div>
+
+    <p className="di-footer-links" style={{ 
+      color: '#cccccc', 
+      textAlign: 'center',
+      fontWeight: '500',
+      marginBottom: '15px'
+    }}>
+      Privacy Policy | Terms and Conditions
+    </p>
+    
+    <p className="di-footer-title" style={{ 
+      color: '#ff6600', 
+      textAlign: 'center',
+      margin: '10px 0 20px 0',
+      fontWeight: 'bold',
+      fontSize: '1.45rem'
+    }}>
+      DEERAJ INTERIORS
+    </p>
+
+    <p className="di-footer-copy" style={{ 
+      color: '#aaaaaa', 
+      textAlign: 'center',
+      fontWeight: '500'
+    }}>
+      COPYRIGHT © DEERAJ TECHNOLOGIES PRIVATE LIMITED - ALL RIGHTS RESERVED.
+    </p>
+
+  </div>
+</footer>
     </div>
   );
 }

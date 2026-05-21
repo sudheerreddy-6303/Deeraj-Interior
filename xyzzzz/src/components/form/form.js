@@ -218,7 +218,7 @@ const BookingForm = ({ onClose }) => {
           </div>
 
           <button type="submit" className="bf-submit-btn">
-            Book Free Slot
+            Book Free Consultation
           </button>
 
           <p className="bf-note">

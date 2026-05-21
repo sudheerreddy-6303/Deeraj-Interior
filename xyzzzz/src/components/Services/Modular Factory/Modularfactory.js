@@ -861,7 +861,7 @@ function Footer() {
           ))}
         </div>
         <div className="footer-bottom">
-          <span>© 2024 Deeraj Modulars. All rights reserved. | Kompally, Hyderabad</span>
+          <span>© DEERAJ TECHNOLOGIES PRIVATE LIMITED. | Kompally, Hyderabad</span>
           <span>Precision Built. Professionally Delivered.</span>
         </div>
       </div>
