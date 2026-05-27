@@ -2264,7 +2264,7 @@ import anveshreddy from "../../assets/anvesh reddy sir.jpeg";
 import sunilimage from "../../assets/dr sunil sir image1.jpeg";
 import sudhakar from "../../assets/sudhakar sir image1.jpeg";
 import kalpana from "../../assets/kalpana madam image.jpeg";
-import First from "../../assets/first add image.png";
+import First from "../../assets/main logo2.png";
 import Second from "../../assets/add Second image.png";
 import Third from "../../assets/add Third image.png";
 
@@ -2478,42 +2478,7 @@ export default function Home() {
     <div className="home-container">
 
       {/* Offer Poster */}
-      {showPoster && (
-        <div className="offer-poster-overlay" onClick={handleClosePoster}>
-          <div className="offer-poster-container" onClick={(e) => e.stopPropagation()}>
-            <button className="offer-poster-close" onClick={handleClosePoster}>✕</button>
-            <div className="offer-poster-built">
-              <div className="offer-poster-bg">
-                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80" alt="Modern Kitchen" className="offer-poster-kitchen" />
-                <div className="offer-poster-logo-bar">
-                  <img src="https://img1.wsimg.com/isteam/ip/e7e3142b-3f26-4173-bc29-b2315178edb8/DI%20logo%20(2).png/:/rs=w:559,h:192,cg:true,m/cr=w:559,h:192/qt=q:95" alt="Deeraj Interiors" className="offer-poster-logo" />
-                </div>
-              </div>
-              <div className="offer-poster-badge-wrap">
-                <div className="offer-poster-badge">
-                  <span className="opb-save">Save up to</span>
-                  <span className="opb-percent">20<sup>%</sup></span>
-                  <span className="opb-off">OFF</span>
-                  <span className="opb-limited">Limited Period Offer</span>
-                  <span className="opb-month">This Month Only</span>
-                </div>
-              </div>
-              <div className="offer-poster-black">
-                <p className="opb-luxury">Luxury Interiors for Your</p>
-                <p className="opb-dream">Dream Home</p>
-                <div className="opb-book-pill">Book Now – Move Into a Ready Home</div>
-                <p className="opb-phone">📞 +91 9000700910 / 930, 9014300930</p>
-              </div>
-            </div>
-            <div className="offer-poster-footer">
-              <button className="offer-poster-cta" onClick={() => { window.open('https://wa.me/919000700930?text=Hello%20Deeraj%20Interiors!%20I%20saw%20your%20offer%20and%20want%20to%20book%20now!', '_blank'); }}>
-                📞 Book Now — Get 20% Off
-              </button>
-              <button className="offer-poster-skip" onClick={handleClosePoster}>Skip for now</button>
-            </div>
-          </div>
-        </div>
-      )}
+      
 
       {/* Offer Popup */}
       {showOfferPopup && (
