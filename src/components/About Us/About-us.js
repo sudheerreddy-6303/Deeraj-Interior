@@ -329,7 +329,7 @@ const AboutUs = () => {
 
       bio: "Mr. Sunder serves as the operational backbone of the organization, seamlessly bridging the gap between market demand and technical execution. By overseeing the entire lifecycle of a project—from the initial sales strategy to the final quality audit—he ensures that the company’s promise of excellence is realized in every square foot produced. His unique dual-focus on sales growth and factory production allows for a highly responsive manufacturing process that adapts to client needs without ever compromising on industrial precision or project timelines.",
 
-      image: "https://cdn.vectorstock.com/i/1000v/08/40/user-icon-male-person-profile-avatar-symbol-vector-20910840.jpg"
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800"
 
     },
 
@@ -485,7 +485,7 @@ const AboutUs = () => {
 
                 <img
 
-                  src="https://t4.ftcdn.net/jpg/03/65/21/75/360_F_365217542_SqD0byWky3uWnd8NHDdxRF6j4mgzPKzh.jpg"
+                  src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
 
                   alt="Deeraj Interiors modular factory and experience center Hyderabad" // ✅ IMPROVED
 
@@ -802,12 +802,12 @@ const AboutUs = () => {
         
         {/* Facebook */}
         <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://img.magnific.com/premium-vector/facebook-app-icon-social-media-logo-vector-illustration-meta_277909-402.jpg?semt=ais_hybrid&w=740&q=80" alt="Facebook" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* Instagram */}
         <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://img.magnific.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?semt=ais_hybrid&w=740&q=80" alt="Instagram" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* Twitter / X */}
@@ -817,7 +817,7 @@ const AboutUs = () => {
 
         {/* Google */}
         <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LMoozClIyyk2YLRSNagwTkpOskwyM01KSk5NSTMxtDKosDCxTEkxMDa3MEk1MrdMNvUSTMlITS1KzFLIzCtJLcrMLyoGADtiFx8&q=dheeraj+interiors&oq=deerajinteriors&gs_lcrp=EgZjaHJvbWUqDwgBEC4YDRivARjHARiABDIGCAAQRRg7Mg8IARAuGA0YrwEYxwEYgAQyDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDUxODRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://media.wired.com/photos/5926ffe47034dc5f91bed4e8/3:2/w_2560%2Cc_limit/google-logo.jpg" alt="Google" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* YouTube */}

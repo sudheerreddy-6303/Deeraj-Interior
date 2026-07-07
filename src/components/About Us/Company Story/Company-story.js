@@ -63,7 +63,7 @@ export default function CompanyStory() {
           <div
             className="deeraj-about-card deeraj-about-vision-card"
             style={{
-              backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.75)), url('https://www.bocadolobo.com/en/inspiration-and-ideas/wp-content/uploads/2022/07/featured-image-inspiration-and-ideas-1400x933.jpg')`,
+              backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&q=80&w=2000')`,
             }}
           >
             <div className="deeraj-about-card-icon">👁️</div>
@@ -77,7 +77,7 @@ export default function CompanyStory() {
           <div
             className="deeraj-about-card deeraj-about-mission-card"
             style={{
-              backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.75)), url('https://thearchitectsdiary.com/wp-content/uploads/2025/10/Indian-Living-13-1024x682.jpg')`,
+              backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.75)), url('https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_640.jpg')`,
             }}
           >
             <div className="deeraj-about-card-icon">🎯</div>
@@ -273,12 +273,12 @@ export default function CompanyStory() {
         
         {/* Facebook */}
         <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://img.magnific.com/premium-vector/facebook-app-icon-social-media-logo-vector-illustration-meta_277909-402.jpg?semt=ais_hybrid&w=740&q=80" alt="Facebook" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* Instagram */}
         <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://img.magnific.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?semt=ais_hybrid&w=740&q=80" alt="Instagram" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* Twitter / X */}
@@ -288,7 +288,7 @@ export default function CompanyStory() {
 
         {/* Google */}
         <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LMoozClIyyk2YLRSNagwTkpOskwyM01KSk5NSTMxtDKosDCxTEkxMDa3MEk1MrdMNvUSTMlITS1KzFLIzCtJLcrMLyoGADtiFx8&q=dheeraj+interiors&oq=deerajinteriors&gs_lcrp=EgZjaHJvbWUqDwgBEC4YDRivARjHARiABDIGCAAQRRg7Mg8IARAuGA0YrwEYxwEYgAQyDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDUxODRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://media.wired.com/photos/5926ffe47034dc5f91bed4e8/3:2/w_2560%2Cc_limit/google-logo.jpg" alt="Google" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* YouTube */}

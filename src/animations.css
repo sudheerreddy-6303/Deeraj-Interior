@@ -1,0 +1,63 @@
+/* =========================================================
+   Deeraj Interiors — Site-wide Animations (ADDITIVE LAYER)
+   This file ONLY adds animations. It does not override or
+   remove any existing styles. All motion is wrapped in a
+   "prefers-reduced-motion: no-preference" guard so users who
+   ask for reduced motion (and any fallback) never see hidden
+   content. The .reveal classes are applied by SiteAnimator.js.
+   ========================================================= */
+
+@media (prefers-reduced-motion: no-preference) {
+
+  /* ---- Scroll reveal (entrance) ---- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.reveal-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ---- Gentle page load fade for the whole app ---- */
+  .App {
+    animation: siteFadeIn 0.6s ease both;
+  }
+
+  @keyframes siteFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* ---- Card hover lift (purely visual, never hides content) ---- */
+  [class*="card"] {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  [class*="card"]:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16);
+  }
+
+  /* ---- Button micro-interaction ---- */
+  button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  }
+
+  button:hover  { transform: translateY(-2px); }
+  button:active { transform: translateY(0); }
+
+  /* ---- Smooth link feedback ---- */
+  a {
+    transition: color 0.2s ease, opacity 0.2s ease;
+  }
+}
+
+/* Safety: if reduced motion is requested, force everything visible. */
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1 !important; transform: none !important; }
+}

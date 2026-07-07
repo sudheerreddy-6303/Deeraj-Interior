@@ -2264,8 +2264,8 @@ import anveshreddy from "../../assets/anvesh reddy sir.jpeg";
 import sunilimage from "../../assets/dr sunil sir image1.jpeg";
 import sudhakar from "../../assets/sudhakar sir image1.jpeg";
 import kalpana from "../../assets/kalpana madam image.jpeg";
-import First from "../../assets/first add image.png";
-import Second from "../../assets/add Second image.png";
+import First from "../../assets/main logo2.png";
+import Second from "../../assets/opening soon.png";
 import Third from "../../assets/add Third image.png";
 
 import './home.css';
@@ -2318,13 +2318,21 @@ const testimonials = [
 const heroSlides = [
   { type: 'image', image: First },
   { type: 'image', image: Second },
-  { type: 'image', image: Third },
+  // { type: 'image', image: Third },
 ];
 
 export default function Home() {
   const navigate = useNavigate();
   const [currentPair, setCurrentPair] = React.useState(0);
   const [whatsappOpen, setWhatsappOpen] = useState(false);
+
+  // Mobile detection
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // Hero slideshow state
   const [heroIndex, setHeroIndex] = useState(0);
@@ -2470,42 +2478,7 @@ export default function Home() {
     <div className="home-container">
 
       {/* Offer Poster */}
-      {showPoster && (
-        <div className="offer-poster-overlay" onClick={handleClosePoster}>
-          <div className="offer-poster-container" onClick={(e) => e.stopPropagation()}>
-            <button className="offer-poster-close" onClick={handleClosePoster}>✕</button>
-            <div className="offer-poster-built">
-              <div className="offer-poster-bg">
-                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80" alt="Modern Kitchen" className="offer-poster-kitchen" />
-                <div className="offer-poster-logo-bar">
-                  <img src="https://img1.wsimg.com/isteam/ip/e7e3142b-3f26-4173-bc29-b2315178edb8/DI%20logo%20(2).png/:/rs=w:559,h:192,cg:true,m/cr=w:559,h:192/qt=q:95" alt="Deeraj Interiors" className="offer-poster-logo" />
-                </div>
-              </div>
-              <div className="offer-poster-badge-wrap">
-                <div className="offer-poster-badge">
-                  <span className="opb-save">Save up to</span>
-                  <span className="opb-percent">20<sup>%</sup></span>
-                  <span className="opb-off">OFF</span>
-                  <span className="opb-limited">Limited Period Offer</span>
-                  <span className="opb-month">This Month Only</span>
-                </div>
-              </div>
-              <div className="offer-poster-black">
-                <p className="opb-luxury">Luxury Interiors for Your</p>
-                <p className="opb-dream">Dream Home</p>
-                <div className="opb-book-pill">Book Now – Move Into a Ready Home</div>
-                <p className="opb-phone">📞 +91 9000700910 / 930, 9014300930</p>
-              </div>
-            </div>
-            <div className="offer-poster-footer">
-              <button className="offer-poster-cta" onClick={() => { window.open('https://wa.me/919000700930?text=Hello%20Deeraj%20Interiors!%20I%20saw%20your%20offer%20and%20want%20to%20book%20now!', '_blank'); }}>
-                📞 Book Now — Get 20% Off
-              </button>
-              <button className="offer-poster-skip" onClick={handleClosePoster}>Skip for now</button>
-            </div>
-          </div>
-        </div>
-      )}
+      
 
       {/* Offer Popup */}
       {showOfferPopup && (
@@ -2549,23 +2522,53 @@ export default function Home() {
       )}
 
       {/* HERO SECTION - With Left/Right Navigation Buttons */}
-      <header className="home-hero" style={{ position: 'relative', overflow: 'hidden', minHeight: '100vh' }}>
+      <header className="home-hero" style={isMobile ? {
+        position: 'relative',
+        overflow: 'hidden',
+        background: '#111',
+        display: 'block',
+      } : {
+        position: 'relative',
+        overflow: 'hidden',
+        minHeight: '100vh',
+        height: '100vh',
+      }}>
 
         {heroSlides.map((slide, i) => (
           <div
             key={i}
-            style={{
+            style={isMobile ? {
+              position: i === heroIndex ? 'relative' : 'absolute',
+              inset: i === heroIndex ? 'unset' : 0,
+              opacity: i === heroIndex ? 1 : 0,
+              transition: 'opacity 0.8s ease-in-out',
+              zIndex: i === heroIndex ? 0 : -1,
+              width: '100%',
+            } : {
               position: 'absolute',
               inset: 0,
-              backgroundImage: `url('${slide.image}')`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center center',
               opacity: i === heroIndex ? 1 : 0,
               transition: 'opacity 0.8s ease-in-out',
               zIndex: 0,
             }}
-          />
+          >
+            <img
+              src={slide.image}
+              alt={`Hero slide ${i + 1}`}
+              style={isMobile ? {
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                objectFit: 'contain',
+              } : {
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'center center',
+                display: 'block',
+              }}
+            />
+          </div>
         ))}
 
         {/* Left Navigation Button */}
@@ -2573,7 +2576,7 @@ export default function Home() {
           onClick={goToPrevSlide}
           style={{
             position: 'absolute',
-            left: '20px',
+            left: isMobile ? '10px' : '20px',
             top: '50%',
             transform: 'translateY(-50%)',
             zIndex: 3,
@@ -2581,9 +2584,9 @@ export default function Home() {
             color: 'white',
             border: 'none',
             borderRadius: '50%',
-            width: '50px',
-            height: '50px',
-            fontSize: '24px',
+            width: isMobile ? '36px' : '50px',
+            height: isMobile ? '36px' : '50px',
+            fontSize: isMobile ? '16px' : '24px',
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
@@ -2602,7 +2605,7 @@ export default function Home() {
           onClick={goToNextSlide}
           style={{
             position: 'absolute',
-            right: '20px',
+            right: isMobile ? '10px' : '20px',
             top: '50%',
             transform: 'translateY(-50%)',
             zIndex: 3,
@@ -2610,9 +2613,9 @@ export default function Home() {
             color: 'white',
             border: 'none',
             borderRadius: '50%',
-            width: '50px',
-            height: '50px',
-            fontSize: '24px',
+            width: isMobile ? '36px' : '50px',
+            height: isMobile ? '36px' : '50px',
+            fontSize: isMobile ? '16px' : '24px',
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
@@ -2628,15 +2631,26 @@ export default function Home() {
 
         {/* NO OVERLAY - COMPLETELY REMOVED */}
 
-        <div className="home-hero-content" style={{ 
-          position: 'relative', 
-          zIndex: 2, 
-          height: '100%', 
-          display: 'flex', 
-          flexDirection: 'column', 
-          justifyContent: 'flex-end', 
+        {/* Dots — on mobile shown below image as a block element, on desktop overlaid */}
+        <div className="home-hero-content" style={isMobile ? {
+          position: 'relative',
+          zIndex: 2,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          paddingBottom: '12px',
+          paddingTop: '10px',
+          background: '#111',
+          textAlign: 'center',
+        } : {
+          position: 'relative',
+          zIndex: 2,
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'flex-end',
           paddingBottom: '80px',
-          textAlign: 'center'
+          textAlign: 'center',
         }}>
 
           <div className="home-hero-buttons">
@@ -2654,7 +2668,7 @@ export default function Home() {
             </button>
           </div>
 
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '30px' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: isMobile ? '0' : '30px' }}>
             {heroSlides.map((_, i) => (
               <span
                 key={i}

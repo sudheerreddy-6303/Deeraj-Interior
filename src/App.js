@@ -17,6 +17,8 @@ import Franchise from "./components/Partner us/Franchise/Franchise"
 import Gallery from "./components/Gallery/Gallery";
 import BusinessAssociate from "./components/Partner us/Business Associate/businessassociate"
 import './App.css';
+import './animations.css';
+import SiteAnimator from './SiteAnimator';
 
 function App() {
   const [showForm, setShowForm] = useState(true);
@@ -24,6 +26,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <SiteAnimator />
         <Navbar />
 
         {/* Floating Booking Form - Top Right Corner, visible on every page */}

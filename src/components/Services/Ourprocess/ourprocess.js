@@ -633,7 +633,7 @@ const OurTeam = () => {
     'https://hips.hearstapps.com/hmg-prod/images/melanie-pounds-neutral-bedroom-veranda-best-minimalist-bedrooms-2022-1646414533.jpeg',
     'https://planner5d.com/blog/content/images/2022/11/luxury-kitchen-ideas.jpg',
     'https://sola-images.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/10/01125250/Trendspotting_FEATURED.jpg',
-    'https://cdn.decorilla.com/online-decorating/wp-content/uploads/2024/08/Home-office-trends-2025-by-Decorilla-1024x683.jpg?width=900',
+    'https://images.pexels.com/photos/33342702/pexels-photo-33342702/free-photo-of-modern-luxury-office-interior-design-with-open-workspace.jpeg?auto=compress&cs=tinysrgb&w=1260',
   ];
 
   return (
@@ -888,12 +888,12 @@ const OurTeam = () => {
         
         {/* Facebook */}
         <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://img.magnific.com/premium-vector/facebook-app-icon-social-media-logo-vector-illustration-meta_277909-402.jpg?semt=ais_hybrid&w=740&q=80" alt="Facebook" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* Instagram */}
         <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://img.magnific.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?semt=ais_hybrid&w=740&q=80" alt="Instagram" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* Twitter / X */}
@@ -903,7 +903,7 @@ const OurTeam = () => {
 
         {/* Google */}
         <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LMoozClIyyk2YLRSNagwTkpOskwyM01KSk5NSTMxtDKosDCxTEkxMDa3MEk1MrdMNvUSTMlITS1KzFLIzCtJLcrMLyoGADtiFx8&q=dheeraj+interiors&oq=deerajinteriors&gs_lcrp=EgZjaHJvbWUqDwgBEC4YDRivARjHARiABDIGCAAQRRg7Mg8IARAuGA0YrwEYxwEYgAQyDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDUxODRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://media.wired.com/photos/5926ffe47034dc5f91bed4e8/3:2/w_2560%2Cc_limit/google-logo.jpg" alt="Google" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* YouTube */}

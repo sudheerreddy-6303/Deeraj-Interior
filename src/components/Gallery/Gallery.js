@@ -281,7 +281,7 @@ const Gallery = () => {
         "https://images.homify.com/v1575251056/p/photo/image/3278753/Bedroom.jpg",
         "https://images.woodenstreet.de/image/data%2FLooks%2F1.jpg",
         "https://www.centuryply.com/assets/img/blog/30-11-22/imag1.jpg",
-        "https://media.istockphoto.com/id/1285572400/photo/vintage-terrace-with-nature-view-3d-render.jpg?s=612x612&w=0&k=20&c=iiLIkK1uuYJUJde6UJeT0hI-kBnkZVSpIZGu7cm05S4="
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
       ],
     },
     {
@@ -301,7 +301,7 @@ const Gallery = () => {
       images: [
         "https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_1280.jpg",
         "https://w0.peakpx.com/wallpaper/1009/686/HD-wallpaper-bathrooms-eclectic-interior-modern-interior-green-bathroom-ideas-for-the-bathroom-eclectic-bathrooms-style.jpg",
-        "https://i.pinimg.com/736x/cd/8e/26/cd8e2620aee782e8865d8ea73a441955.jpg"
+        "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&auto=format&fit=crop&q=80"
       ],
     },
         {
@@ -311,7 +311,7 @@ const Gallery = () => {
         images: [
           "https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_1280.jpg",
           "https://w0.peakpx.com/wallpaper/1009/686/HD-wallpaper-bathrooms-eclectic-interior-modern-interior-green-bathroom-ideas-for-the-bathroom-eclectic-bathrooms-style.jpg",
-          "https://i.pinimg.com/736x/cd/8e/26/cd8e2620aee782e8865d8ea73a441955.jpg"
+          "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800"
         ],
       },
       {
@@ -321,7 +321,7 @@ const Gallery = () => {
         images: [
           "https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_1280.jpg",
           "https://w0.peakpx.com/wallpaper/1009/686/HD-wallpaper-bathrooms-eclectic-interior-modern-interior-green-bathroom-ideas-for-the-bathroom-eclectic-bathrooms-style.jpg",
-          "https://i.pinimg.com/736x/cd/8e/26/cd8e2620aee782e8865d8ea73a441955.jpg"
+          "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=800"
         ],
       }
   ];
@@ -330,16 +330,16 @@ const Gallery = () => {
     {
       id: 1,
       name: "Bedrooms",
-      cover: "https://www.craftedbeds.co.uk/cdn/shop/articles/c6229643564835.57f4204983b16.jpg?v=1654414798",
+      cover: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=1000",
       images: [
         "https://w0.peakpx.com/wallpaper/923/149/HD-wallpaper-modern-bedroom-design-stylish-interior-gray-bedroom-large-bed-gray-stylish-curtains-modern-interiors.jpg",
         "https://images.homify.com/v1575251056/p/photo/image/3278753/Bedroom.jpg",
         "https://www.customfurnish.com/blogs/wp-content/uploads/2025/05/Bedroom_-3.webp",
-        "https://i.pinimg.com/736x/73/01/88/730188a4d66c214b1fd3de77b7cad96b.jpg",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=1000",
         "https://images.homify.com/v1569995885/p/photo/image/3216186/10000.jpg",
         "https://www.shutterstock.com/shutterstock/videos/1102500237/thumb/1.jpg?ip=x480",
         "https://ansainteriors.com/wp-content/uploads/2020/08/ultra-chic-bedroom-interior-design.jpg",
-        "https://i.pinimg.com/736x/50/be/91/50be911cc33bec7246321d9cd0303c6a.jpg",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=1000",
         "https://www.nobroker.in/blog/wp-content/uploads/2023/04/luxury-bedroom-interior-design.webp",
         "https://i.ytimg.com/vi/LTMV9SbBDbI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCimtLeQdzuT_4v24DIESuJ8Yzgcg",
         "https://w0.peakpx.com/wallpaper/546/472/HD-wallpaper-bedroom-project-modern-interior-design-stylish-interior-design-bedroom-golden-3d-elements-on-the-wall-black-wall-in-the-bedroom.jpg",
@@ -349,20 +349,20 @@ const Gallery = () => {
     {
       id: 2,
       name: "Living Rooms",
-      cover: "https://i.pinimg.com/originals/82/2f/d3/822fd3a227370187957ecef8ee6f2f0e.jpg",
+      cover: "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_640.jpg",
       images: [
         "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&auto=format&fit=crop&q=80",
         "https://www.decorpot.com/images/1972745586modern-and-luxurious-living-room-interior-%20design-ideas_main.jpg",
-        "https://img.freepik.com/premium-photo/3d-rendering-luxury-modern-living-room-with-leather-sofa_105762-833.jpg",
+        "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_640.jpg",
         "https://images.woodenstreet.de/image/data%2FLooks%2F1.jpg",
         "https://www.asenseinterior.com/assets/uploads/5b82ebc80c339a72260f95f44effd051.webp",
         "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?cs=srgb&dl=pexels-pixabay-276724.jpg&fm=jpg",
-        "https://img.freepik.com/premium-photo/interior-design-3d-illustration-living-room_252025-140950.jpg",
-        "https://img.freepik.com/premium-photo/illustration-living-room-interior_252025-157798.jpg",
+        "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_640.jpg",
+        "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_640.jpg",
         "https://www.asenseinterior.com/assets/uploads/627d37c1e040220ba214d240f21fd0f0.webp",
         "https://cdn.home-designing.com/wp-content/uploads/2018/11/luxury-living-room-interiors.jpg",
-        "https://media.designcafe.com/wp-content/uploads/2020/02/21010329/modern-living-room-design-ideas.jpg",
-        "https://i.pinimg.com/736x/31/6f/c0/316fc08a70b70bec8be281f65624eb65.jpg"
+        "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_640.jpg",
+        "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_640.jpg"
       ],
     },
     {
@@ -373,13 +373,13 @@ const Gallery = () => {
         "https://www.centuryply.com/assets/img/blog/30-11-22/imag1.jpg",
         "https://www.d2rinteriors.com/images/modular1.jpg",
         "https://i.ytimg.com/vi/naFL9ddp9Ps/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD33NshS4iMZJngiOdk1972q-OFmw",
-        "https://i.pinimg.com/736x/e2/1f/03/e21f037d0093db6c395274b0856a4c17.jpg",
-        "https://thearchitectsdiary.com/wp-content/uploads/2024/09/01-Design-Manish-Manglaw.png",
+        "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&q=80&w=1000",
         "https://i.ytimg.com/vi/Kqaly89f1dk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAOmGRCsBS1_qaN9Q5CDkqIGkQ1Uw",
         "https://www.decorpot.com/images/mobile-kitchen.jpg",
         "https://images.pexels.com/photos/3926542/pexels-photo-3926542.jpeg?cs=srgb&dl=pexels-houzlook-3926542.jpg&fm=jpg",
         "https://www.wedezinestudio.com/blogs/wp-content/uploads/2025/05/kitchendesign11.webp",
-        "https://i.pinimg.com/736x/e4/00/64/e4006494575fa671deeed9941dcb2831.jpg",
+        "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&q=80&w=1000",
         "https://www.asenseinterior.com/assets/mediafile/luxury_modern_kitchen_designs.webp",
         "https://www.premierkitchens.net.au/wp-content/uploads/Modern-luxury-kitchen-renovation-sydney-black-cabinetry-calacatta-stone-ilve-oven-fisher-paykel-vintec-bosch-02-846x564.jpg"
       ],
@@ -396,9 +396,9 @@ const Gallery = () => {
         "https://www.vlitefurnitech.com/wp-content/uploads/2024/06/Office-interior-design-1.webp",
         "https://www.customfurnish.com/blogs/wp-content/uploads/2025/09/900-variation-brown_and_white-1-min.png",
         "https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2023/05/23163145/modern-office-interior-design-with-partition-plants.jpg",
-        "https://media.istockphoto.com/id/1479587535/photo/eco-friendly-open-plan-modern-office-interior-with-meeting-room-wooden-meeting-table-yellow.jpg?s=612x612&w=0&k=20&c=_ECheLlQXPrgvcffXv6hOehCxrrpBLkio-Y5x4TYnIE=",
+        "https://images.pexels.com/photos/33342702/pexels-photo-33342702/free-photo-of-modern-luxury-office-interior-design-with-open-workspace.jpeg?auto=compress&cs=tinysrgb&w=1260",
         "https://hughesmarino.com/inland-empire/wp-content/uploads/sites/27/open-ceiling-office-space.jpg",
-        "https://www.decorilla.com/online-decorating/wp-content/uploads/2025/04/Luxury-office-by-Decorilla-office-interior-decorators-Barbara-C-1024x792.jpg",
+        "https://images.pexels.com/photos/33342702/pexels-photo-33342702/free-photo-of-modern-luxury-office-interior-design-with-open-workspace.jpeg?auto=compress&cs=tinysrgb&w=1260",
         "https://maisoninterior.vn/en/wp-content/uploads/2025/05/luxury-office-interior-design-37.jpg",
         "https://images.pexels.com/photos/33342702/pexels-photo-33342702/free-photo-of-modern-luxury-office-interior-design-with-open-workspace.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       ],
@@ -406,32 +406,32 @@ const Gallery = () => {
     {
       id: 5,
       name: "Wardrobes",
-      cover: "https://i.pinimg.com/736x/c3/56/d9/c356d90952bdbe0bde96672e4906a6c7.jpg",
+      cover: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800",
       images: [
         "https://b2532561.smushcdn.com/2532561/wp-content/uploads/2022/06/Modern-Wardrobe-Design-in-Bhubaneswar-4-scaled.jpg?lossy=2&strip=0&webp=1",
         "https://cpimg.tistatic.com/11090298/b/4/Custom-Designed-Wardrobe-With-Overhead-Storage-Sliding-Doors..jpg",
         "https://www.vevadesigns.in/blog/wp-content/uploads/2025/05/wordroob1.webp",
-        "https://media.istockphoto.com/id/1419085349/photo/wardrobe-sliding-doors.jpg?s=612x612&w=0&k=20&c=qoDeGZgFe_u9XKQQWHd-o2YYyZODeS-0N5mSR_Z6ZRw=",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=800",
         "https://st.hzcdn.com/simgs/f431d3ac088b776b_9-9049/home-design.jpg",
         "https://www.abrinterior.com/sites/default/files/design-gallery/Bedroom-Interior---19.jpg",
         "https://5.imimg.com/data5/SELLER/Default/2023/10/351681022/JK/PP/MD/76093172/modular-wardrobe-design-service-500x500.jpg",
         "https://images.woodenstreet.de/image/data/Modular%20wardrobe%20Design/luminor-white-hinged-modular-wardrobe.jpg",
         "https://image.made-in-china.com/365f3j00RyDLjAOwPkYJ/Professional-Customization-Bedroom-Wardrobe-Design-Modern-Home-Bedroom-Furniture-Sliding-Door-Wooden-Clothes-Wardrobe.webp",
-        "https://i.pinimg.com/736x/da/39/07/da39073cce76cec6f3ccd4735fd69195.jpg",
+        "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&auto=format&fit=crop&q=80",
         "https://woodencherry.com/wp-content/uploads/2025/10/WB-16.webp",
-        "https://i.pinimg.com/236x/9f/e1/27/9fe12710a9074805d3ee8f4069b47dcd.jpg"
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800"
       ],
     },
     {
       id: 6,
       name: "Outdoor Livings",
-      cover: "https://media.istockphoto.com/id/1285572400/photo/vintage-terrace-with-nature-view-3d-render.jpg?s=612x612&w=0&k=20&c=iiLIkK1uuYJUJde6UJeT0hI-kBnkZVSpIZGu7cm05S4=",
+      cover: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       images: [
-        "https://media.istockphoto.com/id/1285572400/photo/vintage-terrace-with-nature-view-3d-render.jpg?s=612x612&w=0&k=20&c=iiLIkK1uuYJUJde6UJeT0hI-kBnkZVSpIZGu7cm05S4=",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
         "https://dkorinteriors.com/wp-content/uploads/2022/04/Indoor-Outdoor-Living-Space-Dkor-Interiors-5.jpg",
-        "https://media.istockphoto.com/id/1285572400/photo/vintage-terrace-with-nature-view-3d-render.jpg?s=612x612&w=0&k=20&c=iiLIkK1uuYJUJde6UJeT0hI-kBnkZVSpIZGu7cm05S4=",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
         "https://www.mountainliving.com/content/uploads/2023/05/z/n/outdoor-5.jpg",
-        "https://i.pinimg.com/736x/cd/8e/26/cd8e2620aee782e8865d8ea73a441955.jpg",
+        "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_640.jpg",
         "https://d1b9sdpix36q7o.cloudfront.net/blog-content/blog/wp-content/uploads/2023/07/Sterling_Grove_Calistoga_Patio_7739_conversion1.jpg"
       ],
     },

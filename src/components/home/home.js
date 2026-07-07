@@ -2265,7 +2265,7 @@ import sunilimage from "../../assets/dr sunil sir image1.jpeg";
 import sudhakar from "../../assets/sudhakar sir image1.jpeg";
 import kalpana from "../../assets/kalpana madam image.jpeg";
 import First from "../../assets/main logo2.png";
-import Second from "../../assets/add Second image.png";
+import Second from "../../assets/opening soon.png";
 import Third from "../../assets/add Third image.png";
 
 import './home.css';
@@ -2317,7 +2317,7 @@ const testimonials = [
 
 const heroSlides = [
   { type: 'image', image: First },
-  // { type: 'image', image: Second },
+  { type: 'image', image: Second },
   // { type: 'image', image: Third },
 ];
 
@@ -2360,7 +2360,7 @@ export default function Home() {
     { name: "Green Aluminium Deer Sculpture", image: "https://m.media-amazon.com/images/S/aplus-media-library-service-media/dbfff93e-7141-4777-84dc-9b7220c66674.__CR0,0,970,600_PT0_SX970_V1___.jpg" },
     { name: "Decoration Leaf", image: "https://m.media-amazon.com/images/S/aplus-media-library-service-media/03870a4f-9af8-4a26-b94f-10f922dd6a01.__CR0,0,970,600_PT0_SX970_V1___.jpg" },
     { name: "Beautiful Wall Mirror", image: "https://m.media-amazon.com/images/I/71yIOkGTTIL.jpg_BO30,255,255,255_UF750,750_SR1910,1000,0,C_QL100_.jpg" },
-    { name: "Gold Aluminium Face Sculpture", image: "https://salsify-ecdn.com/images/0de564332f8386e2f3c73905415624e8.jpg" },
+    { name: "Gold Aluminium Face Sculpture", image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&q=80&w=800" },
     { name: "Black Alloy Metal Floral Shape", image: "https://m.media-amazon.com/images/S/aplus-media-library-service-media/b3b53ac2-4451-48a4-b85e-ffff6650c5c0.__CR0,0,800,600_PT0_SX800_V1___.jpg" },
     { name: "Gold Aluminium Antique Leaf", image: "https://m.media-amazon.com/images/S/aplus-media-library-service-media/7f63a722-0f87-4268-9127-9667b2109201.__CR0,0,970,600_PT0_SX970_V1___.jpg" },
   ];
@@ -2530,8 +2530,10 @@ export default function Home() {
       } : {
         position: 'relative',
         overflow: 'hidden',
-        minHeight: '100vh',
-        height: '100vh',
+        width: '100%',
+        aspectRatio: '1692 / 930',
+        maxHeight: '100vh',
+        background: '#111',
       }}>
 
         {heroSlides.map((slide, i) => (
@@ -2563,7 +2565,7 @@ export default function Home() {
               } : {
                 width: '100%',
                 height: '100%',
-                objectFit: 'cover',
+                objectFit: 'contain',
                 objectPosition: 'center center',
                 display: 'block',
               }}
@@ -2695,6 +2697,60 @@ export default function Home() {
         </div>
       </header>
 
+              {/* Services Overview Section */}
+      <section className="home-services-section">
+        <div className="home-services-wrapper">
+          <h2>OUR SERVICES</h2>
+          <p className="home-section-subtitle">Everything you need. All under one roof.</p>
+          <div className="home-services-grid">
+            <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')` }}>
+              <div className="home-service-title">Bedrooms</div>
+              <div className="home-service-hover-content">
+                <p>Create a peaceful and restful sanctuary with our expert bedroom design services. From custom bed frames to luxurious bedding, we help you create a space that's both comfortable and stylish.</p>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
+              </div>
+            </div>
+            <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1611048267451-e6ed903d4a38?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
+              <div className="home-service-title">Living Rooms </div>
+              <div className="home-service-hover-content">
+                <p>Whether you're looking for a cozy space to relax with family or a stylish entertaining area for guests, we can create a living room that suits your lifestyle and reflects your personality.</p>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
+              </div>
+            </div>
+            <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1722605090433-41d1183a792d?q=80&w=1330&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
+              <div className="home-service-title">Kitchens </div>
+              <div className="home-service-hover-content">
+                <p>At Deeraj Interiors, we specialize in crafting kitchen interiors that are as beautiful as they are functional — thoughtfully designed to reflect your style and suit your everyday needs.</p>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
+              </div> 
+            </div>
+            <div className="home-service-card" style={{ backgroundImage: `url('https://plus.unsplash.com/premium_photo-1663126298656-33616be83c32?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
+              <div className="home-service-title">Home Offices </div>
+              <div className="home-service-hover-content">
+                <p>With more people working from home, it's important to have a functional and inspiring home office. Let us help you create a space that's both productive and stylish.</p>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
+              </div>
+            </div>
+            <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800')` }}>
+              <div className="home-service-title">Wardrobes</div>
+              <div className="home-service-hover-content">
+                <p>Maximize your space with bespoke wardrobe solutions tailored to your lifestyle. From sleek walk-in closets to smart modular designs, we blend elegant aesthetics with intelligent storage.</p>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
+              </div>
+            </div>
+            <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')` }}>
+              <div className="home-service-title">Outdoor Livings </div>
+              <div className="home-service-hover-content">
+                <p>Extend your living space to the outdoors with our expert outdoor living design services. From cozy fire pits to luxurious outdoor kitchens, we help you create a space that's perfect for entertaining and relaxation.</p>
+                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
       {/* About Section */}
       <section className="home-about-section">
         <div className="home-about-wrapper">
@@ -2787,58 +2843,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Overview Section */}
-      <section className="home-services-section">
-        <div className="home-services-wrapper">
-          <h2>OUR SERVICES</h2>
-          <p className="home-section-subtitle">Everything you need. All under one roof.</p>
-          <div className="home-services-grid">
-            <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')` }}>
-              <div className="home-service-title">Bedrooms</div>
-              <div className="home-service-hover-content">
-                <p>Create a peaceful and restful sanctuary with our expert bedroom design services. From custom bed frames to luxurious bedding, we help you create a space that's both comfortable and stylish.</p>
-                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
-              </div>
-            </div>
-            <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1611048267451-e6ed903d4a38?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
-              <div className="home-service-title">Living Rooms </div>
-              <div className="home-service-hover-content">
-                <p>Whether you're looking for a cozy space to relax with family or a stylish entertaining area for guests, we can create a living room that suits your lifestyle and reflects your personality.</p>
-                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
-              </div>
-            </div>
-            <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1722605090433-41d1183a792d?q=80&w=1330&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
-              <div className="home-service-title">Kitchens </div>
-              <div className="home-service-hover-content">
-                <p>At Deeraj Interiors, we specialize in crafting kitchen interiors that are as beautiful as they are functional — thoughtfully designed to reflect your style and suit your everyday needs.</p>
-                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
-              </div> 
-            </div>
-            <div className="home-service-card" style={{ backgroundImage: `url('https://plus.unsplash.com/premium_photo-1663126298656-33616be83c32?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
-              <div className="home-service-title">Home Offices </div>
-              <div className="home-service-hover-content">
-                <p>With more people working from home, it's important to have a functional and inspiring home office. Let us help you create a space that's both productive and stylish.</p>
-                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
-              </div>
-            </div>
-            <div className="home-service-card" style={{ backgroundImage: `url('https://i.pinimg.com/736x/c3/56/d9/c356d90952bdbe0bde96672e4906a6c7.jpg')` }}>
-              <div className="home-service-title">Wardrobes</div>
-              <div className="home-service-hover-content">
-                <p>Maximize your space with bespoke wardrobe solutions tailored to your lifestyle. From sleek walk-in closets to smart modular designs, we blend elegant aesthetics with intelligent storage.</p>
-                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
-              </div>
-            </div>
-            <div className="home-service-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')` }}>
-              <div className="home-service-title">Outdoor Livings </div>
-              <div className="home-service-hover-content">
-                <p>Extend your living space to the outdoors with our expert outdoor living design services. From cozy fire pits to luxurious outdoor kitchens, we help you create a space that's perfect for entertaining and relaxation.</p>
-                <button className="home-btn home-primary" onClick={() => navigate("/Gallery")}>Know More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    
       {/* Testimonials */}
       <section className="home-testimonials-section" style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`,

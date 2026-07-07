@@ -130,7 +130,7 @@ const Franchise = () => {
                 <div className="franchise-support-card">
                   <h3>Showroom Design & Setup</h3>
                   <p>Professional layout, branding, and experience-center creation guidance.</p>
-                  <img src="https://www.natrajfurniture.com/retail-furniture/digital-displays/digital-displays6.jpg" alt="Elegant showroom" className="franchise-support-img" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=800" alt="Elegant showroom" className="franchise-support-img" loading="lazy" />
                 </div>
                 <div className="franchise-support-card">
                   <h3>Training & Operations</h3>
@@ -200,7 +200,7 @@ const Franchise = () => {
                     <span>Market Growth</span>
                   </div>
                   <img
-                    src="https://img.freepik.com/free-photo/future-visions-business-technology-concept_23-2151893450.jpg?semt=ais_user_personalization&w=740&q=80"
+                    src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
                     alt="Growth analytics"
                     className="franchise-market-img"
                   />
@@ -220,7 +220,7 @@ const Franchise = () => {
                 {/* Step 1 */}
                 <div className="franchise-process-step-card">
                   <div className="franchise-step-image">
-                    <img src="https://img.freepik.com/free-vector/online-survey-analysis-electronic-data-collection-digital-research-tool-computerized-study-analyst-considering-feedback-results-analysing-info_335657-854.jpg?semt=ais_user_personalization&w=740&q=80" alt="Submit Inquiry" />
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800" alt="Submit Inquiry" />
                     <div className="franchise-step-number">01</div>
                   </div>
                   <div className="franchise-step-content">
@@ -253,7 +253,7 @@ const Franchise = () => {
                 {/* Step 4 */}
                 <div className="franchise-process-step-card">
                   <div className="franchise-step-image">
-                    <img src="https://cdn.shopify.com/s/files/1/0610/4809/4897/files/lawyer_Office_Decoration_Ideas.jpg?v=1697755019" alt="Launch Store" />
+                    <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&q=80&w=800" alt="Launch Store" />
                     <div className="franchise-step-number">04</div>
                   </div>
                   <div className="franchise-step-content">
@@ -409,12 +409,12 @@ const Franchise = () => {
         
         {/* Facebook */}
         <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://img.magnific.com/premium-vector/facebook-app-icon-social-media-logo-vector-illustration-meta_277909-402.jpg?semt=ais_hybrid&w=740&q=80" alt="Facebook" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* Instagram */}
         <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://img.magnific.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?semt=ais_hybrid&w=740&q=80" alt="Instagram" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* Twitter / X */}
@@ -424,7 +424,7 @@ const Franchise = () => {
 
         {/* Google */}
         <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LMoozClIyyk2YLRSNagwTkpOskwyM01KSk5NSTMxtDKosDCxTEkxMDa3MEk1MrdMNvUSTMlITS1KzFLIzCtJLcrMLyoGADtiFx8&q=dheeraj+interiors&oq=deerajinteriors&gs_lcrp=EgZjaHJvbWUqDwgBEC4YDRivARjHARiABDIGCAAQRRg7Mg8IARAuGA0YrwEYxwEYgAQyDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDUxODRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://media.wired.com/photos/5926ffe47034dc5f91bed4e8/3:2/w_2560%2Cc_limit/google-logo.jpg" alt="Google" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* YouTube */}

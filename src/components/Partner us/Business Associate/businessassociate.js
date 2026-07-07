@@ -42,13 +42,13 @@ const BusinessAssociate = () => {
         {/* Right Side: Stacked Images */}
         <div className="business-hero-images-right">
           <img
-            src="https://cdn.decorilla.com/online-decorating/wp-content/uploads/2023/11/commercial-interior-design-open-office-space-by-Decorilla-1024x683.jpeg?width=900"
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
             alt="Modern workspace"
             className="business-stacked-image business-top-image"
             loading="lazy"
           />
           <img 
-            src="https://cdn.palmspringslife.com/media/2025/11/12222722/DSCF1933-cc.jpg" 
+            src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&q=80&w=1000" 
             alt="Financial growth luxury home" 
             className="business-stacked-image business-bottom-image"
             loading="lazy"
@@ -62,17 +62,17 @@ const BusinessAssociate = () => {
         <div className="business-cards-grid">
           <div className="business-card">
             <h3>Ambitious Entrepreneurs</h3>
-            <img src="https://img.freepik.com/premium-photo/two-businessmen-shaking-hands-while-standing-modern-office_979520-65371.jpg" alt="Business professionals" className="business-card-image" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1000" alt="Business professionals" className="business-card-image" loading="lazy" />
             <p>Business-minded individuals with a passion for growth and the drive to succeed in a competitive marketplace.</p>
           </div>
           <div className="business-card">
             <h3>Networking Professionals</h3>
-            <img src="https://as1.ftcdn.net/jpg/04/49/75/24/1000_F_449752429_cBk7nGIq2lf9DGOZepoeNpDE4ZEmoqYt.jpg" alt="Group business meeting" className="business-card-image" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800" alt="Group business meeting" className="business-card-image" loading="lazy" />
             <p>People with strong interpersonal skills and established connections — your network will be your greatest asset.</p>
           </div>
           <div className="business-card">
             <h3>Income Diversifiers</h3>
-            <img src="https://res.cloudinary.com/zenbusiness/q_auto,w_6049,h_4033/v1/shared-assets/stk/home-office-business-name-idea.jpg" alt="Professional working" className="business-card-image" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=800" alt="Professional working" className="business-card-image" loading="lazy" />
             <p>Professionals seeking to supplement primary income with a scalable, sustainable stream that doesn’t disturb current commitments.</p>
           </div>
         </div>
@@ -83,7 +83,7 @@ const BusinessAssociate = () => {
         <div className="business-benefits-grid">
           <div className="business-benefit-card">
             <h3>Minimal Time Investment</h3>
-            <img src="https://www.salesforce.com/blog/wp-content/uploads/sites/2/2025/06/Side-Hustle-SMB-1.jpg" alt="Side hustle" className="business-benefit-image" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800" alt="Side hustle" className="business-benefit-image" loading="lazy" />
             <p>2–3 hours/day effort maximum → measurable results with our streamlined processes & systems.</p>
           </div>
           <div className="business-benefit-card">
@@ -104,7 +104,7 @@ const BusinessAssociate = () => {
         <div className="business-segments">
           <div className="business-segment">
             <h3>Home Interiors</h3>
-            <img src="https://media.designcafe.com/wp-content/uploads/2024/02/22183423/luxury-kitchen-designs.jpg" alt="Home Interiors" className="business-segment-image" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&q=80&w=1000" alt="Home Interiors" className="business-segment-image" loading="lazy" />
             <ul>
               <li>Modular Kitchens</li>
               <li>Luxury Wardrobes</li>
@@ -113,7 +113,7 @@ const BusinessAssociate = () => {
           </div>
           <div className="business-segment">
             <h3>Commercial Spaces</h3>
-            <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2022/03/Modern-Office-Interior-with-Open-Floor-Plan-scaled.jpeg" alt="Commercial Spaces" className="business-segment-image" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&q=80&w=800" alt="Commercial Spaces" className="business-segment-image" loading="lazy" />
             <ul>
               <li>Corporate Offices</li>
               <li>Co-working Hubs</li>
@@ -149,7 +149,7 @@ const BusinessAssociate = () => {
           </div>
         </div>
         <div className="business-stands-apart-image">
-          <img src="https://thumbs.dreamstime.com/b/happy-young-indian-arab-business-man-wearing-suit-headshot-portrait-ceo-leader-professional-manager-smiling-expert-businessman-257487832.jpg" alt="Businessman" className="business-stands-apart-img" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Businessman" className="business-stands-apart-img" loading="lazy" />
         </div>
       </section>
 
@@ -157,7 +157,7 @@ const BusinessAssociate = () => {
         <h2>YOUR ROLE AS A BUSINESS ASSOCIATE</h2>
         <div className="business-your-role-grid">
           <div className="business-role-image-left">
-            <img src="https://www-cdn.usemotion.com/webflow-export/blog/best-daily-planner-apps/667ae085abae990ac0cd0edc_NotionCalendar_qj3n.webp" alt="Planner" className="business-role-img" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=800" alt="Planner" className="business-role-img" loading="lazy" />
           </div>
           <div className="business-role-content-right">
             <p className="business-role-subtitle">Daily Commitment: 2-3 Hours</p>
@@ -216,7 +216,7 @@ const BusinessAssociate = () => {
               </div>
             </div>
             <div className="business-strategy-image-right">
-              <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2022/03/modern-office-design-for-a-large-conference-room.jpeg" alt="Workspace" className="business-strategy-img" loading="lazy" />
+              <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Workspace" className="business-strategy-img" loading="lazy" />
             </div>
           </div>
         </div>
@@ -226,22 +226,22 @@ const BusinessAssociate = () => {
 
         <div className="business-onboarding-grid">
           <div className="business-onboarding-step">
-            <img src="https://opengov.com/wp-content/uploads/2021/03/business-licensing-laptop-1024x589.png" alt="Application" className="business-onboarding-img" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800" alt="Application" className="business-onboarding-img" loading="lazy" />
             <h4>1. Submit Application</h4>
             <p>Complete our comprehensive inquiry form with your professional background, income expectations, and preferred operating location.</p>
           </div>
           <div className="business-onboarding-step">
-            <img src="https://see-me-strapi.s3.eu-west-1.amazonaws.com/employee_orientation_2408ada6a8.jpg" alt="Orientation" className="business-onboarding-img" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="Orientation" className="business-onboarding-img" loading="lazy" />
             <h4>2. Orientation Session</h4>
             <p>Attend an interactive session covering our business model, market opportunities, professional guidance, and success strategies with current associates.</p>
           </div>
           <div className="business-onboarding-step">
-            <img src="https://thumbs.dreamstime.com/b/close-up-handshake-over-signed-contract-pens-wooden-table-image-showing-symbolizing-agreement-partnership-two-386392396.jpg" alt="Agreement" className="business-onboarding-img" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1000" alt="Agreement" className="business-onboarding-img" loading="lazy" />
             <h4>3. Agreement Signing</h4>
             <p>Formalize your partnership through our agreement, outlining terms, commitments, and mutual support.</p>
           </div>
           <div className="business-onboarding-step">
-            <img src="https://thumbs.dreamstime.com/b/businessman-touching-virtual-startup-arrow-graph-target-icon-using-laptop-concept-business-growth-strategy-financial-429426050.jpg" alt="Earning" className="business-onboarding-img" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800" alt="Earning" className="business-onboarding-img" loading="lazy" />
             <h4>4. Begin Earning</h4>
             <p>Start generating income immediately with full support from our experienced team and proven systems.</p>
           </div>
@@ -290,8 +290,8 @@ const BusinessAssociate = () => {
             <p className="business-success-text">Take Action Today</p>
             <p>The interior design market won't wait, neither should you. With limited positions available in each territory, early applicants receive priority consideration and enhanced support during the initial months.</p>
             <div className="business-success-images">
-              <img src="https://i.pinimg.com/originals/51/37/d8/5137d83126afa6c13fb63d919ff233b6.jpg" alt="Luxury interior" className="business-success-img" loading="lazy" />
-              <img src="https://homeone.in/wp-content/uploads/2024/12/Premium-finish-kitchen-design.png" alt="Kitchen design" className="business-success-img" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&q=80&w=1000" alt="Luxury interior" className="business-success-img" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&q=80&w=1000" alt="Kitchen design" className="business-success-img" loading="lazy" />
             </div>
           </div>
 
@@ -446,12 +446,12 @@ const BusinessAssociate = () => {
         
         {/* Facebook */}
         <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://img.magnific.com/premium-vector/facebook-app-icon-social-media-logo-vector-illustration-meta_277909-402.jpg?semt=ais_hybrid&w=740&q=80" alt="Facebook" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* Instagram */}
         <a href="#" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://img.magnific.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?semt=ais_hybrid&w=740&q=80" alt="Instagram" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* Twitter / X */}
@@ -461,7 +461,7 @@ const BusinessAssociate = () => {
 
         {/* Google */}
         <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LMoozClIyyk2YLRSNagwTkpOskwyM01KSk5NSTMxtDKosDCxTEkxMDa3MEk1MrdMNvUSTMlITS1KzFLIzCtJLcrMLyoGADtiFx8&q=dheeraj+interiors&oq=deerajinteriors&gs_lcrp=EgZjaHJvbWUqDwgBEC4YDRivARjHARiABDIGCAAQRRg7Mg8IARAuGA0YrwEYxwEYgAQyDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDUxODRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" style={{ width: '48px', height: '48px', backgroundColor: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-          <img src="https://media.wired.com/photos/5926ffe47034dc5f91bed4e8/3:2/w_2560%2Cc_limit/google-logo.jpg" alt="Google" style={{ width: '28px', height: '28px' }} />
+          <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google" style={{ width: '28px', height: '28px' }} />
         </a>
 
         {/* YouTube */}

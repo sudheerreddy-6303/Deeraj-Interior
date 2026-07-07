@@ -464,6 +464,43 @@ const shorts = [
     shortId: "ZjAFOAHf0v4",
     description: "See how ideas turn into beautiful realities",
   },
+
+  // New Shorts
+  {
+    title: "Modern Interior Design Showcase",
+    shortId: "QR_G8c0uXmI",
+    description: "Explore stunning modern interior design ideas and inspirations.",
+  },
+  {
+    title: "Elegant Home Transformation",
+    shortId: "5PogUy_QAgg",
+    description: "See how ordinary spaces become extraordinary homes.",
+  },
+  {
+    title: "Premium Modular Interior Solutions",
+    shortId: "HFcXJzTKUhw",
+    description: "Smart and stylish modular solutions for modern living.",
+  },
+  {
+    title: "Luxury Living Space Design",
+    shortId: "EeMSc64PA3I",
+    description: "Experience the beauty of luxury interiors and décor.",
+  },
+  {
+    title: "Creative Wall & Ceiling Concepts",
+    shortId: "BBgWvkgPauw",
+    description: "Unique wall and ceiling designs to elevate your interiors.",
+  },
+  {
+    title: "Custom Furniture & Interior Craftsmanship",
+    shortId: "6bjpz-AIkqo",
+    description: "Expertly crafted furniture designed for your lifestyle.",
+  },
+  {
+    title: "Dream Home Interior Journey",
+    shortId: "v1jiBbDlm3A",
+    description: "A quick look at our process of creating dream interiors.",
+  },
 ];
 
 // Helper Component to keep the UI consistent in both Original and Duplicate sets
