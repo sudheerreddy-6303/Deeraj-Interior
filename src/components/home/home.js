@@ -2265,8 +2265,9 @@ import sunilimage from "../../assets/dr sunil sir image1.jpeg";
 import sudhakar from "../../assets/sudhakar sir image1.jpeg";
 import kalpana from "../../assets/kalpana madam image.jpeg";
 import First from "../../assets/main logo2.png";
-import Second from "../../assets/opening soon.png";
-import Third from "../../assets/add Third image.png";
+// import Second from "../../assets/opening soon.png";
+// import Third from "../../assets/add Third image.png";
+import grandopening from "../../assets/grand opening banner 1.png";
 
 import './home.css';
 
@@ -2316,9 +2317,10 @@ const testimonials = [
 ];
 
 const heroSlides = [
-  { type: 'image', image: First },
-  { type: 'image', image: Second },
+  // { type: 'image', image: First },
+  // { type: 'image', image: Second },
   // { type: 'image', image: Third },
+          { type: 'image', image: grandopening },
 ];
 
 export default function Home() {
